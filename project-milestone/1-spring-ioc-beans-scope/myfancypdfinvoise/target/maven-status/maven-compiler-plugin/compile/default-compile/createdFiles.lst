@@ -1,0 +1,7 @@
+com\marcobehler\myfancypdfinvoices\context\MyFancyPdfInvoicesApplicationConfiguration.class
+com\marcobehler\myfancypdfinvoices\service\InvoiceService.class
+com\marcobehler\myfancypdfinvoices\model\Invoice.class
+com\marcobehler\myfancypdfinvoices\ApplicationLauncher.class
+com\marcobehler\myfancypdfinvoices\model\User.class
+com\marcobehler\myfancypdfinvoices\service\UserService.class
+com\marcobehler\myfancypdfinvoices\web\MyFancyPdfInvoicesServlet.class

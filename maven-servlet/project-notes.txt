@@ -1,0 +1,5 @@
+For json request read using input stream
+https://hmkcode.com/java-servlet-send-receive-json-using-jquery-ajax/
+
+Servlets and other database code
+https://www.mitrais.com/news-updates/step-by-step-making-a-simple-crud-application-using-java-servlet-jsp/

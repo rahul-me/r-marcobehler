@@ -1,0 +1,6 @@
+com\rvcode\appointments\model\Appointment.class
+com\rvcode\appointments\service\AppointmentService.class
+com\rvcode\appointments\service\BotService.class
+com\rvcode\appointments\context\MyAppointmentConfiguration.class
+com\rvcode\appointments\web\MyAppointmentServlet.class
+com\rvcode\appointments\ApplicationLauncher.class
