@@ -1,0 +1,106 @@
+Issue Type,Issue key,Issue id,Summary,Reporter,Reporter Id,Fix versions,Fix versions,Project key,Project name,Project type,Project lead,Project lead id,Project description,Project url
+Story,SMAREP-2589,78709,P59 - New Bookings: Can add a drivers note,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,Hotel - FE/API,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2558,78630,P39 - Standalone Products: Can sell standalone products,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2557,78629,P36 - Refunds: Can refund an expired ticket,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2556,78628,P23 - Refunds: Can refund non-refundable products,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2555,78627,P19 - Refunds: Can refund non-refundable fare type tickets,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2554,78626,P14 - Refunds: Can override refund value,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,Hotel - FE/API,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2553,78625,P07 - Refunds: Can refund cancelled reservation for travel within T&Cs,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2552,78624,P13 - Payments: Can override payment value,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2551,78623,P09 - Payments: Can process card not present payments & zero value transactions,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2550,78622,P03 - New Bookings: Can make new reservation for travel,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,Hotel - FE/API,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2549,78621,P06 - Cancellations: Can cancel existing reservation for travel,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,Hotel - FE/API,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2548,78620,P30 - Amendments: Can add ticket level note,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,Hotel - FE/API,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2547,78619,P16 - Amendments: Can amend non-amendable fare type tickets,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,Hotel - FE/API,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2546,78618,P15 - Amendments: Can amend expired tickets,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,Hotel - FE/API,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",
+Story,SMAREP-2545,78617,P05 - Amendments: Can amend existing reservation for travel within T&Cs,Daniel Parker,5bc4bb7b63cbaa729c4c53ab,Hotel,Hotel - FE/API,SMAREP,Mercury (CapEx 21ne07),software,Chris Weaver,5bfd456fed26a5223c94c78c,"Smart/NX Agents replacement 2019
+
+-CapEx 1945 (SMART Replacement) 
+CapEx 1944 (NX Agents Replacement)-
+CapEx 2003
+Capex 2002 from July 2020 to Dec 2020
+Capex 21ne07 from Jan to End June 2021",

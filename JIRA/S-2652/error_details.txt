@@ -1,0 +1,12 @@
+{
+   "ErrorDetails":{
+      "ErrorCode":500,
+      "ErrorDescription":"Pricing error: [120] Flow : Journey type return (return) from 57366 to 57286 price was not found from: PriceListServiceOD_NX403, PriceListBrandOD_NX or PriceListSuperBrOD_NX matrixes.",
+      "RequestInfo":{
+         "Method":"POST",
+         "ReasonPhrase":"Internal Server Error",
+         "StatusCode":500,
+         "URI":"http://10.251.114.209:7001/rci/services/transportation/1.0/NXTransportationPortal/NX/fares"
+      }
+   }
+}

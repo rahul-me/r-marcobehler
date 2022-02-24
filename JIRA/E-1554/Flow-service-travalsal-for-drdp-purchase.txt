@@ -1,0 +1,14 @@
+
+
+NexChannelAPI/ purchaseTravelWeb
+	NexPurchaseTransaction/  purchaseTravelWeb
+		NxChannelApi/  mapToTicketPurchase4  - Check map step
+		NxTravelPurchase2/  purchaseAnyTravelTicket - 
+		NxTravelPurchase2/  mapToSeatReservationRequest - Check last map step
+		NxTravelPurchase2/  makeSeatReservation - Need to check
+		
+		
+		
+
+
+		

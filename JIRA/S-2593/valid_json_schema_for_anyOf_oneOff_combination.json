@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "required": [
+        "roleID"        
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "roleID": {
+            "type": "string",
+            "minLength": 1
+        }        
+    },
+    "anyOf": [
+        {
+            "type": "object",            
+            "properties": {
+                "roleName":   { "type": "string", "minLength": 1}                
+            },
+            "required":["roleName"]
+        }, 
+        {
+            "type": "object",
+            "properties": {
+                "salesChannel": { "type": "string", "minLength": 1 }                
+            },
+            "required":["salesChannel"]
+        },
+        {
+            "type": "object",
+            "properties":{
+                "permissions": {"minItems": 1, "type": "array", "items": {"type": "string", "minLength": 1 }}
+            },
+            "required":["permissions"]
+        }        
+    ]
+}

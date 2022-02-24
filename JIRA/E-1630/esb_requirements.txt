@@ -1,0 +1,91 @@
+Change in nxchannelapi.priv:mapToTicketPurchase4
+
+NxTravelPurchase2\nxtravelpurchase2.priv.titan:mapToTitanTicketPurchase
+
+NxTravelPurchase2\nxtravelpurchase2.pub:cancelTicketPurchase
+
+
+1. NxChannelApi/nxpub:Payment2 - add adyen object
+2. Check NxChannelApi\nxchannelapi.priv:mapPaymentForPass for any change
+3. NxTravelPassPurchase2\nxtravelpasspurchase2.priv.titan:buildTitanPassPurchase - Check for any change
+4. NxTravelPassPurchase2\nxtravelpasspurchase2.priv:processTitanUpdateFailure - 
+
+Amend Travel
+
+1. NxChannelApi\nxpriv:amendTravel - Check input.
+2. NxChannelApi\nxpub:Payment Check if any additional attributes needed to be added.
+3. Check MAP step which is converting a request to amend travel request object.
+4. NxPayments2/nxpayments2.pub:queueVoidPayment2 - Check if any change required after above mentioned changes.
+
+Travel CAT
+1. purchaseTicket
+- It uses NexPurchaseTransaction\nexpurchasetransaction.doc:purchaseTicketReq as request object
+
+In NexPurchaseTransaction\nexpurchasetransaction.priv:purchaseTicket, we have two blocks, 
+1. Preparation
+2. Ticket purchase
+
+In preparation block under catch block we have nexpurchasetransaction.priv:cancelPurchaseReservation, we need confirm if we are passing required information. In that flow service we need to add one more switch value for Adyen.
+
+In ticket purchase block under try block we have a call to nexpurchasetransaction.priv:purchaseReservation. In that flow service we again need to confirm if we are  passing required information to it.
+
+2. amendTravel
+
+In nexpurchasetransaction.priv:amendTicket we have two main block.
+1. ESB logic for amendment
+2. Call to titan MS to store amendments
+
+In case of faliure of both of the above mentioned block we need to perform void payments.
+
+In falure cases, nexpurchasetransaction.priv:cancelAmendTransaction have been used. We need to add Adyen switch pass adyen related data.
+
+3. recordOtherProductPurchase
+
+In nexretailapi.priv:recordOtherProductSell there is only one place we need to see for Adyen void payment.
+We are using nexpurchasetransaction.priv:cancelProductPurchase to make a void payment. Here need to add Adyen switch and data accordingly.
+
+Common logic for void payment.
+
+1. NxPayments2\nxpayments2.priv:voidPaymentHandler
+
+Create one flow service for adyen ms void operations.
+Add switch for adyen void MS cal
+Add pass through call to void MS in it.
+
+cp_Add_ESB_Basket_Payment_Voided
+cp_insert_payment_provider_transaction_v3
+
+<Ticket ticketNumber="E5JE7146" agentCode="NXDSK" agentUser="webDTU" salesChannel="Web">
+  <Payment payment_value="0" payment_type="CARD" payment_provider="Barclays" payment_provider_transaction_id="8616356807484320"/>
+</Ticket>
+
+Database changes
+
+Select 
+	@Payment_Provider_id = id
+from
+	NXLookUp.dbo.tbl_Payment_Providers
+where
+	description	 = 'Barclaycard'
+	
+From ESB to Void MS
+{
+    "PaymentError": {
+        "Ticket": {
+            "@ticketNumber": "4554",
+            "@agentCode": "4545",
+            "@agentUser": "5",
+            "@salesChannel": "54",
+            "Payment": {
+                "@payment_value": 12,
+                "@payment_type": "1245",
+                "@payment_provider": "Barclays",
+                "@payment_provider_transaction_id": "545421"
+            }
+        }
+    },
+    "isTestOnly": "false"
+}	
+
+
+

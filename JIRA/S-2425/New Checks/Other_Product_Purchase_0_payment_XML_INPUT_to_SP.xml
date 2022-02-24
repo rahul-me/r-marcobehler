@@ -1,0 +1,79 @@
+<Ticket agentCode="D085" agentUser="RChauhan" salesChannel="Call" ticketNumber="U2002438">
+	<Addons>
+		<Addon>
+			<Item_quantity>1</Item_quantity>
+			<Item_value>0</Item_value>
+			<new_fare>0</new_fare>
+			<old_fare>250</old_fare>
+			<override_description>test</override_description>
+			<override_reason_code>N</override_reason_code>
+			<SKU>B02B002</SKU>
+		</Addon>
+		<Addon>
+			<Item_quantity>1</Item_quantity>
+			<Item_value>0</Item_value>
+			<new_fare>0</new_fare>
+			<old_fare>250</old_fare>
+			<override_description>test</override_description>
+			<override_reason_code>N</override_reason_code>
+			<SKU>H42H240</SKU>
+		</Addon>
+		<Addon>
+			<emailAddress>roshni.rosh@gmail.com</emailAddress>
+			<firstName>Roshni</firstName>
+			<Item_quantity>1</Item_quantity>
+			<Item_value>0</Item_value>
+			<new_fare>0</new_fare>
+			<old_fare>1250</old_fare>
+			<override_description>test</override_description>
+			<override_reason_code>N</override_reason_code>
+			<SKU>H27H200</SKU>
+			<surName>Chauhan</surName>
+			<Valid_from>2021-05-18 00:00:00</Valid_from>
+		</Addon>
+		<Addon>
+			<emailAddress>vaishnavi.chauhan@gmail.com</emailAddress>
+			<firstName>Vaishnavi</firstName>
+			<Item_quantity>1</Item_quantity>
+			<Item_value>0</Item_value>
+			<new_fare>0</new_fare>
+			<old_fare>1250</old_fare>
+			<override_description>test</override_description>
+			<override_reason_code>N</override_reason_code>
+			<SKU>H27H201</SKU>
+			<surName>Chauhan</surName>
+			<Valid_from>2021-05-18 00:00:00</Valid_from>
+		</Addon>
+	</Addons>
+	<Discounts/>
+	<DistributionDetails distributionType="Local Post Out" email="rahul.chauhan@nationalexpress.com">
+		<PostalAddress>
+			<address1>Q Associates Ltd</address1>
+			<address2>30 Stamford Street</address2>
+			<address3></address3>
+			<addressTypeId>0</addressTypeId>
+			<postcode>SE19LQ</postcode>
+			<town>LONDON</town>
+		</PostalAddress>
+	</DistributionDetails>
+	<LeadPassenger emailConsent="false" firstName="Rahul" surname="Chauhan" telephone="4411111111" telephoneConsent="false" title="Mr">
+		<Address>
+			<Address1>Q Associates Ltd</Address1>
+			<Address2>30 Stamford Street</Address2>
+			<Address3></Address3>
+			<AddressTypeID>0</AddressTypeID>
+			<PostCode>SE19LQ</PostCode>
+			<Town>LONDON</Town>
+		</Address>
+	</LeadPassenger>
+	<Payment payment_type="Cash" payment_value="0">
+		<BillingAddress>
+			<address1>Q Associates Ltd</address1>
+			<address2>30 Stamford Street</address2>
+			<address3></address3>
+			<addressTypeId>0</addressTypeId>
+			<postcode>SE19LQ</postcode>
+			<town>LONDON</town>
+		</BillingAddress>
+	</Payment>
+</Ticket>

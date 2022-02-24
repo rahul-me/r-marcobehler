@@ -1,0 +1,129 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs22 USE [WebBooking]\par
+GO\par
+\par
+--\lang9 'Premium Outbound Seat Reservation'\lang1033 --\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\ul\lang9 Table: ContentType\lang1033\par
+
+\pard\ulnone\par
+DECLARE @contentId int\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1 SELECT @contentId=MAX(\lang9 CmsContentTypeID\lang1033 ) +1 from \lang9 ContentType\lang1033  \par
+\lang9 INSERT INTO [WebBooking].[dbo].[CMSContentType] (CmsContentTypeID, Name, OwnerID, DeviceID) VALUES \lang1033 (@contentId\lang9 , 'ProductsToSellTC', 'TCDevTeam', ' TCWebBooking');\line\line INSERT INTO [WebBooking].[dbo].[CMSContentType] (CmsContentTypeID, Name, OwnerID, DeviceID) VALUES \lang1033 (@contentId\lang9 , 'ProductsSoldTC', 'TCDevTeam', ' TCWebBooking');\par
+\par
+\ul Table: CMSContent\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContent] (CONTENTID, TITLE, BODY) VALUES(70457, 'Premium Outbound Seat Reservation', ' <div class="col-xs-12 col-sm-12 ng-binding"><ul class="infoText"><li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li></ul><p><a href="https://www.nationalexpress.com/en/seat-reservation" target='_blank">Only available on selected routes</a></p><p><a href="https://www.nationalexpress.com/en/help/conditions-of-carriage" target="_terms">Terms and conditions</a></p></div>');                                                                                                  \par
+                                                                                             \par
+\par
+\ul Table: CMSContentTypMapping\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentTypeMapping] ( ContentID, CmsContentTypeID) VALUES ( 70457,31);\par
+\par
+\ul Table: CMSContentProduct\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentProduct] ( CONTENTID, PRODUCTID, PRODUCTKEY, ProductkeySmartComposite, ProductSelectedByDefault, ProductImageURL, ProductTermsConditionsURL)VALUES (70457, 3341, 'Premium Outbound Seat Reservation', 'H05H038', 0, NULL, NULL);\par
+ \par
+\ul Table: CMSContentExtras_ML\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentExtras_ML] (ContentID, LanguageCode, Title, Body, Summary, USER_COLUMN1, USER_COLUMN2, USER_COLUMN3)VALUES (70457, 'en', 'Premium Outbound Seat Reservation', '<li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li>', '<li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li>', NULL, NULL, NULL );\par
+\par
+\par
+
+\pard\lang1033 --\lang9 'Premium Return Seat Reservation'\lang1033 --\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\cf1\ul\lang9 Table: ContentType\lang1033\par
+
+\pard\ulnone\par
+DECLARE @contentId int\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1 SELECT @contentId=MAX(\lang9 CmsContentTypeID\lang1033 ) +1 from \lang9 ContentType\lang1033  \par
+\lang9 INSERT INTO [WebBooking].[dbo].[CMSContentType] (CmsContentTypeID, Name, OwnerID, DeviceID) VALUES \lang1033 (@contentId\lang9 , 'ProductsToSellTC', 'TCDevTeam', ' TCWebBooking');\line\line INSERT INTO [WebBooking].[dbo].[CMSContentType] (CmsContentTypeID, Name, OwnerID, DeviceID) VALUES \lang1033 (@contentId\lang9 , 'ProductsSoldTC', 'TCDevTeam', ' TCWebBooking');\par
+\cf0\par
+\ul Table: CMSContent\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContent] (CONTENTID, TITLE, BODY) VALUES(70458, 'Premium Return Seat Reservation', ' <div class="col-xs-12 col-sm-12 ng-binding"><ul class="infoText"><li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li></ul><p><a href="https://www.nationalexpress.com/en/seat-reservation" target='_blank">Only available on selected routes</a></p><p><a href="https://www.nationalexpress.com/en/help/conditions-of-carriage" target="_terms">Terms and conditions</a></p></div>');                                                                                                  \par
+                                                                                             \par
+\par
+\ul Table: CMSContentTypMapping\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentTypeMapping] ( ContentID, CmsContentTypeID) VALUES (70458,31);\par
+\par
+\ul Table: CMSContentProduct\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentProduct] ( CONTENTID, PRODUCTID, PRODUCTKEY, ProductkeySmartComposite, ProductSelectedByDefault, ProductImageURL, ProductTermsConditionsURL)VALUES (70458, 3342, 'Premium Return Seat Reservation', 'H05H039', 0, NULL, NULL);\par
+ \par
+\ul Table: CMSContentExtras_ML\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentExtras_ML] (ContentID, LanguageCode, Title, Body, Summary, USER_COLUMN1, USER_COLUMN2, USER_COLUMN3)VALUES (70458, 'en', 'Premium Return Seat Reservation', '<li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li>', '<li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li>', NULL, NULL, NULL );\par
+\par
+\par
+
+\pard\lang1033 --\lang9 'Premium Outbound Seat Reservation'\lang1033 --\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\cf1\ul\lang9 Table: ContentType\lang1033\par
+
+\pard\ulnone\par
+DECLARE @contentId int\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1 SELECT @contentId=MAX(\lang9 CmsContentTypeID\lang1033 ) +1 from \lang9 ContentType\lang1033  \par
+\lang9 INSERT INTO [WebBooking].[dbo].[CMSContentType] (CmsContentTypeID, Name, OwnerID, DeviceID) VALUES \lang1033 (@contentId\lang9 , 'ProductsToSellTC', 'TCDevTeam', ' TCWebBooking');\line\line INSERT INTO [WebBooking].[dbo].[CMSContentType] (CmsContentTypeID, Name, OwnerID, DeviceID) VALUES \lang1033 (@contentId\lang9 , 'ProductsSoldTC', 'TCDevTeam', ' TCWebBooking');\cf0\par
+\par
+\ul Table: CMSContent\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContent] (CONTENTID, TITLE, BODY) VALUES(70459, 'Premium Outbound Seat Reservation', ' <div class="col-xs-12 col-sm-12 ng-binding"><ul class="infoText"><li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li></ul><p><a href="https://www.nationalexpress.com/en/seat-reservation" target='_blank">Only available on selected routes</a></p><p><a href="https://www.nationalexpress.com/en/help/conditions-of-carriage" target="_terms">Terms and conditions</a></p></div>');                                                                                                  \par
+                                                                                             \par
+\par
+\ul Table: CMSContentTypMapping\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentTypeMapping] ( ContentID, CmsContentTypeID) VALUES ( 70459,31);\par
+\par
+\ul Table: CMSContentProduct\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentProduct] ( CONTENTID, PRODUCTID, PRODUCTKEY, ProductkeySmartComposite, ProductSelectedByDefault, ProductImageURL, ProductTermsConditionsURL)VALUES (70459, 3341, 'Premium Outbound Seat Reservation', 'H05H038', 0, NULL, NULL);\par
+ \par
+\ul Table: CMSContentExtras_ML\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentExtras_ML] (ContentID, LanguageCode, Title, Body, Summary, USER_COLUMN1, USER_COLUMN2, USER_COLUMN3)VALUES (70459, 'en', 'Premium Outbound Seat Reservation', '<li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li>', '<li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li>', NULL, NULL, NULL );\par
+\par
+\par
+
+\pard\lang1033 --\lang9 'Premium Return Seat Reservation'\lang1033 --\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\cf1\ul\lang9 Table: ContentType\lang1033\par
+
+\pard\ulnone\par
+DECLARE @contentId int\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1 SELECT @contentId=MAX(\lang9 CmsContentTypeID\lang1033 ) +1 from \lang9 ContentType\lang1033  \par
+\lang9 INSERT INTO [WebBooking].[dbo].[CMSContentType] (CmsContentTypeID, Name, OwnerID, DeviceID) VALUES \lang1033 (@contentId\lang9 , 'ProductsToSellTC', 'TCDevTeam', ' TCWebBooking');\line\line INSERT INTO [WebBooking].[dbo].[CMSContentType] (CmsContentTypeID, Name, OwnerID, DeviceID) VALUES \lang1033 (@contentId\lang9 , 'ProductsSoldTC', 'TCDevTeam', ' TCWebBooking');\par
+\cf0\par
+\ul Table: CMSContent\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContent] (CONTENTID, TITLE, BODY) VALUES(70460, 'Premium Return Seat Reservation', ' <div class="col-xs-12 col-sm-12 ng-binding"><ul class="infoText"><li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li></ul><p><a href="https://www.nationalexpress.com/en/seat-reservation" target='_blank">Only available on selected routes</a></p><p><a href="https://www.nationalexpress.com/en/help/conditions-of-carriage" target="_terms">Terms and conditions</a></p></div>');                                                                                                  \par
+                                                                                             \par
+\par
+\ul Table: CMSContentTypMapping\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentTypeMapping] ( ContentID, CmsContentTypeID) VALUES (70460,31);\par
+\par
+\ul Table: CMSContentProduct\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentProduct] ( CONTENTID, PRODUCTID, PRODUCTKEY, ProductkeySmartComposite, ProductSelectedByDefault, ProductImageURL, ProductTermsConditionsURL)VALUES (70460, 3342, 'Premium Return Seat Reservation', 'H05H039', 0, NULL, NULL);\par
+ \par
+\ul Table: CMSContentExtras_ML\par
+\ulnone\par
+INSERT INTO [WebBooking].[dbo].[CMSContentExtras_ML] (ContentID, LanguageCode, Title, Body, Summary, USER_COLUMN1, USER_COLUMN2, USER_COLUMN3)VALUES (70460, 'en', 'Premium Return Seat Reservation', '<li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li>', '<li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you\rquote ll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li>', NULL, NULL, NULL );\lang1033\par
+}
+ 

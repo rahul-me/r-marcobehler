@@ -1,0 +1,101 @@
+{
+   "travelTransaction":"OTHER_PRODUCT_PURCHASE",
+   "paymentCompleteURL":"https://dt2.nationalexpress.com/dev/sales/#ticket/manage/U2002862",
+   "paymentDeclinedURL":"https://dt2.nationalexpress.com/dev/sales/#payment-error",
+   "ticketNumber":"U2002862",
+   "cardHolderName":"Rahul Chauhan",
+   "passenger":{
+      "title":"Unkno",
+      "firstName":"Rahul",
+      "lastName":"Chauhan",
+      "leadAddress":{
+         "addressLine1":"WS Davies & Son",
+         "addressLine2":"Harwood On Teviot Farm",
+         "addressLine3":"",
+         "city":"HAWICK",
+         "town":"HAWICK",
+         "postCode":"TD90JY",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      },
+      "billingAddress":{
+         "addressLine1":"WS Davies & Son",
+         "addressLine2":"Harwood On Teviot Farm",
+         "addressLine3":"",
+         "city":"HAWICK",
+         "town":"HAWICK",
+         "postCode":"TD90JY",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      }
+   },
+   "distribution":{
+      "distributionType":"P",
+      "distributionSKU":"H42H240",
+      "postalAddress":{
+         "addressLine1":"WS Davies & Son",
+         "addressLine2":"Harwood On Teviot Farm",
+         "addressLine3":"",
+         "city":"HAWICK",
+         "town":"HAWICK",
+         "postCode":"TD90JY",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      },
+      "email":{
+         "emailAddress":"rahul.chauhan@nationalexpress.com",
+         "marketingConsent":false
+      },
+      "phone":{
+         "mobileNumber":"4411111111",
+         "marketingConsent":false,
+         "country":"GB"
+      }
+   },
+   "extras":[
+      {
+         "sku":"B02B002",
+         "itemQuantity":1,
+         "itemValue":0,
+         "override":{
+            "newFare":0,
+            "oldFare":250,
+            "reasonCode":"A",
+            "description":"TEST DESC"
+         }
+      },
+      {
+         "sku":"H42H240",
+         "itemQuantity":1,
+         "itemValue":0,
+         "override":{
+            "newFare":0,
+            "oldFare":250,
+            "reasonCode":"A",
+            "description":"TEST DESC"
+         }
+      },
+      {
+         "sku":"H27H200",
+         "itemQuantity":1,
+         "itemValue":0,
+         "firstName":"Rahul",
+         "surName":"Chauhan",
+         "emailAddress":"rahul.chauhan@nationalexpress.com",
+         "validFrom":"2021-08-02 00:00:00",
+         "override":{
+            "newFare":0,
+            "oldFare":1250,
+            "reasonCode":"A",
+            "description":"TEST DESC"
+         }
+      }
+   ],
+   "coachcards":[
+      
+   ],
+   "discounts":[
+      
+   ],
+   "languageCode":"en"
+}

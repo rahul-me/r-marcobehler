@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ticket agentCode="D085" agentUser="cweaver" journeyType="O" salesChannel="Call" ticketNumber="E3B02040">
+   <Addons>
+      <Addon>
+         <Item_quantity>1</Item_quantity>
+         <Item_value>0</Item_value>
+         <new_fare>0</new_fare>
+         <old_fare>0</old_fare>
+         <SKU>B06B004</SKU>
+      </Addon>
+   </Addons>
+   <DistributionDetails distributionType="E Ticket" email="chris.weaver@nationalexpress.com" />
+   <Fare inBoundJourneySideFare="2200" netPrice="0" NewFare="0" oldFare="0" outBoundJourneySideFare="2200" type="CFL" />
+   <LeadPassenger emailConsent="false" firstName="Chris" surname="Weaver" telephone="44123456789" telephoneConsent="false" title="Unkno">
+      <Address>
+         <Address1>BUCKINGHAM PALACE</Address1>
+         <Address2>London</Address2>
+         <Address3 />
+         <AddressTypeID>0</AddressTypeID>
+         <PostCode>SW1A1AA</PostCode>
+         <Town>LONDON</Town>
+      </Address>
+   </LeadPassenger>
+   <Legs>
+      <Leg>
+         <actual_fare_value>0</actual_fare_value>
+         <arr_date>1619395200</arr_date>
+         <arr_date_string>2021-04-26 21:30:00</arr_date_string>
+         <arr_day>0</arr_day>
+         <arr_time>1290</arr_time>
+         <booking_ref>NEJK</booking_ref>
+         <check_in_time>1110</check_in_time>
+         <company_brand_id>NX</company_brand_id>
+         <coupon_fare_value>0</coupon_fare_value>
+         <dept_date>1619395200</dept_date>
+         <dept_date_string>2021-04-26 18:30:00</dept_date_string>
+         <dept_time>1110</dept_time>
+         <displacement_days>0</displacement_days>
+         <fare_type>CFL</fare_type>
+         <flight_code>BF</flight_code>
+         <flight_start_time>1830</flight_start_time>
+         <from_loc>57366</from_loc>
+         <from_stop>A</from_stop>
+         <gd_trigger_level>0</gd_trigger_level>
+         <leg_dir>O</leg_dir>
+         <leg_no>0</leg_no>
+         <serv_dir>O</serv_dir>
+         <serv_nr>400</serv_nr>
+         <to_loc>33023</to_loc>
+         <to_stop>A</to_stop>
+      </Leg>
+      <Leg>
+         <actual_fare_value>0</actual_fare_value>
+         <arr_date>1619481600</arr_date>
+         <arr_date_string>2021-04-27 23:45:00</arr_date_string>
+         <arr_day>0</arr_day>
+         <arr_time>1425</arr_time>
+         <booking_ref>PHLQ</booking_ref>
+         <check_in_time>1260</check_in_time>
+         <company_brand_id>NX</company_brand_id>
+         <coupon_fare_value>0</coupon_fare_value>
+         <dept_date>1619481600</dept_date>
+         <dept_date_string>2021-04-27 21:00:00</dept_date_string>
+         <dept_time>1260</dept_time>
+         <displacement_days>0</displacement_days>
+         <fare_type>CFL</fare_type>
+         <flight_code>BY</flight_code>
+         <flight_start_time>2100</flight_start_time>
+         <from_loc>33023</from_loc>
+         <from_stop>A</from_stop>
+         <gd_trigger_level>0</gd_trigger_level>
+         <leg_dir>I</leg_dir>
+         <leg_no>1</leg_no>
+         <serv_dir>I</serv_dir>
+         <serv_nr>400</serv_nr>
+         <to_loc>57366</to_loc>
+         <to_stop>L</to_stop>
+      </Leg>
+   </Legs>
+   <Passengers>
+      <Passenger type="AD" />
+   </Passengers>
+   <Payment payment_type="Cash" payment_value="0">
+      <BillingAddress>
+         <address1>BUCKINGHAM PALACE</address1>
+         <address2>London</address2>
+         <address3 />
+         <addressTypeId>0</addressTypeId>
+         <postcode>SW1A1AA</postcode>
+         <town>LONDON</town>
+      </BillingAddress>
+   </Payment>
+</Ticket>

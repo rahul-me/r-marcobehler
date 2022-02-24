@@ -1,0 +1,134 @@
+{
+  "channelIdentifier": {
+    "salesChannelCode": "Call",
+    "agentCode": "D085",
+    "campaignCode": "default",
+    "agentUser": "nmodhvad",
+    "partnerCode": "NX"
+  },
+  "reserveRequest": {
+    "ticketNumber": "U2002869",
+    "journeyType": "S",
+    "fareRequestID": "b39208c2-e4bd-4d4e-8118-a90f2028ee2e",
+    "fare": {
+      "netPrice": 0,
+      "type": "CFL",
+      "outBoundJourneySideFare": 0,
+      "inBoundJourneySideFare": 0,
+      "overrideReasonCode": "K",
+      "oldFare": 2500,
+      "NewFare": 0,
+      "overrideDescription": "test"
+    },
+    "legs": [
+      {
+        "legDirection": "O",
+        "fromLocation": "57366",
+        "toLocation": "33023",
+        "fromStop": "A",
+        "toStop": "A",
+        "companyBrandId": "NX",
+        "serviceNumber": "400",
+        "serviceDirection": "O",
+        "flightCode": "CL",
+        "flightStartDateTime": "2021-07-28 07:30:00",
+        "departureDateTime": "2021-07-28 07:30:00",
+        "checkInDateTime": "2021-07-28 07:30:00",
+        "arrivalDateTime": "2021-07-28 10:35:00",
+        "gdTriggerLevel": 0,
+        "fareType": "CFL",
+        "couponFareValue": 0,
+        "actualFareValue": 0,
+        "throughFareLeg": null,
+        "specialFareId": null,
+        "bookingReference": null,
+        "attractionId": null,
+        "CustomerInfoId": null,
+        "failCode": null
+      }
+    ],
+    "leadPassenger": {
+      "title": "Unkno",
+      "firstName": "nehal",
+      "surname": "modhvadia",
+      "telephone": "441234567890",
+      "postOutConsent": null,
+      "emailConsent": "false",
+      "telephoneConsent": "false",
+      "address": {
+        "address1": "123 Bodenham",
+        "address2": "SALISBURY",
+        "address3": "",
+        "town": "SALISBURY",
+        "county": null,
+        "postcode": "SP54EU",
+        "country": null,
+        "addressTypeId": 0
+      }
+    },
+    "distributionDetails": {
+      "distributionType": "E Ticket",
+      "email": "nehal.modhvadia@nationalexpress.com",
+      "mTicketPhone": null,
+      "collectionLocation": null,
+      "postalAddress": null
+    },
+    "passengers": [
+      {
+        "type": "AD"
+      }
+    ],
+    "addons": [
+      {
+        "sku": "B02B002",
+        "itemValue": 0,
+        "itemQuantity": 1,
+        "serial": null,
+        "validFrom": null,
+        "validTo": null,
+        "overrideReasonCode": "K",
+        "oldFare": 250,
+        "NewFare": 0,
+        "overrideDescription": "test",
+        "firstName": null,
+        "surName": null,
+        "emailAddress": null
+      },
+      {
+        "sku": "H42H242",
+        "itemValue": 0,
+        "itemQuantity": 1,
+        "serial": null,
+        "validFrom": null,
+        "validTo": null,
+        "overrideReasonCode": null,
+        "oldFare": 0,
+        "NewFare": 0,
+        "overrideDescription": null,
+        "firstName": null,
+        "surName": null,
+        "emailAddress": null
+      }
+    ],
+    "paymentDetails": {
+      "paymentValue": 0,
+      "paymentType": "Cash",
+      "cardPayment": null,
+      "billingAddress": {
+        "address1": "123 Bodenham",
+        "address2": "SALISBURY",
+        "address3": "",
+        "town": "SALISBURY",
+        "county": null,
+        "postcode": "SP54EU",
+        "country": null,
+        "addressTypeId": 0
+      }
+    },
+    "coachcards": [],
+    "outboundSeats": [],
+    "inboundSeats": [],
+    "discounts": [],
+    "languageCode": "EN"
+  }
+}

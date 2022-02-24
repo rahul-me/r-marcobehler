@@ -1,0 +1,141 @@
+{
+    "salesChannel":"Call",
+    "agentCode":"D085",
+    "agentUser":"RChauhan",
+    "ticketNumber": "U2013063",
+    "journeyType": "S",
+    "outboundChanged": true,
+    "inboundChanged": false,
+    "fareRequestID": "aa28f710-cd05-435e-b7cd-7a131fab161c",
+    "fare": {
+        "netPrice": 0,
+        "type": "CFL",
+        "outBoundJourneySideFare": 0,
+        "inBoundJourneySideFare": 0,
+        "overrideReasonCode": "A",
+        "oldFare": 4800,
+        "NewFare": 0,
+        "overrideDescription": "test"
+    },
+    "legs": [
+        {
+            "legDirection": "O",
+            "fromLocation": "57366",
+            "toLocation": "57286",
+            "fromStop": "A",
+            "toStop": "A",
+            "companyBrandId": "NX",
+            "serviceNumber": "401",
+            "serviceDirection": "O",
+            "flightCode": "PD",
+            "flightStartDateTime": "2021-07-30 12:00:00",
+            "departureDateTime": "2021-07-30 12:00:00",
+            "checkInDateTime": "2021-07-30 12:00:00",
+            "arrivalDateTime": "2021-07-30 12:45:00",
+            "gdTriggerLevel": 0,
+            "fareType": "CFL",
+            "couponFareValue": 0,
+            "actualFareValue": 0,
+            "throughFareLeg": null,
+            "specialFareId": null,
+            "bookingReference": "NZVQ",
+            "attractionId": null,
+            "CustomerInfoId": null,
+            "failCode": null
+        },
+        {
+            "legDirection": "O",
+            "fromLocation": "57286",
+            "toLocation": "33023",
+            "fromStop": "A",
+            "toStop": "A",
+            "companyBrandId": "NX",
+            "serviceNumber": "210",
+            "serviceDirection": "I",
+            "flightCode": "EE",
+            "flightStartDateTime": "2021-07-30 13:25:00",
+            "departureDateTime": "2021-07-30 13:45:00",
+            "checkInDateTime": "2021-07-30 13:45:00",
+            "arrivalDateTime": "2021-07-30 16:50:00",
+            "gdTriggerLevel": 0,
+            "fareType": "CFL",
+            "couponFareValue": 0,
+            "actualFareValue": 0,
+            "throughFareLeg": null,
+            "specialFareId": null,
+            "bookingReference": "FTXH",
+            "attractionId": null,
+            "CustomerInfoId": null,
+            "failCode": null
+        }
+    ],
+    "leadPassenger": {
+        "title": "Unkno",
+        "firstName": "rahul",
+        "surname": "chauhan",
+        "telephone": "4421111111",
+        "countryCode":"55",
+        "postOutConsent": null,
+        "emailConsent": "false",
+        "telephoneConsent": "false",
+        "address": {
+            "address1": "WS Dennison",
+            "address2": "Unit 5",
+            "address3": "Rathenraw Industrial Estate",
+            "town": "ANTRIM",
+            "county": null,
+            "postcode": "BT412SJ",
+            "country": null,
+            "addressTypeId": 0
+        }
+    },
+    "distributionDetails": {
+        "distributionType": "E Ticket",
+        "email": "rahul.chauhan@nationalexpress.com",
+        "mTicketPhone": null,
+        "collectionLocation": null,
+        "postalAddress": null
+    },
+    "passengers": [
+        {
+            "type": "AD"
+        }
+    ],
+    "addons": [
+        {
+            "sku": "B06B004",
+            "itemValue": 0,
+            "itemQuantity": 1,
+            "serial": null,
+            "validFrom": null,
+            "validTo": null,
+            "overrideReasonCode": null,
+            "oldFare": 0,
+            "NewFare": 0,
+            "overrideDescription": null,
+            "firstName": null,
+            "surName": null,
+            "emailAddress": null
+        }
+    ],
+    "paymentDetails": {
+        "paymentValue": 0,
+        "paymentType": "Cash",
+        "cardPayment": null,
+        "billingAddress": {
+            "address1": "WS Dennison",
+            "address2": "Unit 5",
+            "address3": "Rathenraw Industrial Estate",
+            "town": "ANTRIM",
+            "county": null,
+            "postcode": "BT412SJ",
+            "country": null,
+            "addressTypeId": 0
+        }
+    },
+    "coachcards": null,
+    "outboundSeats": [],
+    "inboundSeats": [],
+    "AmendabilityOverrideCode": null,
+    "AmendabilityOverrideDescription": null
+}

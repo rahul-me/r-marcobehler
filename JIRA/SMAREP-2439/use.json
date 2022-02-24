@@ -1,0 +1,72 @@
+{   
+   "paymentCompleteURL":"https://dt2.nationalexpress.com/dev/sales/#ticket/manage/U2002088",
+   "paymentDeclinedURL":"https://dt2.nationalexpress.com/dev/sales/#payment-error",
+   "ticketNumber":"U2002088",   
+   "cardHolderName":"urvashi parmar",   
+   "passenger":{
+      "title":"Miss",
+      "firstName":"urvashi",
+      "lastName":"parmar",
+      "leadAddress":{
+         "county":"",
+         "addressLine1":"1, Beverley Hills Park",
+         "addressLine2":"Boscombe Down",
+         "addressLine3":"Amesbury",
+         "city":"Salisbury",
+         "town":"Salisbury",
+         "postCode":"SP47LH",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      },
+      "billingAddress":{
+         "county":"",
+         "addressLine1":"1, Beverley Hills Park",
+         "addressLine2":"Boscombe Down",
+         "addressLine3":"Amesbury",
+         "city":"Salisbury",
+         "town":"Salisbury",
+         "postCode":"SP47LH",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      }
+   },
+   "distribution":{
+      "distributionType":"Local Post Out",
+      "distributionSKU":"H42H241",
+      "postalAddress":null,
+      "email":{
+         "emailAddress":"",
+         "marketingConsent":true
+      },
+      "phone":{
+         "mobileNumber":"4444444",
+         "marketingConsent":false,
+         "country":"GB"
+      }
+   },
+   "travellingPax":[
+      {
+         "type":"AD",
+         "count":1
+      }
+   ],
+   "extras":[
+      {
+         "sku":"B02B002",
+         "itemQuantity":1,
+         "itemValue":250
+      },
+      {
+         "sku":"H42H241",
+         "itemQuantity":1,
+         "itemValue":100
+      }
+   ],
+   "coachcards":[
+      
+   ],
+   "discounts":[
+      
+   ],
+   "languageCode":"EN"
+}

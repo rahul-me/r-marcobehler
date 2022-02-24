@@ -1,0 +1,22 @@
+SMAREP-2220 - View User
+
+AC-01
+
+*Default sort by ascending order of ID 
+id of couch db is too big, don't look good
+id of titan user - may be
+i think it is userId of titan. like RChauhan
+
+* Default to User tab on loading user admin console
+UI side
+AC_02
+
+ID - unique database id for this user
+Username - email address
+Role - Name of the role assigned
+Agent Code - 4 char code of the agent where this user will be work
+Team - varchar - name of the team to which this user assigned
+Create Date - Date - Date on which this user was created
+Status varchar - indicates if the user is active or inactive
+Status date - the date and time the user last activated /de-activated
+

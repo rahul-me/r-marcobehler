@@ -1,0 +1,255 @@
+{
+    "ticketId": 76311484,
+    "saleId": 92792327,
+    "ticketSerial": "U2013063",
+    "dateOfTransaction": "2021-07-30 10:40:34.787",
+    "fareType": "CFL",
+    "fareDescription": "Fully Flexible",
+    "journeyType": "Single",
+    "originalJourneyType": "Single",
+    "pnr": "",
+    "ticketStatus": "AMENDED",
+    "timestamp": "2021-07-30 10:40:34.787",
+    "ticketSales": [
+        {
+            "saleId": 92792327,
+            "saleDate": "2021-07-30 10:40:34.787",
+            "agentUserid": 161140,
+            "userId": "RChauhan",
+            "name": "Rahul Chauhan",
+            "salesChannel": "Contact Centre",
+            "agentCode": "D085",
+            "agentId": "22299",
+            "agentName": "NX Contact Centre",
+            "basketOrder": 1,
+            "agentGroup": null,
+            "status": "AMENDED",
+            "category": "AMENDED",
+            "timestamp": null
+        }
+    ],
+    "ticketSaleItems": [
+        {
+            "salesItemId": 318476931,
+            "productId": 1,
+            "saleItemtypeId": 2,
+            "itemSingleValue": 0.0,
+            "itemQuantity": 1,
+            "saleDate": "2021-07-30 10:40:34.787",
+            "fromDate": null,
+            "toDate": null,
+            "saleId": 92792327,
+            "serial": "None",
+            "basketOrder": 1,
+            "productType": "Reserved Coach",
+            "productDescription": "Reserved Coach Travel",
+            "productCategory": "Reserved Coach Travel",
+            "productFamily": "Ticket Travel",
+            "firstNameOfHolder": "rahul",
+            "lastNameOfHolder": "chauhan",
+            "holderEmail": "rahul.chauhan@nationalexpress.com",
+            "sku": "H01H001"
+        },
+        {
+            "salesItemId": 318476932,
+            "productId": 2636,
+            "saleItemtypeId": 1,
+            "itemSingleValue": 0.0,
+            "itemQuantity": 1,
+            "saleDate": "2021-07-30 10:40:34.787",
+            "fromDate": null,
+            "toDate": null,
+            "saleId": 92792327,
+            "serial": "None",
+            "basketOrder": 1,
+            "productType": "Alteration",
+            "productDescription": "Nil Value Amendment",
+            "productCategory": "Distribution Fees",
+            "productFamily": "Fee",
+            "firstNameOfHolder": null,
+            "lastNameOfHolder": null,
+            "holderEmail": null,
+            "sku": "B06B004"
+        }
+    ],
+    "journeyLegs": [
+        {
+            "departureTime": "2021-07-30 12:00:00.0",
+            "arrivalTime": "2021-07-30 12:45:00.0",
+            "flightStart": "2021-07-30 12:00:00.0",
+            "legNumber": 0,
+            "legDirection": "O",
+            "fromLocationCode": "57366",
+            "fromStop": "A",
+            "toLocationCode": "57286",
+            "toStop": "A",
+            "brand": "NX",
+            "serviceNumber": "401",
+            "flightDirection": "O",
+            "flightCode": "PD",
+            "checkInTime": "2021-07-30 12:00:00.0",
+            "bookingReference": "NZVQ",
+            "dateCreated": "2021-07-30 10:40:34.787"
+        },
+        {
+            "departureTime": "2021-07-30 13:45:00.0",
+            "arrivalTime": "2021-07-30 16:50:00.0",
+            "flightStart": "2021-07-30 13:25:00.0",
+            "legNumber": 1,
+            "legDirection": "O",
+            "fromLocationCode": "57286",
+            "fromStop": "A",
+            "toLocationCode": "33023",
+            "toStop": "A",
+            "brand": "NX",
+            "serviceNumber": "210",
+            "flightDirection": "I",
+            "flightCode": "EE",
+            "checkInTime": "2021-07-30 13:45:00.0",
+            "bookingReference": "FTXH",
+            "dateCreated": "2021-07-30 10:40:34.787"
+        }
+    ],
+    "paxCount": [
+        {
+            "consumerType": "AD",
+            "typeDescription": "Adult",
+            "paxCount": 1
+        }
+    ],
+    "consumers": [
+        {
+            "consumerId": 90686536,
+            "consumerTypeId": 1,
+            "titleId": 0,
+            "surName": "chauhan",
+            "foreName": "rahul",
+            "title": "Unkno",
+            "consumerRoleId": 6,
+            "consumerRole": "Lead Passenger",
+            "email": "rahul.chauhan@nationalexpress.com",
+            "phone": "4421111111",
+            "countryCode": "55",
+            "marketingConsent": false,
+            "phoneMarketingConsent": false
+        },
+        {
+            "consumerId": 90686537,
+            "consumerTypeId": 1,
+            "titleId": 0,
+            "surName": "chauhan",
+            "foreName": "rahul",
+            "title": "Unkno",
+            "consumerRoleId": 7,
+            "consumerRole": "Paying Consumer",
+            "email": null,
+            "phone": null,
+            "countryCode": null,
+            "marketingConsent": false,
+            "phoneMarketingConsent": false
+        }
+    ],
+    "paymentDetails": [
+        {
+            "paymentId": 66466449,
+            "paymentTypeId": 1,
+            "consumerId": 90686536,
+            "cardDetailsId": 0,
+            "cardNumber": "************0",
+            "merchantId": 0,
+            "tillId": 0,
+            "nmpId": 0,
+            "currencyId": 0,
+            "paymentValue": 0.0,
+            "dateCreated": "2021-07-30 10:40:34.803",
+            "saleId": 92792327,
+            "saleItemId": 0,
+            "foreignPaymentValue": 0.0,
+            "basketOrder": 0,
+            "paymentType": "Cash",
+            "paymentGateway": null
+        }
+    ],
+    "consumerAddress": [
+        {
+            "billingAddress": false,
+            "marketingConsent": false,
+            "active": true,
+            "addressType": "Payer",
+            "address1": "WS Dennison",
+            "address2": "Unit 5",
+            "address3": "Rathenraw Industrial Estate",
+            "town": "ANTRIM",
+            "postCode": "BT412SJ",
+            "country": "",
+            "county": "",
+            "addressTypeID": 2
+        },
+        {
+            "billingAddress": false,
+            "marketingConsent": false,
+            "active": true,
+            "addressType": "Product",
+            "address1": "WS Dennison",
+            "address2": "Unit 5",
+            "address3": "Rathenraw Industrial Estate",
+            "town": "ANTRIM",
+            "postCode": "BT412SJ",
+            "country": "",
+            "county": "",
+            "addressTypeID": 1
+        }
+    ],
+    "ticketDistributions": [
+        {
+            "ticketDistributionId": 0,
+            "ticketId": 76311484,
+            "ticketTypeId": 1,
+            "distributionTypeId": 4,
+            "distributionType": "E TICKET",
+            "distributionCode": "E",
+            "active": true,
+            "collectingAgentCode": null,
+            "remoteTicketCollected": false,
+            "printStatus": "Queued For Printing",
+            "printedDate": "2021-07-30 10:40:34.803"
+        }
+    ],
+    "coachCards": [],
+    "travelTransactions": [
+        {
+            "isOpenReturn": false,
+            "lastFourDigits": "************0",
+            "fromLocation": "",
+            "originalDepartureDate": "",
+            "originalFareValue": 0.0,
+            "isExcessFarePayable": false,
+            "isTicketAmendableOnLine": false,
+            "over60sCount": false,
+            "highestFarePaidToDate": 0.0,
+            "ticketIsNotAmendable": false,
+            "paymentProvider": null,
+            "paymentType": "Cash",
+            "paymentValue": 0.0,
+            "paymentAccount": "",
+            "outBoundJourneySideFare": 0.0,
+            "inBoundJourneySideFare": 0.0,
+            "previousOutBoundJourneySideFare": 0.0,
+            "previousInBoundJourneySideFare": 0.0,
+            "thirdPartyReference": null
+        }
+    ],
+    "discounts": [],
+    "vouchers": [],
+    "overrideDetails": [
+        {
+            "saleId": 92792327,
+            "saleItemId": 318476931,
+            "overrideReason": "(A) Fare wrong on system",
+            "oldFare": 48.0,
+            "newFare": 0.0,
+            "name": "Rahul Chauhan",
+            "description": "test"
+        }
+    ]
+}

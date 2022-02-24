@@ -1,0 +1,11 @@
+1. nexpurchasetransaction.priv:purchaseTravelWeb
+2. nxchannelapi.priv:mapToTicketPurchase4
+- nxtravelpurchase2.pub:purchaseAnyTravelTicket
+	- nxtravelpurchase2.priv:makeSeatReservation
+	
+	
+	
+	
+
+
+ESB to Product Gateway  -  /products/seats/layout/priced	

@@ -1,0 +1,185 @@
+{
+  "partnerCode": "NX",
+  "campaignCode": "default",
+  "journeySearch": {
+    "adults": 1,
+    "children": 0,
+    "seniors": 0,
+    "disabled": 0,
+    "infants": 0,
+    "euroAdults": 0,
+    "euroChildren": 0,
+    "euroSeniors": 0,
+    "euroYoungPersons": 0,
+    "youngPersonCards": 0,
+    "disabledCards": 0,
+    "seniorCards": 0,
+    "familyCards": 0,
+    "britexCards": 0,
+    "journeyType": "return",
+    "fromLocation": "41065",
+    "toLocation": "57286"
+  },
+  "outboundJourneys": [
+    {
+      "engine": "Pricer",
+      "legs": [
+        {
+          "brand": "NX",
+          "superbrand": "NX",
+          "flightCode": "GP",
+          "flightDate": "2021-07-15T11:40:00",
+          "serviceNumber": "202",
+          "departureTime": "2021-07-15T14:25:00",
+          "arrivalTime": "2021-07-15T16:35:00",
+          "fromLocation": "41065",
+          "toLocation": "57286",
+          "inbound": false,
+          "availability": 52,
+          "capacity": 53,
+          "SessionID": "8118896a-5894-401a-8434-a20d145d5610",
+          "pricerMajorDepartureLocation": "41065",
+          "pricerMajorArrivalLocation": "57286",
+          "rpoMajorDepartureLocation": "41065",
+          "rpoMajorArrivalLocation": "57286"
+        }
+      ]
+    },
+    {
+      "engine": "Pricer",
+      "legs": [
+        {
+          "brand": "NX",
+          "superbrand": "NX",
+          "flightCode": "20",
+          "flightDate": "2021-07-15T15:00:00",
+          "serviceNumber": "040",
+          "departureTime": "2021-07-15T15:00:00",
+          "arrivalTime": "2021-07-15T17:50:00",
+          "fromLocation": "41065",
+          "toLocation": "57366",
+          "inbound": true,
+          "availability": 72,
+          "capacity": 73,
+          "SessionID": "8118896a-5894-401a-8434-a20d145d5610",
+          "pricerMajorDepartureLocation": "41065",
+          "pricerMajorArrivalLocation": "57366",
+          "rpoMajorDepartureLocation": "41065",
+          "rpoMajorArrivalLocation": "57366"
+        },
+        {
+          "brand": "NX",
+          "superbrand": "NX",
+          "flightCode": "QQ",
+          "flightDate": "2021-07-15T19:30:00",
+          "serviceNumber": "403",
+          "departureTime": "2021-07-15T19:30:00",
+          "arrivalTime": "2021-07-15T20:10:00",
+          "fromLocation": "57366",
+          "toLocation": "57286",
+          "inbound": false,
+          "availability": 52,
+          "capacity": 53,
+          "SessionID": "8118896a-5894-401a-8434-a20d145d5610",
+          "pricerMajorDepartureLocation": "57366",
+          "pricerMajorArrivalLocation": "57286",
+          "rpoMajorDepartureLocation": "57366",
+          "rpoMajorArrivalLocation": "57286"
+        }
+      ]
+    },
+    {
+      "engine": "Pricer",
+      "legs": [
+        {
+          "brand": "NX",
+          "superbrand": "NX",
+          "flightCode": "20",
+          "flightDate": "2021-07-15T15:00:00",
+          "serviceNumber": "040",
+          "departureTime": "2021-07-15T15:00:00",
+          "arrivalTime": "2021-07-15T17:50:00",
+          "fromLocation": "41065",
+          "toLocation": "57366",
+          "inbound": true,
+          "availability": 72,
+          "capacity": 73,
+          "SessionID": "8118896a-5894-401a-8434-a20d145d5610",
+          "pricerMajorDepartureLocation": "41065",
+          "pricerMajorArrivalLocation": "57366",
+          "rpoMajorDepartureLocation": "41065",
+          "rpoMajorArrivalLocation": "57366"
+        },
+        {
+          "brand": "NX",
+          "superbrand": "NX",
+          "flightCode": "GI",
+          "flightDate": "2021-07-15T19:30:00",
+          "serviceNumber": "025",
+          "departureTime": "2021-07-15T19:30:00",
+          "arrivalTime": "2021-07-15T20:10:00",
+          "fromLocation": "57366",
+          "toLocation": "57286",
+          "inbound": false,
+          "availability": 53,
+          "capacity": 53,
+          "SessionID": "8118896a-5894-401a-8434-a20d145d5610",
+          "pricerMajorDepartureLocation": "57366",
+          "pricerMajorArrivalLocation": "57286",
+          "rpoMajorDepartureLocation": "57366",
+          "rpoMajorArrivalLocation": "57286"
+        }
+      ]
+    },
+    {
+      "engine": "Pricer",
+      "legs": [
+        {
+          "brand": "NX",
+          "superbrand": "NX",
+          "flightCode": "AC",
+          "flightDate": "2021-07-15T11:10:00",
+          "serviceNumber": "502",
+          "departureTime": "2021-07-15T15:30:00",
+          "arrivalTime": "2021-07-15T18:20:00",
+          "fromLocation": "41065",
+          "toLocation": "57366",
+          "inbound": true,
+          "availability": 53,
+          "capacity": 53,
+          "SessionID": "8118896a-5894-401a-8434-a20d145d5610",
+          "pricerMajorDepartureLocation": "41065",
+          "pricerMajorArrivalLocation": "57366",
+          "rpoMajorDepartureLocation": "41065",
+          "rpoMajorArrivalLocation": "57366"
+        },
+        {
+          "brand": "NX",
+          "superbrand": "NX",
+          "flightCode": "GI",
+          "flightDate": "2021-07-15T19:30:00",
+          "serviceNumber": "025",
+          "departureTime": "2021-07-15T19:30:00",
+          "arrivalTime": "2021-07-15T20:10:00",
+          "fromLocation": "57366",
+          "toLocation": "57286",
+          "inbound": false,
+          "availability": 53,
+          "capacity": 53,
+          "SessionID": "8118896a-5894-401a-8434-a20d145d5610",
+          "pricerMajorDepartureLocation": "57366",
+          "pricerMajorArrivalLocation": "57286",
+          "rpoMajorDepartureLocation": "57366",
+          "rpoMajorArrivalLocation": "57286"
+        }
+      ]
+    }
+  ],
+  "matchFareCode": "CFL",
+  "JourneysToPrice": [
+    null,
+    null,
+    null,
+    null
+  ]
+}

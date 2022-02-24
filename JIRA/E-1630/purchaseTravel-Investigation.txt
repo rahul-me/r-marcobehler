@@ -1,0 +1,37 @@
+purchaseTravel
+
+1. Add Adyen
+
+as payment object
+for now Adyen will have
+
+pspreference string mandatory
+merchantAccount: string not require
+paymentType: Adyen
+
+
+2. Trasition
+
+Find flowservice - 
+-NxChannelApinxpriv:purchaseTravel
+>> NxChannelApi\nxchannelapi.priv:mapToTicketPurchase4 - Cretae PaymentDetails object for Adyen. (See code)
+
+3. On faliure
+
+In a block which handles faliure scenarios for prepeare ticket for purchase (check Try part of Sequence step),
+do the following
+
+add one more branch step BRANCH on 'Payment/Adyen'
+invoke NxChannelApi\nxpriv:voidPayment and provide inputs
+SET PaymentProvider as 'Adyen'
+
+4. One more faliure handler block
+
+Apply conversion for PaymentDetails
+Find flowservice
+-NxTravelPurchase2\nxtravelpurchase2.pub:purchaseAnyTravelTicket
+>> NxTravelPurchase2\nxtravelpurchase2.priv.titan:mapToTitanTicketPurchase
+
+Create Payment Error Doc
+NxTravelPurchase2\nxtravelpurchase2.pub:cancelTicketPurchase
+

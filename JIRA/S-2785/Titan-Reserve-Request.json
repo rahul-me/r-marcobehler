@@ -1,0 +1,162 @@
+{
+       "salesChannel":"Call",
+       "agentCode":"D085",
+       "agentUser":"RChauhan",
+      "ticketNumber":"U4412880",
+      "journeyType":"S",
+      "fareRequestID":"5472acfe-a306-476a-a125-e1824fcd525c",
+      "fare":{
+         "netPrice":0,
+         "type":"CFL",
+         "outBoundJourneySideFare":0,
+         "inBoundJourneySideFare":0,
+         "overrideReasonCode":"A",
+         "oldFare":4800,
+         "NewFare":0,
+         "overrideDescription":"TEST DESC"
+      },
+      "legs":[
+         {
+            "fareType":"CFL",
+            "couponFareValue":0,
+            "legDirection":"O",
+            "fromLocation":"57366",
+            "fromStop":"A",
+            "toLocation":"57286",
+            "toStop":"A",
+            "flightCode":"QJ",
+            "companyBrandId":"NX",
+            "serviceNumber":"403",
+            "checkInDateTime":"2021-07-28 14:00:00",
+            "serviceDirection":"O",
+            "departureDateTime":"2021-07-28 14:00:00",
+            "arrivalDateTime":"2021-07-28 14:45:00",
+            "flightStartDateTime":"2021-07-28 14:00:00",
+            "gdTriggerLevel":"0",
+            "actualFareValue":0,
+            "throughFareLeg":"0",
+            "specialFareId":" ",
+            "bookingReference":"YFYF",
+            "attractionId":" ",
+            "customerInfoId":" ",
+            "failCode":" "
+         },
+         {
+            "fareType":"CFL",
+            "couponFareValue":0,
+            "legDirection":"O",
+            "fromLocation":"57286",
+            "fromStop":"A",
+            "toLocation":"33023",
+            "toStop":"A",
+            "flightCode":"EG",
+            "companyBrandId":"NX",
+            "serviceNumber":"210",
+            "checkInDateTime":"2021-07-28 15:45:00",
+            "serviceDirection":"I",
+            "departureDateTime":"2021-07-28 15:45:00",
+            "arrivalDateTime":"2021-07-28 19:00:00",
+            "flightStartDateTime":"2021-07-28 15:25:00",
+            "gdTriggerLevel":"0",
+            "actualFareValue":0,
+            "throughFareLeg":"0",
+            "specialFareId":" ",
+            "bookingReference":"VCNQ",
+            "attractionId":" ",
+            "customerInfoId":" ",
+            "failCode":" "
+         }
+      ],
+      "leadPassenger":{
+         "title":"Unkno",
+         "firstName":"rahul",
+         "surname":"Chauhan",
+         "telephone":"4411111111",
+         "countryCode":"123",
+         "postOutConsent":null,
+         "emailConsent":"false",
+         "telephoneConsent":"false",
+         "address":{
+            "address1":"WS Dennison",
+            "address2":"Unit 5",
+            "address3":"Rathenraw Industrial Estate",
+            "town":"ANTRIM",
+            "county":null,
+            "postcode":"BT412SJ",
+            "country":null,
+            "addressTypeId":0
+         }
+      },
+      "distributionDetails":{
+         "distributionType":"M Ticket",
+         "email":"rahul.chauhan@nationalexpress.com",
+         "mTicketPhone":null,
+         "collectionLocation":null,
+         "postalAddress":null
+      },
+      "passengers":[
+         {
+            "type":"AD"
+         }
+      ],
+      "addons":[
+         {
+            "sku":"B02B002",
+            "itemValue":0,
+            "itemQuantity":1,
+            "serial":null,
+            "validFrom":null,
+            "validTo":null,
+            "overrideReasonCode":"A",
+            "oldFare":250,
+            "NewFare":0,
+            "overrideDescription":"TEST DESC",
+            "firstName":null,
+            "surName":null,
+            "emailAddress":null
+         },
+         {
+            "sku":"H42H241",
+            "itemValue":0,
+            "itemQuantity":1,
+            "serial":null,
+            "validFrom":null,
+            "validTo":null,
+            "overrideReasonCode":"A",
+            "oldFare":100,
+            "NewFare":0,
+            "overrideDescription":"TEST DESC",
+            "firstName":null,
+            "surName":null,
+            "emailAddress":null
+         }
+      ],
+      "paymentDetails":{
+         "paymentValue":0,
+         "paymentType":"Cash",
+         "cardPayment":null,
+         "billingAddress":{
+            "address1":"WS Dennison",
+            "address2":"Unit 5",
+            "address3":"Rathenraw Industrial Estate",
+            "town":"ANTRIM",
+            "county":null,
+            "postcode":"BT412SJ",
+            "country":null,
+            "addressTypeId":0
+         }
+      },
+      "coachcards":[
+         
+      ],
+      "outboundSeats":[
+         
+      ],
+      "inboundSeats":[
+         
+      ],
+      "discounts":[
+         
+      ],
+      "languageCode":"EN"
+   }

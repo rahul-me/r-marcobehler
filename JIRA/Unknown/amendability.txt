@@ -1,0 +1,11 @@
+Hello @Bhavesh apde TravelRequestDTO ma amendabilityRuleOverride no use payment override mate nathi thato ne!
+
+
+
+
+
+12:12 PM
+ano use case su 6e. apde  amendabilityRuleOverride mathi only reason code ane description j use krie 6ie barabar ne!
+1:49 PM
+Bhavesh When ticket is non amendable fare type and still customer wants to amend ticket, that time CC user override that rule.
+In this case no fare change but overriding crs ticket.

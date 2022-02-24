@@ -1,0 +1,103 @@
+{
+    "agentCode": "D085",
+    "campaignCode": "default",
+    "agentUser": "RChauhan",
+    "ticketNumber": "T4JD4311",
+    "salesChannel": "Call",
+    "leadPassenger": {
+        "title": "Unkno",
+        "firstName": "urvashi",
+        "surname": "parmar",
+        "telephone": "",
+        "postOutConsent": null,
+        "emailConsent": "false",
+        "telephoneConsent": "false",
+        "address": {
+            "address1": "Changan Uk R & D Centre Ltd",
+            "address2": "Unit 3500, Parkside",
+            "address3": "",
+            "town": "BIRMINGHAM",
+            "county": null,
+            "postcode": "B37 7YG",
+            "country": null,
+            "addressTypeId": 0
+        }
+    },
+    "distributionDetails": {
+        "distributionType": "Local Post Out",
+        "email": "urvashi.parmar@nationalexpress.com",
+        "postalAddress": {
+			"address1": "Changan Uk R & D Centre Ltd",
+            "address2": "Unit 3500, Parkside",
+            "address3": "",
+            "town": "BIRMINGHAM",
+            "county": null,
+            "postcode": "B37 7YG",
+            "country": null,
+            "addressTypeId": 0
+		}
+    },    
+    "addons": [
+        {
+            "sku": "H03H181",
+            "itemValue": 1250,
+            "itemQuantity": 1,
+            "serial": null,
+            "validFrom": "2021-04-05",
+            "validTo": null,
+            "overrideReasonCode": null,
+            "oldFare": 0,
+            "overrideDescription": null,
+            "newFare": 0,
+			"firstName": "Urvashi",
+			"surName":"Parmar",
+			"emailAddress": "urvashi@email.com"
+        },
+		{
+            "sku": "H03H181",
+            "itemValue": 1250,
+            "itemQuantity": 1,
+            "serial": null,
+            "validFrom": "2021-04-05",
+            "validTo": null,
+            "overrideReasonCode": null,
+            "oldFare": 0,
+            "overrideDescription": null,
+            "newFare": 0,
+			"firstName": "Rahul",
+			"surName":"Chauhan",
+			"emailAddress": "urvashi@email.com"
+        },
+		{
+            "sku": "B06B005",
+            "itemValue": 600,
+            "itemQuantity": 1,                       
+            "oldFare": 0,            
+            "newFare": 0		
+        }
+    ],
+    "paymentDetails": {
+        "paymentValue": 1610,
+        "paymentType": "Card",
+        "cardPayment": {
+            "paymentProviderTransactionId": "8515dss27784op11op9",
+            "cardType": "visa",
+            "paymentProvider": "Barclays",
+            "merchantId": null,
+            "terminald": null,
+            "authorisationCode": null,
+            "last4Digits": null,
+            "transactionId": null
+        },
+        "billingAddress": {
+            "address1": "Changan Uk R & D Centre Ltd",
+            "address2": "Unit 3500, Parkside",
+            "address3": "",
+            "town": "BIRMINGHAM",
+            "county": null,
+            "postcode": "B37 7YG",
+            "country": null,
+            "addressTypeId": 0
+        }
+    }	
+}

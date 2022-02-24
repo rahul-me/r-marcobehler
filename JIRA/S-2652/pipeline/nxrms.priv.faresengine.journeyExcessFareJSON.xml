@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <value name="jsonRequest">{"partnerCode":"NX","campaignCode":"default","journeySearch":{"adults":1,"children":0,"seniors":0,"disabled":0,"infants":0,"euroAdults":0,"euroChildren":0,"euroSeniors":0,"euroYoungPersons":0,"youngPersonCards":0,"disabledCards":0,"seniorCards":0,"familyCards":0,"britexCards":0,"journeyType":"return","fromLocation":"41065","toLocation":"57286"},"outboundJourneys":[{"engine":"Pricer","legs":[{"brand":"NX","superbrand":"NX","flightCode":"GP","flightDate":"2021-07-15T11:40:00","serviceNumber":"202","departureTime":"2021-07-15T14:25:00","arrivalTime":"2021-07-15T16:35:00","fromLocation":"41065","toLocation":"57286","inbound":false,"availability":52,"capacity":53,"SessionID":"2d4cab7c-4c13-40d3-b1bc-5be2d09e5c2a","pricerMajorDepartureLocation":"41065","pricerMajorArrivalLocation":"57286","rpoMajorDepartureLocation":"41065","rpoMajorArrivalLocation":"57286"}]},{"engine":"Pricer","legs":[{"brand":"NX","superbrand":"NX","flightCode":"20","flightDate":"2021-07-15T15:00:00","serviceNumber":"040","departureTime":"2021-07-15T15:00:00","arrivalTime":"2021-07-15T17:50:00","fromLocation":"41065","toLocation":"57366","inbound":true,"availability":73,"capacity":73,"SessionID":"2d4cab7c-4c13-40d3-b1bc-5be2d09e5c2a","pricerMajorDepartureLocation":"41065","pricerMajorArrivalLocation":"57366","rpoMajorDepartureLocation":"41065","rpoMajorArrivalLocation":"57366"},{"brand":"NX","superbrand":"NX","flightCode":"QQ","flightDate":"2021-07-15T19:30:00","serviceNumber":"403","departureTime":"2021-07-15T19:30:00","arrivalTime":"2021-07-15T20:10:00","fromLocation":"57366","toLocation":"57286","inbound":false,"availability":53,"capacity":53,"SessionID":"2d4cab7c-4c13-40d3-b1bc-5be2d09e5c2a","pricerMajorDepartureLocation":"57366","pricerMajorArrivalLocation":"57366","rpoMajorDepartureLocation":"57366","rpoMajorArrivalLocation":"46115"}]},{"engine":"Pricer","legs":[{"brand":"NX","superbrand":"NX","flightCode":"20","flightDate":"2021-07-15T15:00:00","serviceNumber":"040","departureTime":"2021-07-15T15:00:00","arrivalTime":"2021-07-15T17:50:00","fromLocation":"41065","toLocation":"57366","inbound":true,"availability":73,"capacity":73,"SessionID":"2d4cab7c-4c13-40d3-b1bc-5be2d09e5c2a","pricerMajorDepartureLocation":"41065","pricerMajorArrivalLocation":"57366","rpoMajorDepartureLocation":"41065","rpoMajorArrivalLocation":"57366"},{"brand":"NX","superbrand":"NX","flightCode":"GI","flightDate":"2021-07-15T19:30:00","serviceNumber":"025","departureTime":"2021-07-15T19:30:00","arrivalTime":"2021-07-15T20:10:00","fromLocation":"57366","toLocation":"57286","inbound":false,"availability":53,"capacity":53,"SessionID":"2d4cab7c-4c13-40d3-b1bc-5be2d09e5c2a","pricerMajorDepartureLocation":"57366","pricerMajorArrivalLocation":"57286","rpoMajorDepartureLocation":"57366","rpoMajorArrivalLocation":"57286"}]},{"engine":"Pricer","legs":[{"brand":"NX","superbrand":"NX","flightCode":"AC","flightDate":"2021-07-15T11:10:00","serviceNumber":"502","departureTime":"2021-07-15T15:30:00","arrivalTime":"2021-07-15T18:20:00","fromLocation":"41065","toLocation":"57366","inbound":true,"availability":53,"capacity":53,"SessionID":"2d4cab7c-4c13-40d3-b1bc-5be2d09e5c2a","pricerMajorDepartureLocation":"41065","pricerMajorArrivalLocation":"57366","rpoMajorDepartureLocation":"41065","rpoMajorArrivalLocation":"57366"},{"brand":"NX","superbrand":"NX","flightCode":"GI","flightDate":"2021-07-15T19:30:00","serviceNumber":"025","departureTime":"2021-07-15T19:30:00","arrivalTime":"2021-07-15T20:10:00","fromLocation":"57366","toLocation":"57286","inbound":false,"availability":53,"capacity":53,"SessionID":"2d4cab7c-4c13-40d3-b1bc-5be2d09e5c2a","pricerMajorDepartureLocation":"57366","pricerMajorArrivalLocation":"57286","rpoMajorDepartureLocation":"57366","rpoMajorArrivalLocation":"57286"}]}],"matchFareCode":"CFL","JourneysToPrice":[null,null,null,null]}</value>
+    <record name="JourneyExcessFareRequest" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="partnerCode">NX</value>
+      <value name="campaignCode">DEFAULT</value>
+      <record name="journeySearch" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="channel">Web</value>
+        <number name="adults" type="java.lang.Integer">3</number>
+        <number name="children" type="java.lang.Integer">0</number>
+        <number name="seniors" type="java.lang.Integer">0</number>
+        <number name="disabled" type="java.lang.Integer">0</number>
+        <number name="infants" type="java.lang.Integer">0</number>
+        <number name="euroAdults" type="java.lang.Integer">0</number>
+        <number name="euroChildren" type="java.lang.Integer">0</number>
+        <number name="euroSeniors" type="java.lang.Integer">0</number>
+        <number name="euroYoungPersons" type="java.lang.Integer">0</number>
+        <number name="youngPersonCards" type="java.lang.Integer">0</number>
+        <number name="disabledCards" type="java.lang.Integer">0</number>
+        <number name="seniorCards" type="java.lang.Integer">0</number>
+        <number name="familyCards" type="java.lang.Integer">0</number>
+        <number name="britexCards" type="java.lang.Integer">0</number>
+        <value name="journeyType">return</value>
+        <value name="fromLocation">21131</value>
+        <value name="toLocation">57366</value>
+      </record>
+      <array name="outboundJourneys" type="record" depth="1">
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="engine">Pricer</value>
+          <array name="legs" type="record" depth="1">
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="brand">NX</value>
+              <value name="superbrand">NX</value>
+              <value name="flightCode">SD</value>
+              <value name="flightDate">2021-06-05T14:00:00</value>
+              <value name="serviceNumber">540</value>
+              <value name="departureTime">2021-06-05T14:00:00</value>
+              <value name="arrivalTime">2021-06-05T19:20:00</value>
+              <value name="fromLocation">21131</value>
+              <value name="toLocation">57366</value>
+              <jboolean name="inbound">true</jboolean>
+              <number name="availability" type="java.lang.Integer">48</number>
+              <number name="capacity" type="java.lang.Integer">51</number>
+              <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+              <value name="pricerMajorDepartureLocation">21131</value>
+              <value name="pricerMajorArrivalLocation">57366</value>
+              <value name="rpoMajorDepartureLocation">21131</value>
+              <value name="rpoMajorArrivalLocation">57366</value>
+            </record>
+          </array>
+        </record>
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="engine">Pricer</value>
+          <array name="legs" type="record" depth="1">
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="brand">NX</value>
+              <value name="superbrand">NX</value>
+              <value name="flightCode">SJ</value>
+              <value name="flightDate">2021-06-05T15:00:00</value>
+              <value name="serviceNumber">540</value>
+              <value name="departureTime">2021-06-05T15:00:00</value>
+              <value name="arrivalTime">2021-06-05T20:10:00</value>
+              <value name="fromLocation">21131</value>
+              <value name="toLocation">57366</value>
+              <jboolean name="inbound">true</jboolean>
+              <number name="availability" type="java.lang.Integer">51</number>
+              <number name="capacity" type="java.lang.Integer">51</number>
+              <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+              <value name="pricerMajorDepartureLocation">21131</value>
+              <value name="pricerMajorArrivalLocation">57366</value>
+              <value name="rpoMajorDepartureLocation">21131</value>
+              <value name="rpoMajorArrivalLocation">57366</value>
+            </record>
+          </array>
+        </record>
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="engine">Pricer</value>
+          <array name="legs" type="record" depth="1">
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="brand">NX</value>
+              <value name="superbrand">NX</value>
+              <value name="flightCode">QM</value>
+              <value name="flightDate">2021-06-05T16:00:00</value>
+              <value name="serviceNumber">540</value>
+              <value name="departureTime">2021-06-05T16:00:00</value>
+              <value name="arrivalTime">2021-06-05T20:50:00</value>
+              <value name="fromLocation">21131</value>
+              <value name="toLocation">57366</value>
+              <jboolean name="inbound">true</jboolean>
+              <number name="availability" type="java.lang.Integer">51</number>
+              <number name="capacity" type="java.lang.Integer">51</number>
+              <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+              <value name="pricerMajorDepartureLocation">21131</value>
+              <value name="pricerMajorArrivalLocation">57366</value>
+              <value name="rpoMajorDepartureLocation">21131</value>
+              <value name="rpoMajorArrivalLocation">57366</value>
+            </record>
+          </array>
+        </record>
+      </array>
+      <value name="matchFareCode">CST</value>
+      <array name="JourneysToPrice" type="record" depth="1">
+        <null/>
+        <null/>
+        <null/>
+      </array>
+    </record>
+    <jboolean name="SaveFareOffers">false</jboolean>
+    <value name="FromLocationType">A</value>
+    <value name="ToLocationType">A</value>
+    <byte name="jsonBytes">
+eyJjaGFubmVsSWRlbnRpZmllciI6eyJzYWxlc0NoYW5uZWxDb2RlIjoiV2ViIiwiYWdlbnRDb2RlIjoiUzUwMiIsImFnZW50VXNlciI6Ik15QWNjdCIsInBhcnRuZXJDb2RlIjoiTlgiLCJjYW1wYWlnbkNvZGUiOiJERUZBVUxUIn0sImpvdXJuZXlSZXF1ZXN0Ijp7ImZyb21Mb2NhdGlvbkNvZGUiOiIyMTEzMSIsInRvTG9jYXRpb25Db2RlIjoiNTczNjYiLCJkYXRlVGltZSI6IjIwMjEtMDYtMDVUMTQ6MDA6MDAiLCJkZXBhcnRBcnJpdmFsSW5kaWNhdG9yIjoiRGVwYXJ0QWZ0ZXIiLCJkaXJlY3Rpb24iOiJpbmJvdW5kIiwibWluSm91cm5leXMiOiIzIiwiaW5jbHVkZVVuYXZhaWxhYmxlSm91cm5leXMiOmZhbHNlLCJwYXNzZW5nZXJTdW1tYXJ5Ijp7ImRvbWVzdGljQWR1bHRzIjoiMyIsImRvbWVzdGljU2VuaW9ycyI6IjAiLCJkb21lc3RpY0Rpc2FibGVkIjoiMCIsImRvbWVzdGljQ2hpbGRyZW4iOiIwIiwiZG9tZXN0aWNJbmZhbnRzIjoiMCIsImV1cm9wZWFuQWR1bHRzIjoiMCIsImV1cm9wZWFuU2VuaW9ycyI6IjAiLCJldXJvcGVhbllvdW5nUGVyc29ucyI6IjAiLCJldXJvcGVhbkNoaWxkcmVuIjoiMCJ9LCJmYXJlQ29kZSI6IkNTVCIsImpvdXJuZXlTaWRlRmFyZSI6NDIuOSwiZXhjZXNzRmFyZVBheWFibGUiOmZhbHNlLCJqb3VybmV5VHlwZSI6InJldHVybiIsImluYm91bmQiOnRydWUsInRpY2tldFNlcmlhbCI6IkU1SkUyMDU1IiwiY29hY2hDYXJkcyI6eyJkaXNhYmxlZCI6IjAiLCJzZW5pb3JDaXRpemVucyI6IjAiLCJ5b3VuZ1BlcnNvbnMiOiIwIn19LCJrZXkiOiIxNzM4OTBjZC1mOGM4LTRjZTItYjNmYy0zZGNlNDgwYmYxNDQifQ==    </byte>
+    <value name="jsonString">{"partnerCode":"NX","campaignCode":"DEFAULT","journeySearch":{"channel":"Web","adults":3,"children":0,"seniors":0,"disabled":0,"infants":0,"euroAdults":0,"euroChildren":0,"euroSeniors":0,"euroYoungPersons":0,"youngPersonCards":0,"disabledCards":0,"seniorCards":0,"familyCards":0,"britexCards":0,"journeyType":"return","fromLocation":"21131","toLocation":"57366"},"outboundJourneys":[{"engine":"Pricer","legs":[{"brand":"NX","superbrand":"NX","flightCode":"SD","flightDate":"2021-06-05T14:00:00","serviceNumber":"540","departureTime":"2021-06-05T14:00:00","arrivalTime":"2021-06-05T19:20:00","fromLocation":"21131","toLocation":"57366","inbound":true,"availability":48,"capacity":51,"SessionID":"0f64d8b6-a966-418d-b278-4440684ed3e9","pricerMajorDepartureLocation":"21131","pricerMajorArrivalLocation":"57366","rpoMajorDepartureLocation":"21131","rpoMajorArrivalLocation":"57366"}]},{"engine":"Pricer","legs":[{"brand":"NX","superbrand":"NX","flightCode":"SJ","flightDate":"2021-06-05T15:00:00","serviceNumber":"540","departureTime":"2021-06-05T15:00:00","arrivalTime":"2021-06-05T20:10:00","fromLocation":"21131","toLocation":"57366","inbound":true,"availability":51,"capacity":51,"SessionID":"0f64d8b6-a966-418d-b278-4440684ed3e9","pricerMajorDepartureLocation":"21131","pricerMajorArrivalLocation":"57366","rpoMajorDepartureLocation":"21131","rpoMajorArrivalLocation":"57366"}]},{"engine":"Pricer","legs":[{"brand":"NX","superbrand":"NX","flightCode":"QM","flightDate":"2021-06-05T16:00:00","serviceNumber":"540","departureTime":"2021-06-05T16:00:00","arrivalTime":"2021-06-05T20:50:00","fromLocation":"21131","toLocation":"57366","inbound":true,"availability":51,"capacity":51,"SessionID":"0f64d8b6-a966-418d-b278-4440684ed3e9","pricerMajorDepartureLocation":"21131","pricerMajorArrivalLocation":"57366","rpoMajorDepartureLocation":"21131","rpoMajorArrivalLocation":"57366"}]}],"matchFareCode":"CST","JourneysToPrice":[null,null,null]}</value>
+    <record name="JourneyExcessRequest" javaclass="com.wm.util.Values">
+      <record name="channelIdentifier" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="salesChannelCode">Web</value>
+        <value name="agentCode">S502</value>
+        <value name="agentUser">MyAcct</value>
+        <value name="partnerCode">NX</value>
+        <value name="campaignCode">DEFAULT</value>
+      </record>
+      <record name="journeyRequest" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="fromLocationCode">21131</value>
+        <value name="toLocationCode">57366</value>
+        <value name="dateTime">2021-06-05T14:00:00</value>
+        <value name="departArrivalIndicator">DepartAfter</value>
+        <value name="direction">inbound</value>
+        <value name="minJourneys">3</value>
+        <value name="includeUnavailableJourneys">true</value>
+        <record name="passengerSummary" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="domesticAdults">3</value>
+          <value name="domesticSeniors">0</value>
+          <value name="domesticDisabled">0</value>
+          <value name="domesticChildren">0</value>
+          <value name="domesticInfants">0</value>
+          <value name="europeanAdults">0</value>
+          <value name="europeanSeniors">0</value>
+          <value name="europeanYoungPersons">0</value>
+          <value name="europeanChildren">0</value>
+        </record>
+        <value name="fareCode">CST</value>
+        <double name="journeySideFare" type="java.lang.Double">42.9</double>
+        <jboolean name="excessFarePayable">false</jboolean>
+        <value name="journeyType">return</value>
+        <jboolean name="inbound">true</jboolean>
+        <value name="ticketSerial">E5JE2055</value>
+        <record name="coachCards" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="disabled">0</value>
+          <value name="seniorCitizens">0</value>
+          <value name="youngPersons">0</value>
+        </record>
+      </record>
+      <value name="key">173890cd-f8c8-4ce2-b3fc-3dce480bf144</value>
+    </record>
+    <value name="minJourneys">4</value>
+    <value name="includeUnavailableJourneys">true</value>
+    <value name="$httpMethod">POST</value>
+    <array name="passengerType" type="value" depth="1">
+    </array>
+    <value name="hasInfants">false</value>
+    <value name="SalesChannelCode">Web</value>
+    <value name="PartnerCode">NX</value>
+    <value name="CampaignCode">DEFAULT</value>
+    <value name="JourneyType">return</value>
+    <value name="FromLocationCode">21131</value>
+    <value name="ToLocationCode">57366</value>
+    <value name="MatchFareCode">CST</value>
+    <record name="PassengerSummary" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="DomesticAdults">3</value>
+      <value name="DomesticSeniors">0</value>
+      <value name="DomesticDisabled">0</value>
+      <value name="DomesticChildren">0</value>
+      <value name="DomesticInfants">0</value>
+      <value name="EuropeanAdults">0</value>
+      <value name="EuropeanSeniors">0</value>
+      <value name="EuropeanYoungPersons">0</value>
+      <value name="EuropeanChildren">0</value>
+    </record>
+    <record name="CoachCards" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="Disabled">0</value>
+      <value name="SeniorCitizens">0</value>
+      <value name="YoungPersons">0</value>
+    </record>
+    <array name="JourneyList" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <array name="Legs" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <record name="Departure" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">21131</value>
+              <value name="CheckinTime">2021-06-05T14:00:00</value>
+              <value name="DepartureTime">2021-06-05T14:00:00</value>
+              <value name="StopId">A</value>
+            </record>
+            <record name="Arrival" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">57366</value>
+              <value name="ArrivalTime">2021-06-05T19:20:00</value>
+              <value name="StopId">L</value>
+            </record>
+            <record name="Flight" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="FlightCode">SD</value>
+              <value name="DepartureTime">2021-06-05T14:00:00</value>
+              <value name="Brand">NX</value>
+              <value name="Service">540</value>
+              <value name="Outbound">false</value>
+              <value name="FlightStartDate">2021-04-16T00:00:00</value>
+              <value name="FlightEndDate">2021-06-20T00:00:00</value>
+              <value name="Dow">99</value>
+              <value name="ConnectionRuleBreaker">false</value>
+            </record>
+          </record>
+        </array>
+        <value name="DurationInMinutes">320</value>
+        <value name="isFastest">false</value>
+        <value name="isAvailable">true</value>
+        <number name="availableStock" type="java.lang.Integer">48</number>
+        <number name="maxCapacity" type="java.lang.Integer">51</number>
+        <null name="unbookableReason"/>
+        <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <array name="Legs" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <record name="Departure" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">21131</value>
+              <value name="CheckinTime">2021-06-05T15:00:00</value>
+              <value name="DepartureTime">2021-06-05T15:00:00</value>
+              <value name="StopId">A</value>
+            </record>
+            <record name="Arrival" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">57366</value>
+              <value name="ArrivalTime">2021-06-05T20:10:00</value>
+              <value name="StopId">L</value>
+            </record>
+            <record name="Flight" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="FlightCode">SJ</value>
+              <value name="DepartureTime">2021-06-05T15:00:00</value>
+              <value name="Brand">NX</value>
+              <value name="Service">540</value>
+              <value name="Outbound">false</value>
+              <value name="FlightStartDate">2021-04-16T00:00:00</value>
+              <value name="FlightEndDate">2021-06-20T00:00:00</value>
+              <value name="Dow">99</value>
+              <value name="ConnectionRuleBreaker">false</value>
+            </record>
+          </record>
+        </array>
+        <value name="DurationInMinutes">310</value>
+        <value name="isFastest">false</value>
+        <value name="isAvailable">true</value>
+        <number name="availableStock" type="java.lang.Integer">51</number>
+        <number name="maxCapacity" type="java.lang.Integer">51</number>
+        <null name="unbookableReason"/>
+        <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <array name="Legs" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <record name="Departure" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">21131</value>
+              <value name="CheckinTime">2021-06-05T16:00:00</value>
+              <value name="DepartureTime">2021-06-05T16:00:00</value>
+              <value name="StopId">A</value>
+            </record>
+            <record name="Arrival" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">57366</value>
+              <value name="ArrivalTime">2021-06-05T20:50:00</value>
+              <value name="StopId">L</value>
+            </record>
+            <record name="Flight" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="FlightCode">QM</value>
+              <value name="DepartureTime">2021-06-05T16:00:00</value>
+              <value name="Brand">NX</value>
+              <value name="Service">540</value>
+              <value name="Outbound">false</value>
+              <value name="FlightStartDate">2021-06-01T00:00:00</value>
+              <value name="FlightEndDate">2021-06-20T00:00:00</value>
+              <value name="Dow">65</value>
+              <value name="ConnectionRuleBreaker">false</value>
+            </record>
+          </record>
+        </array>
+        <value name="DurationInMinutes">290</value>
+        <value name="isFastest">true</value>
+        <value name="isAvailable">true</value>
+        <number name="availableStock" type="java.lang.Integer">51</number>
+        <number name="maxCapacity" type="java.lang.Integer">51</number>
+        <null name="unbookableReason"/>
+        <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+      </record>
+    </array>
+    <array name="Journey" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <array name="Legs" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <record name="Departure" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">21131</value>
+              <value name="CheckinTime">2021-06-05T14:00:00</value>
+              <value name="DepartureTime">2021-06-05T14:00:00</value>
+              <value name="StopId">A</value>
+            </record>
+            <record name="Arrival" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">57366</value>
+              <value name="ArrivalTime">2021-06-05T19:20:00</value>
+              <value name="StopId">L</value>
+            </record>
+            <record name="Flight" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="FlightCode">SD</value>
+              <value name="DepartureTime">2021-06-05T14:00:00</value>
+              <value name="Brand">NX</value>
+              <value name="Service">540</value>
+              <value name="Outbound">false</value>
+              <value name="FlightStartDate">2021-04-16T00:00:00</value>
+              <value name="FlightEndDate">2021-06-20T00:00:00</value>
+              <value name="Dow">99</value>
+              <value name="ConnectionRuleBreaker">false</value>
+            </record>
+          </record>
+        </array>
+        <value name="DurationInMinutes">320</value>
+        <value name="isFastest">false</value>
+        <value name="isAvailable">true</value>
+        <number name="availableStock" type="java.lang.Integer">48</number>
+        <number name="maxCapacity" type="java.lang.Integer">51</number>
+        <null name="unbookableReason"/>
+        <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <array name="Legs" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <record name="Departure" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">21131</value>
+              <value name="CheckinTime">2021-06-05T15:00:00</value>
+              <value name="DepartureTime">2021-06-05T15:00:00</value>
+              <value name="StopId">A</value>
+            </record>
+            <record name="Arrival" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">57366</value>
+              <value name="ArrivalTime">2021-06-05T20:10:00</value>
+              <value name="StopId">L</value>
+            </record>
+            <record name="Flight" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="FlightCode">SJ</value>
+              <value name="DepartureTime">2021-06-05T15:00:00</value>
+              <value name="Brand">NX</value>
+              <value name="Service">540</value>
+              <value name="Outbound">false</value>
+              <value name="FlightStartDate">2021-04-16T00:00:00</value>
+              <value name="FlightEndDate">2021-06-20T00:00:00</value>
+              <value name="Dow">99</value>
+              <value name="ConnectionRuleBreaker">false</value>
+            </record>
+          </record>
+        </array>
+        <value name="DurationInMinutes">310</value>
+        <value name="isFastest">false</value>
+        <value name="isAvailable">true</value>
+        <number name="availableStock" type="java.lang.Integer">51</number>
+        <number name="maxCapacity" type="java.lang.Integer">51</number>
+        <null name="unbookableReason"/>
+        <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <array name="Legs" type="record" depth="1">
+          <record javaclass="com.wm.data.ISMemDataImpl">
+            <record name="Departure" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">21131</value>
+              <value name="CheckinTime">2021-06-05T16:00:00</value>
+              <value name="DepartureTime">2021-06-05T16:00:00</value>
+              <value name="StopId">A</value>
+            </record>
+            <record name="Arrival" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="LocationId">57366</value>
+              <value name="ArrivalTime">2021-06-05T20:50:00</value>
+              <value name="StopId">L</value>
+            </record>
+            <record name="Flight" javaclass="com.wm.data.ISMemDataImpl">
+              <value name="FlightCode">QM</value>
+              <value name="DepartureTime">2021-06-05T16:00:00</value>
+              <value name="Brand">NX</value>
+              <value name="Service">540</value>
+              <value name="Outbound">false</value>
+              <value name="FlightStartDate">2021-06-01T00:00:00</value>
+              <value name="FlightEndDate">2021-06-20T00:00:00</value>
+              <value name="Dow">65</value>
+              <value name="ConnectionRuleBreaker">false</value>
+            </record>
+          </record>
+        </array>
+        <value name="DurationInMinutes">290</value>
+        <value name="isFastest">true</value>
+        <value name="isAvailable">true</value>
+        <number name="availableStock" type="java.lang.Integer">51</number>
+        <number name="maxCapacity" type="java.lang.Integer">51</number>
+        <null name="unbookableReason"/>
+        <value name="SessionID">0f64d8b6-a966-418d-b278-4440684ed3e9</value>
+      </record>
+    </array>
+    <value name="fileName">nxrms.priv.faresengine.journeyExcessFareJSON.xml</value>
+  </record>
+</IDataXMLCoder>

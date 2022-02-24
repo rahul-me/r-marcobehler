@@ -1,0 +1,31 @@
+journeyForDay
+
+{
+   "journeyDetail":{
+      "departArrivalIndicator":"DepartAfter",
+      "fromLocationCode":"41065",
+      "toLocationCode":"57286",
+      "includeStages":"Y",
+      "direction":"outbound",
+      "isEuroline":"false",
+      "isFareRequired":"true",
+      "journeyType":"return",
+      "minJourneys":"4",
+      "outboundJourneyId":null,
+      "dateTime":"2021-07-15T14:00:00"
+   },
+   "passengerSummary":{
+      "domesticAdults":"1",
+      "domesticSeniors":0,
+      "domesticDisabled":0,
+      "domesticChildren":0,
+      "domesticInfants":0,
+      "europeanAdults":0,
+      "europeanSeniors":0,
+      "europeanYoungPersons":0,
+      "europeanChildren":0
+   },
+   "coachCardSummary":{
+      
+   }
+}

@@ -1,0 +1,90 @@
+Ticket on sales
+EUJGD941
+
+Outbound 15-7-21
+14:25 - 16:35
+
+From location:
+BRISTOL Bus & Coach Station, Marlborough St
+To location:
+HEATHROW AIRPORT Central Bus Stn OR Terminal 2 forecourt for hotels
+Fare type:
+CFL - Fully Flexible
+Ticket type:
+Return
+
+Leg 1
+arrivalTime: "2021-07-15 16:35:00.0"
+bookingReference: "BABB"
+brand: "NX"
+checkInTime: "2021-07-15 14:25:00.0"
+dateCreated: "2021-01-14 20:05:56.777"
+departureTime: "2021-07-15 14:25:00.0"
+flightCode: "VL"
+flightDirection: "O"
+flightStart: "2021-07-15 13:00:00.0"
+fromLocationCode: "41065"
+fromStop: "A"
+legDirection: "O"
+legNumber: 0
+serviceNumber: "202"
+toLocationCode: "57286"
+toStop: "A"
+
+Leg 2
+arrivalTime: "2021-08-05 21:25:00.0"
+bookingReference: "JPDA"
+brand: "NX"
+checkInTime: "2021-08-05 19:20:00.0"
+dateCreated: "2021-01-14 20:05:56.777"
+departureTime: "2021-08-05 19:20:00.0"
+flightCode: "VM"
+flightDirection: "I"
+flightStart: "2021-08-05 19:00:00.0"
+fromLocationCode: "57286"
+fromStop: "A"
+legDirection: "R"
+legNumber: 1
+serviceNumber: "202"
+toLocationCode: "41065"
+toStop: "A"
+
+Get Journey with excess fare for inbound 
+coachCards: {}
+dateTime: "2021-08-05T19:20:00"
+departArrivalIndicator: "DepartAfter"
+direction: "inbound"
+fareCode: "CFL"
+fromLocationCode: "57286"
+inbound: true
+includeUnavailableJourneys: "true"
+isExcessFarePayable: "true"
+journeySideFare: 44
+journeyType: "return"
+minJourneys: "4"
+passengerSummary: {domesticAdults: "1", domesticSeniors: 0, domesticDisabled: 0, domesticChildren: 0, domesticInfants: 0,…}
+toLocationCode: "41065"
+
+for outbound
+coachCards: {}
+dateTime: "2021-07-15T14:25:00"
+departArrivalIndicator: "DepartAfter"
+direction: "outbound"
+fareCode: "CFL"
+fromLocationCode: "41065"
+inbound: false
+includeUnavailableJourneys: "true"
+isExcessFarePayable: "true"
+journeySideFare: 44
+journeyType: "return"
+minJourneys: "4"
+passengerSummary: {domesticAdults: "1", domesticSeniors: 0, domesticDisabled: 0, domesticChildren: 0, domesticInfants: 0,…}
+toLocationCode: "57286"
+
+
+UXG06888 - Ticket purchased on sales. The same journey had been selected for which I am getting error at get journey with excess
+
+com.softwareag.nx.faresengine.SAGFaresEngineException: Unable to calculate fares for journey
+flow service: nxrms.priv.faresengine:getJourneyExcessFare Package: NxRMS
+Start with flow service: nexjourney.pub:getJourneyWithExcessFare Package: NexJourney
+

@@ -1,0 +1,56 @@
+USE [Titan]
+GO
+
+/****** Object:  StoredProcedure [dbo].[cp_Add_Sales_Item_Transaction]    Script Date: 5/10/2021 9:33:12 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE   PROCEDURE [dbo].[cp_Add_Sales_Item_Transaction]
+	@sales_item_id int,
+	@transaction_type_id int,
+	@sales_item_transaction_id int OUTPUT
+AS
+INSERT dbo.tbl_Sales_Item_Transactions
+	(
+	sales_item_id,
+	transaction_type_id,
+	date_created
+	)
+VALUES
+	(
+	@sales_item_id,
+	@transaction_type_id,
+	getdate()
+	)
+SET @sales_item_transaction_id = SCOPE_IDENTITY()
+
+GO
+
+
+USE [Titan]
+GO
+
+ALTER TABLE [dbo].[tbl_Consumers]  WITH NOCHECK ADD  CONSTRAINT [FK_tbl_Consumers_tbl_Age_Ranges] FOREIGN KEY([age_range_id])
+REFERENCES [dbo].[tbl_Age_Ranges] ([age_range_id])
+GO
+
+ALTER TABLE [dbo].[tbl_Consumers] CHECK CONSTRAINT [FK_tbl_Consumers_tbl_Age_Ranges]
+GO
+
+USE [Titan]
+GO
+
+ALTER TABLE [dbo].[tbl_Consumers]  WITH NOCHECK ADD  CONSTRAINT [FK_tbl_Consumers_tbl_Consumer_Types] FOREIGN KEY([consumer_type_id])
+REFERENCES [dbo].[tbl_Consumer_Types] ([consumer_type_id])
+GO
+
+ALTER TABLE [dbo].[tbl_Consumers] CHECK CONSTRAINT [FK_tbl_Consumers_tbl_Consumer_Types]
+GO
+
+
+
+
+

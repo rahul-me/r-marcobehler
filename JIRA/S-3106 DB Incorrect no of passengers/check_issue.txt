@@ -1,0 +1,42 @@
+E7B40079 - ticket purchased
+
+perf env
+ticket with 1 AD pax E7B40134
+ticket with 2 AD pax E7B40135
+ticket with 2 AD pax E7B40136
+ticket with 1 AD 1 CH pax E7B40138
+ticket with 2 AD 2 CH pax E7B40144
+
+stable env
+ticket with 1 AD pax - E3B08606
+ticket with 2 AD pax - E3B08607
+ticket with 2 AD 2 CH - E3B08608
+
+
+JIRA tickets
+EULUT270 - showing 3 real 2  showing 3 AD real 2 AD   28/09/21 at 10:47
+EUNRU183 - showing 2 real 1  showing 2 AD real 1 AD   23/12/21 at 11:41
+EUMPH492 - showing 2 real 1 02/11/21 at 15:33
+UXH38472 - 
+
+
+2005-09-27 14:28:38.610
+2021-09-27 18:18:12.020
+2021-09-28 10:48:07.367
+
+
+This is for ticket - EULUT270
+
+SELECT * 
+ SElect c.consumer_id, c.consumer_type_id, c.forename,
+ c.date_created as consumer_created, c.consumer_role_id, 
+ c.sale_id, ct.consumer_type, ct.passenger_type_code, si.date_created as item_purchaseed_date
+      FROM   tbl_item_consumer IC 
+             INNER JOIN tbl_consumers C 
+                     ON IC.consumer_id = C.consumer_id
+             LEFT JOIN [dbo].[tbl_consumer_types] CT 
+                    ON C.consumer_type_id = CT.consumer_type_id 
+             INNER JOIN tbl_sales_items SI 
+                     ON SI.sales_item_id = sale_item_id 
+      WHERE  SI.sale_id = '178990351'
+             AND SI.product_id = 1

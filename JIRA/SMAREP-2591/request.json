@@ -1,0 +1,9 @@
+{
+	"roleID": "A",
+	"roleName": "Contact Centre CSA",
+	"salesChannel": "Travel-Shop",
+	"permissions": [
+	    "51cb6g21-1640-29a8-be62-c6207ef99283",
+        "51cb6g21-1640-29a1-be62-c6207ef99283"
+	 ]
+}

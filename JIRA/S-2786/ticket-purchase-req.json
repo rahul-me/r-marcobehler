@@ -1,0 +1,138 @@
+{
+   "paymentCompleteURL":"https://dt2.nationalexpress.com/dev/sales/#ticket/manage/U2002863",
+   "paymentDeclinedURL":"https://dt2.nationalexpress.com/dev/sales/#payment-error",
+   "travelTransaction":"PURCHASE",
+   "ticketNumber":"U2002863",
+   "journeyType":"S",
+   "cardHolderName":"Rahul Chauhan",
+   "fare":{
+      "sku":"H01H001",
+      "fareType":"CFL",
+      "fareValue":0,
+      "fareRequestId":"19a94cde-1e72-46a5-be4f-0d6c8cda7406",
+      "outboundSideFare":0,
+      "inboundSideFare":0,
+      "override":{
+         "newFare":0,
+         "oldFare":2500,
+         "reasonCode":"A",
+         "description":"TEST DES"
+      }
+   },
+   "outbound":{
+      "legs":[
+         {
+            "legDirection":"O",
+            "fromLocation":"57366",
+            "toLocation":"33023",
+            "fromStop":"A",
+            "toStop":"A",
+            "brand":"NX",
+            "direction":"OUTBOUND",
+            "service":"400",
+            "flightStartDate":"2021-07-29 11:30:00",
+            "departureTime":"2021-07-29 11:30:00",
+            "checkinTime":"2021-07-29 11:30:00",
+            "arrivalTime":"2021-07-29 14:35:00",
+            "flightCode":"CN",
+            "fareType":"CFL"
+         }
+      ],
+      "seats":[
+         {
+            "seatNumber":"1D",
+            "sku":"H05H036",
+            "type":"Standard"
+         }
+      ]
+   },
+   "inbound":{
+      "legs":null,
+      "seats":[
+         
+      ]
+   },
+   "passenger":{
+      "title":"Unkno",
+      "firstName":"Rahul",
+      "lastName":"Chauhan",
+      "leadAddress":{
+         "county":"",
+         "addressLine1":"WS Dennison",
+         "addressLine2":"Unit 5",
+         "addressLine3":"Rathenraw Industrial Estate",
+         "city":"ANTRIM",
+         "town":"ANTRIM",
+         "postCode":"BT412SJ",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      },
+      "billingAddress":{
+         "county":"",
+         "addressLine1":"WS Dennison",
+         "addressLine2":"Unit 5",
+         "addressLine3":"Rathenraw Industrial Estate",
+         "city":"ANTRIM",
+         "town":"ANTRIM",
+         "postCode":"BT412SJ",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      }
+   },
+   "distribution":{
+      "distributionType":"E",
+      "distributionSKU":"H42H242",
+      "postalAddress":null,
+      "email":{
+         "emailAddress":"rahul.chauhan@nationalexpress.com",
+         "marketingConsent":false
+      },
+      "phone":{
+         "mobileNumber":"4411111111",
+         "marketingConsent":false,
+         "country":"GB"
+      }
+   },
+   "travellingPax":[
+      {
+         "type":"AD",
+         "count":1
+      }
+   ],
+   "extras":[
+      {
+         "sku":"B02B002",
+         "itemQuantity":1,
+         "itemValue":0,
+         "override":{
+            "newFare":0,
+            "oldFare":250,
+            "reasonCode":"A",
+            "description":"TEST DES"
+         }
+      },
+      {
+         "sku":"H05H036",
+         "itemQuantity":1,
+         "itemValue":0,
+         "override":{
+            "newFare":0,
+            "oldFare":300,
+            "reasonCode":"A",
+            "description":"TEST DES"
+         }
+      },
+      {
+         "sku":"H42H242",
+         "itemQuantity":1,
+         "itemValue":0
+      }
+   ],
+   "coachcards":[
+      
+   ],
+   "discounts":[
+      
+   ],
+   "languageCode":"EN"
+}

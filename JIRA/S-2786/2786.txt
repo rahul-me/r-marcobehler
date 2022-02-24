@@ -1,0 +1,1 @@
+U2002870 - Booked having distribution type as MTicket - Does not have mPhone in purchase request.

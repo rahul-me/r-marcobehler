@@ -1,0 +1,101 @@
+{
+    "channelIdentifier": {
+        "salesChannelCode": "Call",
+        "agentCode": "D085",
+        "campaignCode": "default",
+        "agentUser": "uparmar",
+        "partnerCode": "NX"
+    },
+    "otherProductPurchaseRequest": {
+    "agentCode": "D085",
+    "campaignCode": "default",
+    "agentUser": "sys",
+    "ticketNumber": "T0000003",
+    "salesChannel": "Call",    
+    "leadPassenger": {
+        "title": "Unkno",
+        "firstName": "urvashi",
+        "surname": "parmar",
+        "telephone": "",
+        "postOutConsent": null,
+        "emailConsent": "false",
+        "telephoneConsent": "false",
+        "address": {
+            "address1": "Changan Uk R & D Centre Ltd",
+            "address2": "Unit 3500, Parkside",
+            "address3": "",
+            "town": "BIRMINGHAM",
+            "county": null,
+            "postcode": "B37 7YG",
+            "country": null,
+            "addressTypeId": 0
+        }
+    },
+    "distributionDetails": {
+        "distributionType": "E Ticket",
+        "email": "urvashi.parmar@nationalexpress.com",
+        "mTicketPhone": null,
+        "collectionLocation": null,
+        "postalAddress": null
+    },
+    "passengers": [
+        {
+            "type": "AD"
+        },
+        {
+            "type": "ST"
+        },
+        {
+            "type": "CF"
+        }
+    ],
+    "addons": [
+        {
+            "sku": "B06B005",
+            "itemValue": 600,
+            "itemQuantity": 1,
+            "serial": null,
+            "validFrom": null,
+            "validTo": null,
+            "overrideReasonCode": null,
+            "oldFare": 0,
+            "overrideDescription": null,
+            "newFare": 0
+        }
+    ],
+    "paymentDetails": {
+        "paymentValue": 1610,
+        "paymentType": "Card",
+        "cardPayment": {
+            "paymentProviderTransactionId": "8515dss2778456878989",
+            "cardType": "visa",
+            "paymentProvider": "Barclays",
+            "merchantId": null,
+            "terminald": null,
+            "authorisationCode": null,
+            "last4Digits": null,
+            "transactionId": null
+        },
+        "billingAddress": {
+            "address1": "Changan Uk R & D Centre Ltd",
+            "address2": "Unit 3500, Parkside",
+            "address3": "",
+            "town": "BIRMINGHAM",
+            "county": null,
+            "postcode": "B37 7YG",
+            "country": null,
+            "addressTypeId": 0
+        }
+    },
+    "coachcards": [
+        {
+            "type": "CF",
+            "serialNumber":"1C456325"
+        },
+        {
+            "type": "ST",
+            "serialNumber":"1C456326"
+        }
+    ]
+}
+}

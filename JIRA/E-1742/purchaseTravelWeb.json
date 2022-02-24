@@ -1,0 +1,94 @@
+{
+    "channelIdentifier": {
+        "salesChannelCode": "Web",
+        "agentCode": "NXDSK",
+        "agentUser": "webDTU",
+        "partnerCode": "NX",
+        "campaignCode": "DEFAULT"
+    },
+    "paymentObject": {
+        "paymentProvider": "AmazonPay",
+        "amazonOrderReferenceId": "S02-2788213-9197779",
+        "accountEmail": "andy.holder@nationalexpress.com",
+        "currencyCode": "GBP",
+        "sellerNote": null,
+        "sellerId": "A1YQ14D0105CP1",
+        "sellerOrderId": "E5JE7137",
+        "storeName": "National Express",
+        "sellerAuthorisationNote": null,
+        "successCallbackUrl": "http://localhost:4100/#/amazon/payment",
+        "errorCallbackUrl": "http://localhost:4100/#/amazon/payment",
+        "totalAmount": 1450
+    },
+    "ticketNumber": "E5JE7137",
+    "sessionIdentifier": "DC9FABEA9C60AD70676B6B680BBC31A3",
+    "fareRequestId": "db13957f-09b8-4d5e-94f8-ef6ed9332c12",
+    "fareCode": "CST",
+    "leadPassenger": {
+        "passengerName": {
+            "title": "",
+            "firstName": "Andy",
+            "lastName": "Holder"
+        },
+        "address": {
+            "line1": "Starbucks Coffee Co (Uk) Ltd",
+            "line2": "Digbeth",
+            "line3": "",
+            "town": null,
+            "county": null,
+            "country": "United Kingdom",
+            "countryCode": "GB",
+            "postcode": "B5 6DD"
+        },
+        "email": "andy.holder@nationalexpress.com",
+        "phone": "",
+        "gender": null,
+        "dateOfBirth": null,
+        "contactMethods": {
+            "viaEmail": null,
+            "viaSMS": null,
+            "nxWhiteCoach": null,
+            "thirdPartyTravel": null,
+            "thirdPartyLeisure": null,
+            "thirdPartyShopping": null,
+            "thirdPartyGambling": null,
+            "thirdPartyOffers": null,
+            "thirdPartyEvents": null,
+            "thirdPartyFinance": null,
+            "nxAccountID": null
+        }
+    },
+    "passengers": [],
+    "ticketDistributionSummary": {
+        "distributionProductClass": "ETICKET",
+        "remoteCollectAgentCode": null,
+        "mTicketPhoneNumber": null,
+        "postoutDeliveryName": null,
+        "postoutDeliveryAddress": null
+    },
+    "bookingFee": {
+        "sku": "B04B004",
+        "fee": "100"
+    },
+    "distributionFee": {
+        "sku": "H43H003",
+        "fee": "0"
+    },
+    "coachCards": [],
+    "discounts": [],
+    "additionalProducts": [
+        {
+            "sku": "H05H019",
+            "unitPrice": "500",
+            "quantity": "1",
+            "totalPrice": "500"
+        }
+    ],
+    "salesChannelFare": 850,
+    "outboundSeats": [],
+    "inboundSeats": [],
+    "outboundSeatsData": null,
+    "inboundSeatsData": null,
+    "accessibilityRequirement": null,
+    "odsReference": null
+}

@@ -1,0 +1,44 @@
+CmsContent_MultiProductAddExtras_ML
+
+skus: "H05H036","H05H038","H05H040"
+
+New CmsContentTypeID :  @CmsContentTypeIDNew OwnerID : 'TCDevTeam'New DeviceID :  'TCWebBooking'
+
+----------------------------------------------------
+USE [WebBooking]
+GO
+
+DECLARE	@return_value int
+
+EXEC	@return_value = [dbo].[CmsContent_MultiProductAddExtras_ML]
+		@SKU = N'H05H036,H05H038,H05H040',
+		@LANGUAGECODE = N'EN',
+		@OWNERID = N'JavaDevTeam',
+		@DEVICEID = N'DesktopJDT',
+		@DISPLAYCONTEXT = N'ProductsToSellDesk'
+
+SELECT	'Return Value' = @return_value
+
+GO
+
+
+------------------------------------------
+
+
+USE [WebBooking]
+GO
+
+DECLARE	@return_value int
+
+EXEC	@return_value = [dbo].[CmsContent_MultiProductAddExtras_ML]
+		@SKU = N'H05H036,H05H038,H05H040',
+		@LANGUAGECODE = N'EN',
+		@OWNERID = N'TCDevTeam',
+		@DEVICEID = N'TCWebBooking',
+		@DISPLAYCONTEXT = N'ProductsToSellDesk'
+
+SELECT	'Return Value' = @return_value
+
+GO
+
+10.251.114.134  - UKPDSQL03 - WebBooking DB.

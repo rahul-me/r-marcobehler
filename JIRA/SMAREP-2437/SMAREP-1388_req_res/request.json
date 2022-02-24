@@ -1,0 +1,149 @@
+{
+    "agentCode": "D085",
+    "campaignCode": "default",
+    "agentUser": "sys",
+    "ticketNumber": "T4JD4284",
+    "salesChannel": "Call",
+    "journeyType": "S",      
+    "fare": {
+        "netPrice": 1010,
+        "type": "CST",
+        "outBoundJourneySideFare": 2100,
+        "inBoundJourneySideFare": 0,
+        "overrideReasonCode": null,
+        "oldFare": 0,
+        "overrideDescription": null,
+        "newFare": 0
+    },
+    "legs": [
+        {
+            "legDirection": "O",
+            "fromLocation": "57366",
+            "toLocation": "57286",
+            "fromStop": "A",
+            "toStop": "A",
+            "companyBrandId": "NX",
+            "serviceNumber": "403",
+            "serviceDirection": "O",
+            "flightCode": "M5",
+            "flightStartDateTime": "2020-08-13 09:30:00",
+            "departureDateTime": "2020-08-13 09:30:00",
+            "checkInDateTime": "2020-08-13 09:30:00",
+            "arrivalDateTime": "2020-08-13 10:10:00",
+            "gdTriggerLevel": 0,
+            "fareType": "CST",
+            "couponFareValue": 0,
+            "actualFareValue": 0,
+            "throughFareLeg": null,
+            "specialFareId": null,
+            "bookingReference": "GHTK",
+            "attractionId": null,
+            "failCode": null,
+            "customerInfoId": null
+        },
+        {
+            "legDirection": "O",
+            "fromLocation": "57286",
+            "toLocation": "21131",
+            "fromStop": "A",
+            "toStop": "A",
+            "companyBrandId": "NX",
+            "serviceNumber": "212",
+            "serviceDirection": "I",
+            "flightCode": "EC",
+            "flightStartDateTime": "2020-08-13 10:25:00",
+            "departureDateTime": "2020-08-13 11:00:00",
+            "checkInDateTime": "2020-08-13 11:00:00",
+            "arrivalDateTime": "2020-08-13 16:45:00",
+            "gdTriggerLevel": 0,
+            "fareType": "CST",
+            "couponFareValue": 0,
+            "actualFareValue": 0,
+            "throughFareLeg": null,
+            "specialFareId": null,
+            "bookingReference": "GTHL",
+            "attractionId": null,
+            "failCode": null,
+            "customerInfoId": null
+        }
+    ],
+    "leadPassenger": {
+        "title": "Unkno",
+        "firstName": "urvashi",
+        "surname": "parmar",
+        "telephone": "",
+        "postOutConsent": null,
+        "emailConsent": "false",
+        "telephoneConsent": "false",
+        "address": {
+            "address1": "Changan Uk R & D Centre Ltd",
+            "address2": "Unit 3500, Parkside",
+            "address3": "",
+            "town": "BIRMINGHAM",
+            "county": null,
+            "postcode": "B37 7YG",
+            "country": null,
+            "addressTypeId": 0
+        }
+    },
+    "distributionDetails": {
+        "distributionType": "E Ticket",
+        "email": "urvashi.parmar@nationalexpress.com",
+        "mTicketPhone": null,
+        "collectionLocation": null,
+        "postalAddress": null
+    },
+    "passengers": [
+        {
+            "type": "AD"
+        }
+    ],
+    "addons": [
+        {
+            "sku": "B06B005",
+            "itemValue": 600,
+            "itemQuantity": 1,
+            "serial": null,
+            "validFrom": null,
+            "validTo": null,
+            "overrideReasonCode": null,
+            "oldFare": 0,
+            "overrideDescription": null,
+            "newFare": 0
+        }
+    ],
+    "paymentDetails": {
+        "paymentValue": 1610,
+        "paymentType": "Card",
+        "cardPayment": {
+            "paymentProviderTransactionId": "8515dss277845689kk89",
+            "cardType": "visa",
+            "paymentProvider": "Barclays",
+            "merchantId": null,
+            "terminald": null,
+            "authorisationCode": null,
+            "last4Digits": null,
+            "transactionId": null
+        },
+        "billingAddress": {
+            "address1": "Changan Uk R & D Centre Ltd",
+            "address2": "Unit 3500, Parkside",
+            "address3": "",
+            "town": "BIRMINGHAM",
+            "county": null,
+            "postcode": "B37 7YG",
+            "country": null,
+            "addressTypeId": 0
+        }
+    },
+    "coachcards": [
+        {
+            "type": "CF",
+            "serialNumber":"1C456325"
+        },
+        {
+            "type": "ST",
+            "serialNumber":"1C456326"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+it('Success: Update Role', function (done) {
+
+        let permissionResponseForUpdateRole = {
+            "permissionID": "Test",
+            "permissionName": "CanAmsend",
+            "permissionCategory": "Amend",
+            "permissionActiveStatus": true,
+            "lastUpdated": "2021-05-27T17:04:46.371Z",
+            "isRemoved": false,
+            "statusDate": "2021-05-27T17:04:46.371Z",
+            "_id": "a8f54be930f18ac9d40ada400601ad37",
+            "id": "a8f54be930f18ac9d40ada400601ad37"
+        }
+
+        createRoleRequest.roleID = "roleAdmin";
+        mockCouch.get.withArgs(query.allRoles).resolves({ rows: [{ value: roleResponse, id: roleResponse.id }] });
+        mockCouch.get.withArgs(query.allPermissions).resolves({ rows: [{value:permissionResponseForUpdateRole , id: permissionResponseForUpdateRole.id}] });
+        mockCouch.get.withArgs(roleResponse.id).resolves({ rows: [{ value: roleResponse, id: roleResponse.id }] });
+        mockCouch.insert.withArgs(sinon.match.any).resolves(roleResponse);
+        
+
+        request(app)
+            .post(usermanagementEndpoints.updateRole)
+            .set(requestHeaders())
+            .set("id_token", "abcjk123")
+            .set("email", userEmail)
+            .send(createRoleRequest)
+            .expect(contentType, /json/)
+            .expect(200)
+            .expect(() => roleResponse)
+            .end(done);
+
+        mockCouch.get.withArgs(query.allPermissions).resolves({ rows: [] });
+    });

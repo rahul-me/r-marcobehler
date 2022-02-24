@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <record name="ChannelIdentifier" javaclass="com.wm.data.BasicData">
+      <value name="SalesChannelCode">Web</value>
+      <value name="AgentCode">NXDSK</value>
+      <value name="AgentUser">webDTU</value>
+      <value name="PartnerCode">NX</value>
+      <value name="CampaignCode">DEFAULT</value>
+    </record>
+    <value name="TicketNumber">E5JE3751</value>
+    <value name="SessionIdentifier">6FCFE0E375513FE1474EC9EE55525C75</value>
+    <record name="LeadPassenger" javaclass="com.wm.data.BasicData">
+      <record name="PassengerName" javaclass="com.wm.data.BasicData">
+        <value name="Title"></value>
+        <value name="FirstName">rahul</value>
+        <value name="LastName">chauhan</value>
+      </record>
+      <record name="Address" javaclass="com.wm.data.BasicData">
+        <value name="Line1">WS Dennison</value>
+        <value name="Line2">Unit 5</value>
+        <value name="Line3">Rathenraw Industrial Estate</value>
+        <value name="Town">ANTRIM</value>
+        <value name="Country">United Kingdom</value>
+        <value name="CountryCode">GB</value>
+        <value name="Postcode">BT412SJ</value>
+      </record>
+      <value name="Email">rahul.chauhan@nationalexpress.com</value>
+      <value name="Phone">441111111111</value>
+      <record name="ContactMethods" javaclass="com.wm.data.BasicData">
+        <jboolean name="NxWhiteCoach">false</jboolean>
+      </record>
+    </record>
+    <record name="BookingFee" javaclass="com.wm.data.BasicData">
+      <value name="SKU">B04B004</value>
+      <value name="Fee">100</value>
+    </record>
+    <record name="DistributionFee" javaclass="com.wm.data.BasicData">
+      <value name="SKU">H43H003</value>
+      <value name="Fee">0</value>
+    </record>
+    <array name="AdditionalProduct" type="record" depth="1">
+      <record javaclass="com.wm.data.BasicData">
+        <value name="SKU">H05H036</value>
+        <value name="UnitPrice">200</value>
+        <value name="Quantity">1</value>
+        <value name="TotalPrice">200</value>
+      </record>
+    </array>
+    <record name="TicketDistributionSummary" javaclass="com.wm.data.BasicData">
+      <value name="DistributionProductClass">ETICKET</value>
+    </record>
+    <record name="Payment" javaclass="com.wm.data.BasicData">
+      <value name="Amount">3790</value>
+      <record name="Barclays" javaclass="com.wm.data.BasicData">
+        <value name="PaymentProviderTransactionId">8216269513098801</value>
+        <value name="PaymentMethod">visa</value>
+      </record>
+    </record>
+    <value name="FareRequestID">44967247-2f72-4ff9-8f44-afd68270bea4</value>
+    <value name="FareCode">CFL</value>
+    <array name="OutboundSeats" type="value" depth="1">
+      <value>1D</value>
+    </array>
+    <array name="OutboundSeatsData" type="record" depth="1">
+      <record javaclass="com.wm.data.BasicData">
+        <number name="Price" type="java.lang.Integer">200</number>
+        <value name="ProductSKU">H05H036</value>
+        <value name="SeatIdentifier">1D</value>
+        <value name="TimeOfDayDimension">DAY</value>
+        <value name="DurationDimension">MH</value>
+      </record>
+    </array>
+    <value name="fileName">nxpriv.purchaseTravel.xml</value>
+  </record>
+</IDataXMLCoder>

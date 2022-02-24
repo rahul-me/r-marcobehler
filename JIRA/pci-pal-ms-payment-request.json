@@ -1,0 +1,19 @@
+{
+    "vccemail": "rahul.chauhan@nationalexpress.com",
+    "billingAddresshouseNumberOrName": "WS Dennison",
+    "billingAddressstreet": "Unit 5",
+    "billingAddresscity": "ANTRIM",
+    "billingAddressstateOrProvince": null,
+    "billingAddresspostalCode": "BT412SJ",
+    "billingAddresscountry": "GB",
+    "currencyCode": "GBP",
+    "paymentAmount": "1500",
+    "shopperfirstName": "Rahul",
+    "shopperlastName": "Chauhan",
+    "cardcardHolderName": "Rahul Chauhan",
+    "merchantReference": "U2003045Call1630652777646",
+    "shopperEmail": "rahul.chauhan@nationalexpress.com",
+    "shoppertelephoneNumber": "4412457885",
+    "sessionValidity": "2021-09-03 08:16:17",
+    "resURL": "https://dt2.nationalexpress.com/barclayapi/payment/process-pcipal-response/328abe96-65fe-40e0-b31f-04f5109109da"
+}

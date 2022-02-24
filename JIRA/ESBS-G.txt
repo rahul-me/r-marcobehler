@@ -1,0 +1,4 @@
+Dfile=D:\CG_SAG_JARS\wm-brokerclient-1.0.jar -DgroupId=com.softwareag -DartifactId=wmbrokerclient -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=D:\CG_SAG_JARS\wm-g11nutils-1.0.jar -DgroupId=com.softwareag -DartifactId=wmG11nutils -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=D:\CG_SAG_JARS\wm-jmsclient-1.0.jar -DgroupId=com.softwareag -DartifactId=wmjmsclient -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=D:\CG_SAG_JARS\wm-jmsnaming-1.0.jar -DgroupId=com.softwareag -DartifactId=wmjmsnaming -Dversion=1.0 -Dpackaging=jar

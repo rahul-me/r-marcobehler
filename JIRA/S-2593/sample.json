@@ -1,0 +1,44 @@
+{
+   "title":"Application Get Single",
+   "type":"object",
+   "properties":{
+      "headers":{
+         "type":"object",
+         "properties":{
+            "api_key":{
+               "type":"string"
+            }
+         }
+      },
+      "query_string":{
+         "type":"object",
+         "properties":{
+            "apikey":{
+               "type":"string"
+            }
+         }
+      }
+   },
+   "anyOf":[
+      {
+         "properties":{
+            "headers":{
+               "type":"object",
+               "required":[
+                  "api_key"
+               ]
+            }
+         }
+      },
+      {
+         "properties":{
+            "query_string":{
+               "type":"object",
+               "required":[
+                  "apikey"
+               ]
+            }
+         }
+      }
+   ]
+}

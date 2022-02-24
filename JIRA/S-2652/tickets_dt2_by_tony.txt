@@ -1,0 +1,889 @@
+C_TICK_N C_S C C_ TO_CHAR(C_FLT_ST SUBST SL_LOCATION_NAME                                   C_TO_ SUBSTR(T.SL_LOC
+
+-------- --- - -- ---------------- ----- -------------------------------------------------- ----- ---------------
+
+E2JD4967 509 I ES 05/08/2021 03:00 15035 Cardiff                                            57366 London
+
+E2JD4967 509 O E2 06/08/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKER408 509 O EO 16/08/2021 21:30 57366 London                                             15035 Cardiff
+
+EUKER569 509 I EB 12/11/2021 09:15 15035 Cardiff                                            57366 London
+
+EUKER569 509 O EB 14/11/2021 14:30 57366 London                                             15035 Cardiff
+
+EUKER885 509 O EJ 16/08/2021 18:00 57366 London                                             15035 Cardiff
+
+EUKES556 509 I E5 21/07/2021 04:55 15255 Newport [S.Wales]                                  57366 London
+
+EUKES556 509 O E2 23/07/2021 08:30 57366 London                                             15255 Newport [S.Wale
+
+EUKES652 509 O E6 24/07/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKES796 509 I E8 26/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKES796 509 O EM 28/07/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKES967 509 O E9 26/07/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKES967 509 I EF 01/08/2021 12:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKET055 509 I EB 20/08/2021 09:15 15035 Cardiff                                            57366 London
+
+EUKET055 509 O EF 22/08/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKET059 509 I E6 23/07/2021 05:25 15135 Cardiff (Castle)                                   57366 London
+
+EUKET059 509 O E4 25/07/2021 10:30 57366 London                                             15135 Cardiff (Castle
+
+EUKET100 509 O E6 24/07/2021 11:30 57366 London                                             15135 Cardiff (Castle
+
+EUKET141 509 O EB 08/08/2021 14:30 57366 London                                             15035 Cardiff
+
+EUKET203 509 O EE 29/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKET258 509 O E5 03/08/2021 11:00 57366 London                                             15035 Cardiff
+
+EUKET283 509 O E4 24/07/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKET283 509 I EN 25/07/2021 16:00 15035 Cardiff                                            57336 London (Hammers
+
+EUKET323 509 I EM 01/10/2021 15:00 15255 Newport [S.Wales]                                  57366 London
+
+EUKET323 509 O EF 03/10/2021 16:30 57366 London                                             15255 Newport [S.Wale
+
+EUKET356 509 I EC 05/08/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKET356 509 O EF 07/08/2021 16:30 57366 London                                             15255 Newport [S.Wale
+
+EUKET525 509 I EE 21/07/2021 11:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKET525 509 O EA 23/07/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKET547 509 I EC 11/08/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKET547 509 O EI 14/08/2021 18:00 57366 London                                             15255 Newport [S.Wale
+
+EUKET551 509 O E4 06/08/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKET878 509 I E9 28/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKET878 509 O EM 28/07/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKET982 509 O E4 01/08/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKET997 509 I ED 31/07/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKET997 509 O EC 02/08/2021 14:30 57366 London                                             15035 Cardiff
+
+EUKEU202 509 I EF 01/08/2021 12:45 15035 Cardiff                                            57366 London
+
+EUKEU284 509 I E8 26/11/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKEU284 509 O EQ 26/11/2021 23:00 57366 London                                             15255 Newport [S.Wale
+
+EUKEU329 509 O E6 16/08/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKEU398 509 I E9 27/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKEU398 509 O EL 28/07/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKEU536 509 O EH 20/07/2021 17:30 57366 London                                             15135 Cardiff (Castle
+
+EUKEU558 509 I E8 27/08/2021 07:15 15035 Cardiff                                            57366 London
+
+EUKEU756 509 I EA 24/07/2021 07:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKEU756 509 O EE 27/07/2021 15:30 57366 London                                             15255 Newport [S.Wale
+
+EUKEU763 509 I ED 29/10/2021 10:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKEU763 509 O EK 31/10/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKEU786 509 I EC 11/08/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKEU786 509 O EH 12/08/2021 17:30 57366 London                                             15255 Newport [S.Wale
+
+EUKEV126 509 O E2 06/08/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKEV126 509 I ER 09/08/2021 17:15 15035 Cardiff                                            57366 London
+
+EUKEV272 509 O EK 25/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKEV319 509 O E8 25/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKEV334 509 O E8 27/07/2021 12:30 57336 London (Hammersmith)                               15255 Newport [S.Wale
+
+EUKEV334 509 I EE 03/08/2021 11:45 15255 Newport [S.Wales]                                  57336 London (Hammers
+
+EUKEV674 509 O E3 19/08/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKEV674 509 I EQ 21/08/2021 17:15 15035 Cardiff                                            57366 London
+
+EUKEV784 509 O EE 20/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKEV796 509 I ED 10/09/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKEV796 509 O E4 13/09/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKEV867 509 I E9 27/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKEV867 509 O EL 28/07/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKEW349 509 O EE 21/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKEW365 509 O EE 21/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKEW372 509 I EH 20/07/2021 13:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKEW372 509 O EH 28/07/2021 17:30 57366 London                                             15255 Newport [S.Wale
+
+EUKEW418 509 I E9 05/08/2021 07:15 15035 Cardiff                                            57366 London
+
+EUKEW418 509 O EE 05/08/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKEW840 509 I E9 29/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKEW840 509 O EQ 30/07/2021 23:00 57366 London                                             15255 Newport [S.Wale
+
+EUKEW866 509 I E8 26/07/2021 07:15 15035 Cardiff                                            57366 London
+
+EUKEW866 509 O EA 30/07/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKEW915 509 I ED 16/08/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKEW915 509 O E5 19/08/2021 11:00 57366 London                                             15035 Cardiff
+
+EUKEX044 509 O E6 22/08/2021 11:30 57366 London                                             15345 Chepstow
+
+EUKEX207 509 I EC 21/07/2021 09:45 15035 Cardiff                                            57366 London
+
+EUKEX207 509 O E6 26/07/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKEX217 509 I EH 05/08/2021 13:15 15035 Cardiff                                            57366 London
+
+EUKEX217 509 O E9 09/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKEX374 509 O EG 30/07/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKEX404 509 O E9 29/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKEX416 509 O EG 02/08/2021 16:30 57366 London                                             15255 Newport [S.Wale
+
+EUKEX416 509 I ER 09/08/2021 17:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKEX575 509 O EM 17/08/2021 20:30 57366 London                                             15135 Cardiff (Castle
+
+EUKEX665 509 O E4 24/07/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKEX665 509 I EN 25/07/2021 16:00 15035 Cardiff                                            57366 London
+
+EUKEX765 509 I EM 27/08/2021 15:00 15035 Cardiff                                            57366 London
+
+EUKEX765 509 O EK 29/08/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKEX795 509 O E5 03/08/2021 11:00 57366 London                                             15035 Cardiff
+
+EUKEX795 509 I EO 06/08/2021 16:00 15035 Cardiff                                            57366 London
+
+EUKEX919 509 O EG 20/08/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKEX919 509 I ER 23/08/2021 17:15 15035 Cardiff                                            57366 London
+
+EUKEX927 509 O EG 02/08/2021 16:30 57366 London                                             15010 Cardiff Univers
+
+EUKEX934 509 O E6 22/08/2021 11:30 57366 London                                             15345 Chepstow
+
+EUKEX989 509 O E4 27/08/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKEX989 509 I ED 30/08/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKEY075 509 I E9 28/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKEY075 509 O EO 31/07/2021 21:30 57366 London                                             15255 Newport [S.Wale
+
+EUKEY157 509 I E9 02/09/2021 07:15 15035 Cardiff                                            57366 London
+
+EUKEY157 509 O EE 02/09/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKEY217 509 O EF 12/12/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKEY228 509 O EH 21/07/2021 17:30 57366 London                                             15035 Cardiff
+
+EUKEY497 509 I EC 21/07/2021 09:45 15035 Cardiff                                            57366 London
+
+EUKEY698 509 O E5 28/07/2021 11:00 57366 London                                             15035 Cardiff
+
+EUKEY850 509 I E4 05/09/2021 04:55 15135 Cardiff (Castle)                                   57366 London
+
+EUKEY850 509 O EH 07/09/2021 17:30 57366 London                                             15135 Cardiff (Castle
+
+EUKEY883 509 O EF 25/07/2021 16:30 57366 London                                             15135 Cardiff (Castle
+
+EUKEY897 509 I EG 27/08/2021 12:45 15035 Cardiff                                            57366 London
+
+EUKEY897 509 O EF 29/08/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKEZ868 509 O E8 04/08/2021 12:30 57366 London                                             15135 Cardiff (Castle
+
+EUKEZ939 509 O E3 03/08/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKEZ939 509 I EO 06/08/2021 16:00 15035 Cardiff                                            57366 London
+
+EUKFA450 509 O EF 25/07/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKFA452 509 I EC 29/09/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFA452 509 O E9 02/10/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFA569 509 O EO 28/08/2021 21:30 57366 London                                             15035 Cardiff
+
+EUKFA694 509 O EH 21/07/2021 17:30 57366 London                                             15010 Cardiff Univers
+
+EUKFA720 509 I ED 07/08/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKFA720 509 O E6 08/08/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFA825 509 I E8 23/07/2021 07:15 15010 Cardiff University                                 57366 London
+
+EUKFA825 509 O ED 23/07/2021 14:30 57366 London                                             15010 Cardiff Univers
+
+EUKFA840 509 I E4 01/08/2021 04:55 15255 Newport [S.Wales]                                  57366 London
+
+EUKFA840 509 O EE 04/08/2021 15:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFA870 509 I E8 26/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFA870 509 O EL 27/07/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFA906 509 O EE 11/08/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFB052 509 I E5 22/07/2021 04:55 15255 Newport [S.Wales]                                  57366 London
+
+EUKFB052 509 O EE 05/08/2021 15:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFB360 509 O EE 22/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFB360 509 I EK 27/07/2021 14:45 15035 Cardiff                                            57366 London
+
+EUKFB375 509 I EC 05/08/2021 09:45 15035 Cardiff                                            57366 London
+
+EUKFB375 509 O EG 09/08/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKFB417 509 O E8 27/07/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFB417 509 I EK 28/07/2021 14:45 15035 Cardiff                                            57366 London
+
+EUKFB537 509 O EI 25/07/2021 18:00 57366 London                                             15035 Cardiff
+
+EUKFB729 509 O EN 27/09/2021 20:30 57366 London                                             15010 Cardiff Univers
+
+EUKFB812 509 O E3 25/08/2021 08:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFB891 509 I EC 05/08/2021 09:45 15035 Cardiff                                            57366 London
+
+EUKFB891 509 O EG 09/08/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKFB904 509 O E7 23/07/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFB993 509 O E5 11/08/2021 11:00 57366 London                                             15035 Cardiff
+
+EUKFB993 509 I ED 14/08/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKFC145 509 O E3 22/07/2021 08:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFC145 509 I E5 29/07/2021 04:55 15255 Newport [S.Wales]                                  57366 London
+
+EUKFC361 509 O E8 29/07/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFC473 509 I EB 23/07/2021 09:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFC473 509 O EB 25/07/2021 14:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFC516 509 I ED 03/09/2021 10:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFC516 509 O E4 06/09/2021 10:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFC557 509 O E5 22/07/2021 11:00 57366 London                                             15035 Cardiff
+
+EUKFC557 509 I ED 25/07/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKFC564 509 I EF 07/08/2021 12:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFC564 509 O EC 16/08/2021 14:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFC570 509 I EB 06/08/2021 09:15 15010 Cardiff University                                 57366 London
+
+EUKFC570 509 O EB 08/08/2021 14:30 57366 London                                             15010 Cardiff Univers
+
+EUKFC690 509 O E4 07/08/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKFC698 509 I E8 02/08/2021 07:15 15035 Cardiff                                            57366 London
+
+EUKFC698 509 O EN 02/08/2021 20:30 57366 London                                             15035 Cardiff
+
+EUKFC765 509 O E1 31/07/2021 08:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFC765 509 I EL 01/08/2021 15:00 15255 Newport [S.Wales]                                  57366 London
+
+EUKFD080 509 O E2 23/07/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKFD100 509 I EG 30/07/2021 12:45 15035 Cardiff                                            57366 London
+
+EUKFD100 509 O E8 03/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFD137 509 I E8 23/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFD137 509 O E9 25/07/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFD144 509 O EE 22/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFD165 509 I EK 08/09/2021 14:45 15035 Cardiff                                            57366 London
+
+EUKFD165 509 O E6 12/09/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFD260 509 I EI 18/09/2021 13:45 15035 Cardiff                                            57366 London
+
+EUKFD260 509 O E4 20/09/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKFD299 509 I E3 06/08/2021 04:20 15010 Cardiff University                                 57366 London
+
+EUKFD299 509 O EJ 09/08/2021 18:00 57366 London                                             15010 Cardiff Univers
+
+EUKFD427 509 I E9 05/08/2021 07:15 15035 Cardiff                                            57366 London
+
+EUKFD427 509 O EB 07/08/2021 14:30 57366 London                                             15035 Cardiff
+
+EUKFD491 509 I ER 30/07/2021 17:15 15035 Cardiff                                            57366 London
+
+EUKFD491 509 O EQ 06/08/2021 23:00 57366 London                                             15035 Cardiff
+
+EUKFD516 509 O E9 26/07/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFD532 509 I E9 04/08/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFD532 509 O EN 06/08/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFD725 509 O E4 19/09/2021 10:30 57366 London                                             15010 Cardiff Univers
+
+EUKFD792 509 O EH 21/07/2021 17:30 57366 London                                             15010 Cardiff Univers
+
+EUKFD796 509 I EM 06/08/2021 15:00 15255 Newport [S.Wales]                                  57366 London
+
+EUKFD796 509 O EF 08/08/2021 16:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFD840 509 I E9 20/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFD840 509 O EL 21/07/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFD854 509 I EP 21/07/2021 16:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFD984 509 O EJ 27/08/2021 18:00 57366 London                                             15010 Cardiff Univers
+
+EUKFE062 509 O E8 20/07/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFE388 509 O EK 01/08/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFE406 509 I E9 05/08/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFE406 509 O EK 06/08/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFE573 509 O E3 08/09/2021 08:30 57366 London                                             15010 Cardiff Univers
+
+EUKFE573 509 I EG 10/09/2021 12:45 15010 Cardiff University                                 57366 London
+
+EUKFE732 509 O E2 06/08/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKFE732 509 I EN 08/08/2021 16:00 15035 Cardiff                                            57366 London
+
+EUKFF117 509 O EF 14/08/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKFF181 509 I EC 24/08/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFF181 509 O EJ 27/08/2021 18:00 57366 London                                             15255 Newport [S.Wale
+
+EUKFF190 509 O EH 20/07/2021 17:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFF232 509 I EE 04/08/2021 11:45 15035 Cardiff                                            57366 London
+
+EUKFF232 509 O EC 09/08/2021 14:30 57366 London                                             15035 Cardiff
+
+EUKFF241 509 O E3 22/07/2021 08:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFF305 509 O EP 21/07/2021 22:00 57366 London                                             15035 Cardiff
+
+EUKFF358 509 I EC 20/07/2021 09:45 15135 Cardiff (Castle)                                   57366 London
+
+EUKFF358 509 O EH 20/07/2021 17:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFF377 509 O E7 13/08/2021 11:30 57366 London                                             15345 Chepstow
+
+EUKFF402 509 I EA 14/08/2021 07:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFF402 509 O E9 15/08/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFF554 509 O E6 01/08/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFF623 509 I E7 07/08/2021 06:10 15255 Newport [S.Wales]                                  57366 London
+
+EUKFF623 509 O EN 08/08/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFF821 509 I E8 30/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFF821 509 O EN 31/07/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFF846 509 I E8 30/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFF846 509 O EN 31/07/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFG381 509 I E8 30/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFG381 509 O EN 31/07/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFG465 509 I EP 19/08/2021 16:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFG465 509 O EN 23/08/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFG505 509 I E6 30/07/2021 05:25 15255 Newport [S.Wales]                                  57366 London
+
+EUKFG505 509 O EK 01/08/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFG571 509 I EE 20/07/2021 11:45 15035 Cardiff                                            57366 London
+
+EUKFG571 509 O EL 21/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFG644 509 O EH 21/07/2021 17:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFG710 509 I EA 31/07/2021 07:45 15035 Cardiff                                            57366 London
+
+EUKFG710 509 O EF 01/08/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKFG769 509 I EK 10/08/2021 14:45 15035 Cardiff                                            57366 London
+
+EUKFG793 509 O E1 24/07/2021 08:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFG793 509 I EN 25/07/2021 16:00 15135 Cardiff (Castle)                                   57366 London
+
+EUKFG875 509 I E9 05/08/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFG875 509 O E9 07/08/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFG962 509 O EF 25/07/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKFH182 509 O EE 22/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFH256 509 O EL 22/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFH334 509 O EH 28/07/2021 17:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFH402 509 O EH 28/07/2021 17:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFH565 509 I E7 24/07/2021 06:10 15135 Cardiff (Castle)                                   57366 London
+
+EUKFH565 509 O EE 27/07/2021 15:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFH613 509 O EH 21/07/2021 17:30 57366 London                                             15035 Cardiff
+
+EUKFH635 509 I EC 20/07/2021 09:45 15035 Cardiff                                            57366 London
+
+EUKFH635 509 O EH 21/07/2021 17:30 57366 London                                             15035 Cardiff
+
+EUKFH690 509 O EI 25/07/2021 18:00 57366 London                                             15035 Cardiff
+
+EUKFH890 509 O E3 21/07/2021 08:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFH939 509 O E9 26/07/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFH939 509 I EK 27/07/2021 14:45 15035 Cardiff                                            57366 London
+
+EUKFH998 509 I E6 26/07/2021 05:25 15035 Cardiff                                            57366 London
+
+EUKFH998 509 O EJ 02/08/2021 18:00 57366 London                                             15035 Cardiff
+
+EUKFJ007 509 O EB 05/09/2021 14:30 57366 London                                             15035 Cardiff
+
+EUKFJ216 509 I EE 04/08/2021 11:45 15035 Cardiff                                            57366 London
+
+EUKFJ216 509 O EA 06/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFJ419 509 I EC 21/07/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFJ419 509 O EM 21/07/2021 20:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFJ444 509 I E9 28/07/2021 07:15 15135 Cardiff (Castle)                                   57366 London
+
+EUKFJ444 509 O EH 29/07/2021 17:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFJ516 509 I E5 05/08/2021 04:55 15255 Newport [S.Wales]                                  57366 London
+
+EUKFJ516 509 O EG 09/08/2021 16:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFJ519 509 O E4 12/09/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKFJ555 509 I EF 02/08/2021 12:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFJ555 509 O E8 04/08/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFJ598 509 O E6 02/08/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFJ750 509 I E8 02/08/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFJ750 509 O EO 02/08/2021 21:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFJ762 509 O E8 22/07/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFJ762 509 I ED 06/08/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKFJ779 509 O EO 30/07/2021 21:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFJ779 509 I EQ 01/08/2021 17:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFJ860 509 O EE 21/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFJ908 509 O EK 24/07/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFJ935 509 I EC 20/07/2021 09:45 15035 Cardiff                                            57366 London
+
+EUKFJ935 509 O EH 21/07/2021 17:30 57366 London                                             15035 Cardiff
+
+EUKFJ996 509 O EA 30/07/2021 12:30 57366 London                                             15010 Cardiff Univers
+
+EUKFJ996 509 I EF 01/08/2021 12:45 15010 Cardiff University                                 57366 London
+
+EUKFK095 509 I EC 20/07/2021 09:45 15135 Cardiff (Castle)                                   57366 London
+
+EUKFK095 509 O EH 20/07/2021 17:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFK190 509 I EM 23/07/2021 15:00 15255 Newport [S.Wales]                                  57366 London
+
+EUKFK190 509 O EF 25/07/2021 16:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFK390 509 I E5 10/08/2021 04:55 15255 Newport [S.Wales]                                  57366 London
+
+EUKFK390 509 O EL 12/08/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFK572 509 I E9 20/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFK572 509 O EL 21/07/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFK596 509 I EA 31/07/2021 07:45 15135 Cardiff (Castle)                                   57328 London (Earl's
+
+EUKFK596 509 O E9 01/08/2021 12:30 57336 London (Hammersmith)                               15135 Cardiff (Castle
+
+EUKFK598 509 I ES 07/10/2021 03:00 15035 Cardiff                                            57366 London
+
+EUKFK598 509 O EN 11/10/2021 20:30 57366 London                                             15035 Cardiff
+
+EUKFK634 509 I E9 21/07/2021 07:15 15135 Cardiff (Castle)                                   57366 London
+
+EUKFK634 509 O EJ 23/07/2021 18:00 57366 London                                             15135 Cardiff (Castle
+
+EUKFK650 509 I EB 16/08/2021 09:15 15035 Cardiff                                            57366 London
+
+EUKFK650 509 O E8 18/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFK925 509 O EL 28/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFK972 509 I EI 24/07/2021 13:45 15035 Cardiff                                            57366 London
+
+EUKFL140 509 O E4 30/07/2021 10:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFL140 509 I EL 01/08/2021 15:00 15255 Newport [S.Wales]                                  57366 London
+
+EUKFL175 509 O E6 13/09/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFL214 509 O EE 20/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFL325 509 O EE 21/07/2021 15:30 57366 London                                             15010 Cardiff Univers
+
+EUKFL343 509 O E9 24/07/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFL343 509 I EF 01/08/2021 12:45 15035 Cardiff                                            57366 London
+
+EUKFL458 509 I EA 23/10/2021 07:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFL458 509 O EG 25/10/2021 16:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFL502 509 I E9 04/08/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFL502 509 O EH 04/08/2021 17:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFL527 509 O E2 26/07/2021 08:30 57366 London                                             15010 Cardiff Univers
+
+EUKFL528 509 O EM 22/07/2021 20:30 57366 London                                             15115 Cardiff (Gabalf
+
+EUKFL540 509 O EE 20/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFL540 509 I EF 24/07/2021 12:45 15035 Cardiff                                            57366 London
+
+EUKFL566 509 I E4 24/07/2021 04:55 15255 Newport [S.Wales]                                  57366 London
+
+EUKFL566 509 O EI 25/07/2021 18:00 57366 London                                             15255 Newport [S.Wale
+
+EUKFL588 509 I E8 03/09/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFL588 509 O E9 05/09/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFL686 509 O EH 10/08/2021 17:30 57366 London                                             15035 Cardiff
+
+EUKFL766 509 O EK 04/09/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFL787 509 I E7 04/09/2021 06:10 15255 Newport [S.Wales]                                  57366 London
+
+EUKFL787 509 O E9 05/09/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFL822 509 O E1 08/08/2021 08:30 57366 London                                             15010 Cardiff Univers
+
+EUKFM037 509 O EK 26/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFM050 509 O E9 02/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFM050 509 I EF 07/08/2021 12:45 15035 Cardiff                                            57366 London
+
+EUKFM223 509 O E3 29/07/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKFM241 509 O EI 14/08/2021 18:00 57366 London                                             15035 Cardiff
+
+EUKFM328 509 O E5 20/07/2021 11:00 57366 London                                             15010 Cardiff Univers
+
+EUKFM352 509 O EI 22/08/2021 18:00 57366 London                                             15255 Newport [S.Wale
+
+EUKFM418 509 O E1 31/07/2021 08:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFM503 509 I EE 22/07/2021 11:45 15035 Cardiff                                            57366 London
+
+EUKFM503 509 O E4 26/07/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKFM512 509 I ED 20/11/2021 10:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFM512 509 O E4 28/11/2021 10:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFM514 509 I EB 10/09/2021 09:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFM514 509 O E9 12/09/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFM551 509 I ER 23/08/2021 17:15 15035 Cardiff                                            57366 London
+
+EUKFM551 509 O EF 29/08/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKFM584 509 I EC 18/08/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFM584 509 O EA 20/08/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFM594 509 I EK 22/07/2021 14:45 15035 Cardiff                                            57366 London
+
+EUKFM607 509 O EQ 26/07/2021 23:00 57366 London                                             15035 Cardiff
+
+EUKFM631 509 I EB 10/09/2021 09:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFM631 509 O E9 12/09/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFM665 509 O E2 23/07/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKFM723 509 I EC 27/07/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFM723 509 O EL 27/07/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFM817 509 I E7 28/08/2021 06:10 15255 Newport [S.Wales]                                  57366 London
+
+EUKFM817 509 O EK 30/08/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFM947 509 I EB 14/08/2021 09:15 15035 Cardiff                                            57366 London
+
+EUKFM947 509 O EC 16/08/2021 14:30 57366 London                                             15035 Cardiff
+
+EUKFN056 509 I E8 17/09/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFN056 509 O EB 19/09/2021 14:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFN077 509 O EH 21/07/2021 17:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFN148 509 O E7 23/07/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFN204 509 O E2 02/08/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKFN209 509 I EP 21/07/2021 16:15 15035 Cardiff                                            57366 London
+
+EUKFN227 509 I EB 23/07/2021 09:15 15010 Cardiff University                                 57366 London
+
+EUKFN227 509 O EO 25/07/2021 21:30 57366 London                                             15010 Cardiff Univers
+
+EUKFN455 509 O EE 22/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFN718 509 I EG 23/07/2021 12:45 15035 Cardiff                                            57366 London
+
+EUKFN718 509 O EG 26/07/2021 16:30 57366 London                                             15035 Cardiff
+
+EUKFN824 509 O EC 06/09/2021 14:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFN861 509 O E8 20/07/2021 12:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFN915 509 O EH 21/07/2021 17:30 57366 London                                             15035 Cardiff
+
+EUKFP035 509 O E4 06/08/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKFP035 509 I EI 08/08/2021 13:45 15035 Cardiff                                            57366 London
+
+EUKFP058 509 O EH 21/07/2021 17:30 57366 London                                             15035 Cardiff
+
+EUKFP076 509 I EA 24/07/2021 07:45 15035 Cardiff                                            57366 London
+
+EUKFP076 509 O E6 25/07/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFP079 509 I E7 07/08/2021 06:10 15035 Cardiff                                            57366 London
+
+EUKFP079 509 O E9 08/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFP152 509 O E8 21/07/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFP168 509 O EL 22/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFP222 509 I EM 30/07/2021 15:00 15255 Newport [S.Wales]                                  57366 London
+
+EUKFP222 509 O EK 01/08/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFP355 509 O EL 22/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFP357 509 I EC 21/07/2021 09:45 15010 Cardiff University                                 57366 London
+
+EUKFP357 509 O EE 22/07/2021 15:30 57366 London                                             15010 Cardiff Univers
+
+EUKFP359 509 I EE 20/07/2021 11:45 15035 Cardiff                                            57366 London
+
+EUKFP482 509 O EP 22/07/2021 22:00 57366 London                                             15035 Cardiff
+
+EUKFP516 509 O EI 01/08/2021 18:00 57366 London                                             15115 Cardiff (Gabalf
+
+EUKFP610 509 I E8 26/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFP610 509 O EE 28/07/2021 15:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFP875 509 I EC 21/07/2021 09:45 15010 Cardiff University                                 57366 London
+
+EUKFR055 509 O E4 23/08/2021 10:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFR055 509 I EM 27/08/2021 15:00 15255 Newport [S.Wales]                                  57366 London
+
+EUKFR177 509 O E4 23/07/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKFR229 509 O EM 22/07/2021 20:30 57366 London                                             15035 Cardiff
+
+EUKFR468 509 I EP 21/07/2021 16:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFR766 509 O EA 30/07/2021 12:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFR801 509 I E8 23/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFR801 509 O EJ 23/07/2021 18:00 57366 London                                             15255 Newport [S.Wale
+
+EUKFR821 509 I E8 23/07/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFR821 509 O EJ 23/07/2021 18:00 57366 London                                             15255 Newport [S.Wale
+
+EUKFR890 509 O EA 06/08/2021 12:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFS027 509 I E8 27/08/2021 07:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFS027 509 O EK 29/08/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFS085 509 O E4 23/07/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKFS085 509 I EQ 24/07/2021 17:15 15035 Cardiff                                            57366 London
+
+EUKFS086 509 I EA 25/09/2021 07:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFS086 509 O EK 25/09/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFS188 509 I E3 26/07/2021 04:20 15255 Newport [S.Wales]                                  57366 London
+
+EUKFS188 509 O EJ 26/07/2021 18:00 57366 London                                             15255 Newport [S.Wale
+
+EUKFS300 509 I EA 24/07/2021 07:45 15010 Cardiff University                                 57366 London
+
+EUKFS300 509 O EK 24/07/2021 18:30 57366 London                                             15010 Cardiff Univers
+
+EUKFS474 509 I EH 22/07/2021 13:15 15035 Cardiff                                            57366 London
+
+EUKFS474 509 O EK 24/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFS620 509 O EE 20/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFS898 509 I E6 26/07/2021 05:25 15255 Newport [S.Wales]                                  57366 London
+
+EUKFS898 509 O E8 28/07/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFS954 509 I E4 07/08/2021 04:55 15010 Cardiff University                                 57366 London
+
+EUKFS954 509 O E1 08/08/2021 08:30 57366 London                                             15010 Cardiff Univers
+
+EUKFT048 509 O E6 25/07/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFT085 509 O E7 20/08/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFT085 509 I ED 23/08/2021 10:45 15035 Cardiff                                            57366 London
+
+EUKFT129 509 O E6 01/08/2021 11:30 57366 London                                             15035 Cardiff
+
+EUKFT129 509 I EH 05/08/2021 13:15 15035 Cardiff                                            57366 London
+
+EUKFT151 509 I EC 03/08/2021 09:45 15035 Cardiff                                            57366 London
+
+EUKFT151 509 O E8 25/08/2021 12:30 57366 London                                             15035 Cardiff
+
+EUKFT169 509 O E3 28/07/2021 08:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFT256 509 I E6 23/07/2021 05:25 15255 Newport [S.Wales]                                  57366 London
+
+EUKFT256 509 O EK 25/07/2021 18:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFT302 509 O EL 22/07/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFT592 509 O E8 27/07/2021 12:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFT592 509 I EC 28/09/2021 09:45 15255 Newport [S.Wales]                                  57366 London
+
+EUKFT719 509 I EB 21/08/2021 09:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFT719 509 O E4 23/08/2021 10:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFT733 509 O EO 26/07/2021 21:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFT975 509 I EJ 30/07/2021 13:45 15035 Cardiff                                            57366 London
+
+EUKFT975 509 O E1 31/07/2021 08:30 57366 London                                             15035 Cardiff
+
+EUKFU083 509 O EK 14/08/2021 18:30 57366 London                                             15035 Cardiff
+
+EUKFU215 509 O EG 30/07/2021 16:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFU215 509 I EQ 01/08/2021 17:15 15255 Newport [S.Wales]                                  57366 London
+
+EUKFU279 509 O E5 01/09/2021 11:00 57366 London                                             15035 Cardiff
+
+EUKFU441 509 I E7 08/08/2021 06:10 15255 Newport [S.Wales]                                  57366 London
+
+EUKFU441 509 O EQ 08/08/2021 23:00 57366 London                                             15255 Newport [S.Wale
+
+EUKFU663 509 I EE 20/07/2021 11:45 15035 Cardiff                                            57366 London
+
+EUKFU663 509 O EE 22/07/2021 15:30 57366 London                                             15035 Cardiff
+
+EUKFU695 509 I EC 21/07/2021 09:45 15135 Cardiff (Castle)                                   57366 London
+
+EUKFU695 509 O EE 22/07/2021 15:30 57366 London                                             15135 Cardiff (Castle
+
+EUKFU697 509 O EI 07/08/2021 18:00 57366 London                                             15035 Cardiff
+
+EUKFU714 509 O EN 07/08/2021 20:30 57366 London                                             15035 Cardiff
+
+EUKFU784 509 O EE 22/07/2021 15:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFU926 509 O EO 01/08/2021 21:30 57366 London                                             15255 Newport [S.Wale
+
+EUKFU936 509 O E4 02/08/2021 10:30 57366 London                                             15035 Cardiff
+
+EUKFV033 509 O EH 20/07/2021 17:30 57366 London                                             15035 Cardiff
+
+EUKFV083 509 I EC 20/07/2021 09:45 15010 Cardiff University                                 57366 London
+
+EUKFV083 509 O EH 21/07/2021 17:30 57366 London                                             15010 Cardiff Univers

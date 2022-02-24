@@ -1,0 +1,13 @@
+{
+    "roleID": "A",
+    "roleName": "Contact Centre CSA",
+    "salesChannel": "Travel-Shop",
+    "permissions": [
+        "51cb6g21-1640-29a1-be62-c6207ef99283",
+        "51cb6g21-1640-29a8-be62-c6207ef99283"
+    ],
+    "status": "Active",
+    "statusDate": "2021-04-30T11:06:37.578Z",
+    "lastUpdated": "2021-04-30T11:06:37.579Z",
+    "_id": "addb9cd0-2316-4c59-99a8-8d69c75b3002"
+}

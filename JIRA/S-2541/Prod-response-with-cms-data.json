@@ -1,0 +1,34 @@
+{
+    "ProductWithCMSData": [
+        {
+            "sku": "H05H038",
+            "productDescription": "Premium Outbound Seat Reservation",
+            "productRole": null,
+            "unitPrice": 4.0,
+            "quantity": 1,
+            "totalPrice": 4.0,
+            "productFamily": null,
+            "products": {
+                "sku": "H05H038",
+                "productDescription": "Premium Outbound Seat Reservation",
+                "unitPrice": "4.00",
+                "quantity": "1",
+                "totalPrice": "4.00",
+                "productPriorityOrder": 12000,
+                "layoutCode": "DPR",
+                "isInboundProduct": false,
+                "isOutboundProduct": true,
+                "isLuggageProduct": false,
+                "isSeatProduct": true
+            },
+            "cmsContent": {
+                "title": "Premium Outbound Seat Reservation",
+                "body": "<div class=\"col-xs-12 col-sm-12 ng-binding\"><ul class=\"infoText\"><li>Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li>Plus, you'll be sat on the top deck of our double decker services with the best views possible.</li><li>Reserve your Premium seat from just &#163;5.00 per person, per journey leg.</li><li>Limited availability - reserve now to guarantee your Premium seat!</li></ul><p><a href=\"https://www.nationalexpress.com/en/seat-reservation\" target=\"_blank\">Only available on selected routes</a></p><p><a href=\"https://www.nationalexpress.com/en/help/conditions-of-carriage\" target=\"_terms\">Terms and conditions</a></p></div>",
+                "productImageURL": "./dist/css/img/SeatProduct-Premium.png",
+                "summary": "<ul class=\"list-unstyled nx-subheader-copy\"><li class=\"nx-extra-bullet-icon\">Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li class=\"nx-extra-bullet-icon\">Plus, you'll be sat on the top deck of our double decker services with the best views possible.</li><li class=\"nx-extra-bullet-icon\">Reserve your Premium seat from just &#163;5.00 per person, per journey leg.</li><li class=\"nx-extra-bullet-icon\">Limited availability - reserve now to guarantee your Premium seat!</li></ul>",
+                "layoutContent": "<ul class=\"infoText mt-3\"><li class=\" nx-extra-bullet-icon\">Reserve your Premium seat from just &#163;5.00 per person, per journey leg.</li><li class=\"nx-extra-bullet-icon\">Sit back and relax with a large table, extra recline and up to 50% extra legroom.</li><li class=\"nx-extra-bullet-icon\">Limited availability - reserve now to guarantee your Premium seat!</li></ul>"
+            },
+            "unitPriceInPence": 400
+        }
+    ]
+}

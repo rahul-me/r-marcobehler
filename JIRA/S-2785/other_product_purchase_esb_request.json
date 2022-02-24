@@ -1,0 +1,111 @@
+{
+  "channelIdentifier": {
+    "salesChannelCode": "Call",
+    "agentCode": "D085",
+    "campaignCode": "default",
+    "agentUser": "RChauhan",
+    "partnerCode": "NX"
+  },
+  "otherProductPurchaseRequest": {
+    "ticketNumber": "U2002882",
+    "leadPassenger": {
+      "title": "Unkno",
+      "firstName": "Rahul",
+      "surname": "Chauhan",
+      "telephone": "4411111111",
+      "postOutConsent": null,
+      "emailConsent": "false",
+      "telephoneConsent": "false",
+      "address": {
+        "address1": "WS Dennison",
+        "address2": "Unit 5",
+        "address3": "Rathenraw Industrial Estate",
+        "town": "ANTRIM",
+        "county": null,
+        "postcode": "BT412SJ",
+        "country": null,
+        "addressTypeId": 0
+      }
+    },
+    "distributionDetails": {
+      "distributionType": "Local Post Out",
+      "email": "rahul.chauhan@nationalexpress.com",
+      "mTicketPhone": null,
+      "collectionLocation": null,
+      "postalAddress": {
+        "address1": "WS Dennison",
+        "address2": "Unit 5",
+        "address3": "Rathenraw Industrial Estate",
+        "town": "ANTRIM",
+        "county": null,
+        "postcode": "BT412SJ",
+        "country": null,
+        "addressTypeId": 0
+      }
+    },
+    "passengers": null,
+    "addons": [
+      {
+        "sku": "B02B002",
+        "itemValue": 0,
+        "itemQuantity": 1,
+        "serial": null,
+        "validFrom": null,
+        "validTo": null,
+        "overrideReasonCode": "A",
+        "oldFare": 250,
+        "NewFare": 0,
+        "overrideDescription": "NO R",
+        "firstName": null,
+        "surName": null,
+        "emailAddress": null
+      },
+      {
+        "sku": "H42H240",
+        "itemValue": 0,
+        "itemQuantity": 1,
+        "serial": null,
+        "validFrom": null,
+        "validTo": null,
+        "overrideReasonCode": "A",
+        "oldFare": 250,
+        "NewFare": 0,
+        "overrideDescription": "NO R",
+        "firstName": null,
+        "surName": null,
+        "emailAddress": null
+      },
+      {
+        "sku": "H27H200",
+        "itemValue": 0,
+        "itemQuantity": 1,
+        "serial": null,
+        "validFrom": "2021-08-05 00:00:00",
+        "validTo": null,
+        "overrideReasonCode": "A",
+        "oldFare": 1250,
+        "NewFare": 0,
+        "overrideDescription": "NO R",
+        "firstName": "Rahul",
+        "surName": "Chauhan",
+        "emailAddress": "rahul.chauhan@nationalexpress.com"
+      }
+    ],
+    "paymentDetails": {
+      "paymentValue": 0,
+      "paymentType": "Cash",
+      "cardPayment": null,
+      "billingAddress": {
+        "address1": "WS Dennison",
+        "address2": "Unit 5",
+        "address3": "Rathenraw Industrial Estate",
+        "town": "ANTRIM",
+        "county": null,
+        "postcode": "BT412SJ",
+        "country": null,
+        "addressTypeId": 0
+      }
+    },
+    "discounts": []
+  }
+}

@@ -1,0 +1,121 @@
+Gigya 
+
+Ashika: 82b430d958c0452cb8bc8b38cdb84231
+
+Jose: 21c85961419c405eb5be811c87b0c35f            jjoseph   Jose Joseph        jose.joseph@nationalexpress.com
+
+Nehal: 80cdb8a6c87d453e9ff547aeff8cb858           nmodhvad  Nehal Modhvadia    nehal.modhvadia@nationalexpress.com 
+
+-----------------
+Name = Dhun Jayswal
+Access Level = 1
+gigya id = 12566bcbb6274f44a5ffca70f83c5585
+-----------------
+
+USE [Titan]
+GO
+
+USE [Titan]
+GO
+
+DECLARE	@return_value int,
+		@agent_user_id int
+
+EXEC	@return_value = [dbo].[cp_Add_Agent_User_V2]
+		@agent_code = N'D085',
+		@team_id = 1,
+		@user_id = N'nmodhvad',
+		@pwd = N'Password',
+		@name = N'Nehal Modhvadia',
+		@access_level = 1,
+		@active = 1,
+		@agent_user_id = @agent_user_id OUTPUT
+
+SELECT	@agent_user_id as N'@agent_user_id'
+
+------------------------------------------
+dt4
+{
+  "_id": "622c8fa65a3031c33bfb873e12006e6e",
+  "_rev": "3-6d543c7abe184849850c1214cfa21aa9",
+  "data": {
+    "name": "Ashika Borad",
+    "email": "ashika.borad@nationalexpress.com",
+    "sites": [
+      {
+        "agentCode": "D085",
+        "titanUserId": "ASHIKA"
+      }
+    ],
+    "status": "active",
+    "sendResetPasswordLink": true,
+    "autoActive": true,
+    "gigyaId": "82b430d958c0452cb8bc8b38cdb84231",
+    "lastUpdated": "2021-08-04T08:57:14.428Z",
+    "permissions": [
+      {
+        "permissionId": "1a7d348f-1dde-4ca0-bf51-7f616c262df4",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "1d7fb607-e353-4e7f-afb5-40039f3fe7ea",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "25ea41f5-5fb9-48bf-9060-c4fd92119538",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "2f5390d7-a067-4b03-9bf6-8736cff1e5fa",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "59020e26-9e44-47dd-8414-2108ad0fc93d",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "668b1a1f-5ccb-442a-a4bd-11c7304fabaa",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "6e02dea4-85e4-4950-9ec8-8c4f1fc5df7c",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "8249376a-0f8f-4233-acef-a23cbece6299",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "95d58507-f32d-44be-8ca8-8e0c7b2ba76e",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "a32ea3f5-4a2a-455d-817f-d0939069529e",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "b544536a-420b-49d5-a6dc-421c4ea26459",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "b7029716-57ba-4b70-97fc-808a31b0bc25",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "bdad2394-1317-4a5c-ade5-d9d246537a7e",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "df749246-269d-4100-8ee0-0cb8920f8238",
+        "permissionType": "role"
+      },
+      {
+        "permissionId": "fe452746-d7a0-4526-957f-f533dfe1ca47",
+        "permissionType": "role"
+      }
+    ],
+    "role": "a9e59516-e30c-412f-8507-2c748af966bd",
+    "team": "Project"
+  },
+  "type": "User"
+}

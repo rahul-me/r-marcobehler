@@ -1,0 +1,126 @@
+{
+   "paymentCompleteURL":"https://dt2.nationalexpress.com/dev/sales/#/ticket/manage/U2002841",
+   "paymentDeclinedURL":"https://dt2.nationalexpress.com/dev/sales/#/payment-error",
+   "travelTransaction":"AMEND",
+   "ticketNumber":"U2002841",
+   "journeyType":"S",
+   "cardHolderName":"rahul chauhan",
+   "fare":{
+      "sku":"H01H001",
+      "fareRequestId":"603b767e-d71c-452e-8959-81ff6806a8d1",
+      "fareValue":"0",
+      "fareType":"CFL",
+      "outboundSideFare":0,
+      "inboundSideFare":0,
+      "override":{
+         "reasonCode":"A",
+         "oldFare":4600,
+         "description":"TEST",
+         "newFare":0
+      }
+   },
+   "outbound":{
+      "isJourneyAmended":true,
+      "legs":[
+         {
+            "legDirection":"O",
+            "fromLocation":"57366",
+            "toLocation":"33023",
+            "fromStop":"A",
+            "toStop":"A",
+            "brand":"NX",
+            "direction":"OUTBOUND",
+            "service":"400",
+            "flightStartDate":"2021-08-28 19:00:00",
+            "departureTime":"2021-08-28 19:00:00",
+            "checkinTime":"2021-08-28 19:00:00",
+            "arrivalTime":"2021-08-28 21:55:00",
+            "flightCode":"DF",
+            "fareType":"CFL"
+         },
+         {
+            "legDirection":"O",
+            "fromLocation":"33023",
+            "toLocation":"21131",
+            "fromStop":"A",
+            "toStop":"A",
+            "brand":"NX",
+            "direction":"INBOUND",
+            "service":"181",
+            "flightStartDate":"2021-08-28 23:00:00",
+            "departureTime":"2021-08-28 23:00:00",
+            "checkinTime":"2021-08-28 23:00:00",
+            "arrivalTime":"2021-08-29 01:15:00",
+            "flightCode":"BC",
+            "fareType":"CFL"
+         }
+      ],
+      "seats":[
+         
+      ]
+   },
+   "inbound":{
+      "isJourneyAmended":false,
+      "legs":[
+         
+      ],
+      "seats":[
+         
+      ]
+   },
+   "passenger":{
+      "title":"Unkno",
+      "firstName":"rahul",
+      "lastName":"chauhan",
+      "leadAddress":{
+         "county":"",
+         "addressLine1":"WS Dennison",
+         "addressLine2":"Unit 5",
+         "addressLine3":"Rathenraw Industrial Estate",
+         "city":"ANTRIM",
+         "town":"ANTRIM",
+         "postCode":"BT412SJ",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      },
+      "billingAddress":{
+         "county":"",
+         "addressLine1":"WS Dennison",
+         "addressLine2":"Unit 5",
+         "addressLine3":"Rathenraw Industrial Estate",
+         "city":"ANTRIM",
+         "town":"ANTRIM",
+         "postCode":"BT412SJ",
+         "country":"United Kingdom",
+         "countryCode":"GB"
+      }
+   },
+   "distribution":{
+      "distributionType":"E",
+      "distributionSKU":"H42H242",
+      "postalAddress":null,
+      "email":{
+         "emailAddress":"rahul.chauhan@nationalexpress.com",
+         "marketingConsent":false
+      },
+      "phone":{
+         "mobileNumber":"441111111111",
+         "marketingConsent":false,
+         "country":"GB"
+      }
+   },
+   "travellingPax":[
+      {
+         "type":"AD",
+         "count":1
+      }
+   ],
+   "extras":[
+      {
+         "sku":"B06B004",
+         "itemQuantity":1,
+         "itemValue":0
+      }
+   ],
+   "coachcards":null
+}
