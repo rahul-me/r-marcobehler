@@ -1,0 +1,3404 @@
+{
+	"info": {
+		"_postman_id": "5a54ef9d-5d69-4009-912c-ce2fe4818945",
+		"name": "ChannelAPI_SOAP_V3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CHv3_SingleEndPoints",
+			"item": [
+				{
+					"name": "E2E Basic Flow",
+					"item": [
+						{
+							"name": "E2E_CHv3_getPartnerLocations",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPartnerLocations xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <LocationType xmlns=\"\">from</LocationType>\n        </getPartnerLocations>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3",
+										"nxpub_ChannelApi3_Port"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getPricedJourneys",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPricedJourneys xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyRequest xmlns=\"\">\n                <FromLocationCode>76052</FromLocationCode>\n                <ToLocationCode>57366</ToLocationCode>\n                <DateTime>2021-04-23T18:00:00</DateTime>\n                <DepartArrivalIndicator>DepartAfter</DepartArrivalIndicator>\n                <Direction>outbound</Direction>\n                <JourneyType>single</JourneyType>\n                <!-- <PromotionCode>[string?]</PromotionCode> -->\n                <PassengerSummary>\n                    <DomesticAdults>1</DomesticAdults>\n                    <DomesticSeniors>0</DomesticSeniors>\n                    <DomesticDisabled>0</DomesticDisabled>\n                    <DomesticChildren>0</DomesticChildren>\n                    <DomesticInfants>0</DomesticInfants>\n                    <EuropeanAdults>0</EuropeanAdults>\n                    <EuropeanSeniors>0</EuropeanSeniors>\n                    <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                    <EuropeanChildren>0</EuropeanChildren>\n                </PassengerSummary>\n                <!-- Optional\n                <CoachCards>\n                    <Disabled>[integer?]</Disabled>\n                    <SeniorCitizens>[integer?]</SeniorCitizens>\n                    <YoungPersons>[integer?]</YoungPersons>\n                    <Family1plus1>[integer?]</Family1plus1>\n                    <Family2plus2>[integer?]</Family2plus2>\n                    <BritExplorer>[integer?]</BritExplorer>\n                </CoachCards>  -->\n                <!-- <journeyId>[string?]</journeyId> -->\n                <!--<MinJourneys>1</MinJourneys>-->\n                <!-- <MaxJourneys>[positiveInteger?]</MaxJourneys> -->\n                <FastestJourney>true</FastestJourney>\n                <IncludeUnavailableJourneys>true</IncludeUnavailableJourneys>\n                <!-- <FixedJourneyDate>[boolean?]</FixedJourneyDate> -->\n            </JourneyRequest>\n            <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF85AF</SessionIdentifier>\n        </getPricedJourneys>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_4CHv3_getPricedJourneys Copy",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "BATZ0223PETYYFWS373G",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "mobile121User",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPricedJourneys xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyRequest xmlns=\"\">\n                <FromLocationCode>57366</FromLocationCode>\n                <ToLocationCode>33023</ToLocationCode>\n                <DateTime>2020-12-18T00:45:00</DateTime>\n                <DepartArrivalIndicator>DepartAfter</DepartArrivalIndicator>\n                <Direction>outbound</Direction>\n                <JourneyType>single</JourneyType>\n                <!-- <PromotionCode>[string?]</PromotionCode> -->\n                <PassengerSummary>\n                    <DomesticAdults>1</DomesticAdults>\n                    <DomesticSeniors>0</DomesticSeniors>\n                    <DomesticDisabled>0</DomesticDisabled>\n                    <DomesticChildren>0</DomesticChildren>\n                    <DomesticInfants>0</DomesticInfants>\n                    <EuropeanAdults>0</EuropeanAdults>\n                    <EuropeanSeniors>0</EuropeanSeniors>\n                    <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                    <EuropeanChildren>0</EuropeanChildren>\n                </PassengerSummary>\n                <!-- Optional\n                <CoachCards>\n                    <Disabled>[integer?]</Disabled>\n                    <SeniorCitizens>[integer?]</SeniorCitizens>\n                    <YoungPersons>[integer?]</YoungPersons>\n                    <Family1plus1>[integer?]</Family1plus1>\n                    <Family2plus2>[integer?]</Family2plus2>\n                    <BritExplorer>[integer?]</BritExplorer>\n                </CoachCards>  -->\n                <!-- <journeyId>[string?]</journeyId> -->\n                <MinJourneys>4</MinJourneys>\n                <!-- <MaxJourneys>[positiveInteger?]</MaxJourneys> -->\n                <FastestJourney>true</FastestJourney>\n                <IncludeUnavailableJourneys>true</IncludeUnavailableJourneys>\n                <!-- <FixedJourneyDate>[boolean?]</FixedJourneyDate> -->\n            </JourneyRequest>\n            <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF85AF</SessionIdentifier>\n        </getPricedJourneys>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getFareDetails",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "text/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getFareDetails xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyType xmlns=\"\">single</JourneyType>\n            <OutboundJourneyId xmlns=\"\">NTczNjZ8MzMwMjN8MjAyMDA5MTFUMDkwMDAwfENSU3w2LjkwfDB8Ni45MHxaRk5YNTUw</OutboundJourneyId>\n            <!--<InboundJourneyId xmlns=\"\"></InboundJourneyId>-->\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>1</DomesticAdults>\n                <DomesticSeniors>0</DomesticSeniors>\n                <DomesticDisabled>0</DomesticDisabled>\n                <DomesticChildren>0</DomesticChildren>\n                <DomesticInfants>0</DomesticInfants>\n                <EuropeanAdults>0</EuropeanAdults>\n                <EuropeanSeniors>0</EuropeanSeniors>\n                <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                <EuropeanChildren>0</EuropeanChildren>\n            </PassengerSummary>\n            <!-- Optional -->\n            <!--<CoachCards xmlns=\"\">\n                <Disabled>[integer?]</Disabled>\n                <SeniorCitizens>[integer?]</SeniorCitizens>\n                <YoungPersons>[integer?]</YoungPersons>\n                <Family1plus1>[integer?]</Family1plus1>\n                <Family2plus2>[integer?]</Family2plus2>\n                <BritExplorer>[integer?]</BritExplorer>\n            </CoachCards>-->\n            <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF85AF</SessionIdentifier>\n            <LanguageCode xmlns=\"\">en</LanguageCode>\n            <IsEurolines xmlns=\"\">false</IsEurolines>\n        </getFareDetails>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getFares",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getFares xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyType xmlns=\"\">single</JourneyType>\n            <OutboundJourneyId xmlns=\"\">NTczNjZ8MzMwMjN8MjAyMDA5MTFUMDkwMDAwfENSU3w2LjkwfDB8Ni45MHxaRk5YNTUw</OutboundJourneyId>\n            <!--<InboundJourneyId xmlns=\"\"></InboundJourneyId>-->\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>1</DomesticAdults>\n                    <DomesticSeniors>0</DomesticSeniors>\n                    <DomesticDisabled>0</DomesticDisabled>\n                    <DomesticChildren>0</DomesticChildren>\n                    <DomesticInfants>0</DomesticInfants>\n                    <EuropeanAdults>0</EuropeanAdults>\n                    <EuropeanSeniors>0</EuropeanSeniors>\n                    <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                    <EuropeanChildren>0</EuropeanChildren>\n            </PassengerSummary>\n            <!-- Optional -->\n            <CoachCards>\n                    <Disabled>0</Disabled>\n                    <SeniorCitizens>0</SeniorCitizens>\n                    <YoungPersons>0</YoungPersons>\n                    <Family1plus1>0</Family1plus1>\n                    <Family2plus2>0</Family2plus2>\n                    <BritExplorer>0</BritExplorer>\n                </CoachCards>\n            <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF85AF</SessionIdentifier>\n        </getFares>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getAdditionalProductsWithCMSData",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{username}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "text/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAdditionalProductsWithCMSData xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>1</DomesticAdults>\n                <DomesticSeniors>0</DomesticSeniors>\n                <DomesticDisabled>0</DomesticDisabled>\n                <DomesticChildren>0</DomesticChildren>\n                <DomesticInfants>0</DomesticInfants>\n                <EuropeanAdults>0</EuropeanAdults>\n                <EuropeanSeniors>0</EuropeanSeniors>\n                <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                <EuropeanChildren>0</EuropeanChildren>\n            </PassengerSummary>\n            <!--<CoachCardSummary xmlns=\"\">\n                <Disabled>[integer?]</Disabled>\n                <SeniorCitizens>[integer?]</SeniorCitizens>\n                <YoungPersons>[integer?]</YoungPersons>\n                <Family1plus1>[integer?]</Family1plus1>\n                <Family2plus2>[integer?]</Family2plus2>\n                <BritExplorer>[integer?]</BritExplorer>\n            </CoachCardSummary>-->\n            <OutboundJourneyId xmlns=\"\">NTczNjZ8MzQwMTN8MjAxOTA3MzBUMDYwMDAwfENSU3w2LjEwfDB8Ni4xMHxSQk5YNDIw</OutboundJourneyId>\n            <!--<InboundJourneyId xmlns=\"\"></InboundJourneyId>-->\n            <JourneyType xmlns=\"\">single</JourneyType>\n            <DiscountCode xmlns=\"\"></DiscountCode>\n            <FareType xmlns=\"\">CRS</FareType>\n            <TransactionType xmlns=\"\"></TransactionType>\n            <LanguageCode xmlns=\"\">en</LanguageCode>\n        </getAdditionalProductsWithCMSData>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3",
+										"nxpub_ChannelApi3_Port"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getAdditionalProducts",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAdditionalProducts xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>1</DomesticAdults>\n                <DomesticSeniors>0</DomesticSeniors>\n                <DomesticDisabled>0</DomesticDisabled>\n                <DomesticChildren>0</DomesticChildren>\n                <DomesticInfants>0</DomesticInfants>\n                <EuropeanAdults>0</EuropeanAdults>\n                <EuropeanSeniors>0</EuropeanSeniors>\n                <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                <EuropeanChildren>0</EuropeanChildren>\n            </PassengerSummary>\n            <!-- Optional -->\n            <!--<CoachCardSummary xmlns=\"\">\n                <Disabled>[integer?]</Disabled>\n                <SeniorCitizens>[integer?]</SeniorCitizens>\n                <YoungPersons>[integer?]</YoungPersons>\n                <Family1plus1>[integer?]</Family1plus1>\n                <Family2plus2>[integer?]</Family2plus2>\n                <BritExplorer>[integer?]</BritExplorer>\n            </CoachCardSummary>-->\n            <OutboundJourneyId xmlns=\"\">MzMzNDN8MzMwMjN8MjAyMDAzMDRUMDExMDAwfENTVHw0LjEwfDB8NC4xMHxBT0pMNzA3</OutboundJourneyId>\n            <!--<InboundJourneyId xmlns=\"\"></InboundJourneyId>-->\n            <JourneyType xmlns=\"\">single</JourneyType>\n            <DiscountCode xmlns=\"\"></DiscountCode>\n            <FareType xmlns=\"\">CFL</FareType>\n            <TransactionType xmlns=\"\"></TransactionType>\n        </getAdditionalProducts>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3",
+										"nxpub_ChannelApi3_Port"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getDistributionFee",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getDistributionFee xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <FromLocationCode xmlns=\"\">57366</FromLocationCode>\n            <ToLocationCode xmlns=\"\">34013</ToLocationCode>\n            <DepartureDateTime xmlns=\"\">2019-07-30T06:00:00</DepartureDateTime>\n            <BrandId xmlns=\"\"></BrandId>\n            <AdditionalProductSku xmlns=\"\">H05H023</AdditionalProductSku>\n        </getDistributionFee>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3",
+										"nxpub_ChannelApi3_Port"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getBookingFee",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getBookingFee xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TransactionType xmlns=\"\">RESERVATION</TransactionType>\n            <isEurolines xmlns=\"\">false</isEurolines>\n            <numberOfPassengers xmlns=\"\">1</numberOfPassengers>\n            <!-- <FareCode xmlns=\"\">[string?]</FareCode> -->\n        </getBookingFee>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getNewTicketNumber",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getNewTicketNumber xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF85AF</SessionIdentifier>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>1</DomesticAdults>\n                    <DomesticSeniors>0</DomesticSeniors>\n                    <DomesticDisabled>0</DomesticDisabled>\n                    <DomesticChildren>0</DomesticChildren>\n                    <DomesticInfants>0</DomesticInfants>\n                    <EuropeanAdults>0</EuropeanAdults>\n                    <EuropeanSeniors>0</EuropeanSeniors>\n                    <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                    <EuropeanChildren>0</EuropeanChildren>\n            </PassengerSummary>\n            <!-- Optional -->\n            <!--<CoachCard xmlns=\"\">\n                <Type>[string?]</Type>\n                <SerialNumber>[string]</SerialNumber>\n                <ExpiryDate>[date?]</ExpiryDate>\n            </CoachCard>-->\n            <!-- Optional -->\n            <SelectedFare xmlns=\"\">\n                <FareCode>CST</FareCode>\n                <GrossPrice>7.30</GrossPrice>\n                <Discount></Discount>\n                <NetPrice>7.30</NetPrice>\n            </SelectedFare>\n            <OutboundJourneyId xmlns=\"\">NTczNjZ8MzMwMjN8MjAyMDA4MjBUMTMwMDAwfENSU3w0LjcwfDB8NC43MHxBQ05YNDA5</OutboundJourneyId>\n            <!--<InboundJourneyId xmlns=\"\"></InboundJourneyId>-->\n            <TicketDistributionSummary xmlns=\"\">\n                <DistributionType></DistributionType>\n                <RemoteCollectAgentCode></RemoteCollectAgentCode>\n                <MTicketPhoneNumber></MTicketPhoneNumber>\n                <HasBeenCollected></HasBeenCollected>\n                <!-- Optional -->\n                <PostoutDeliveryName>\n                    <Title>Mr</Title>\n                    <FirstName>Lead</FirstName>\n                    <LastName>Passenger</LastName>\n                </PostoutDeliveryName>\n                <!-- Optional -->\n                <PostoutDeliveryAddress>\n                        <Line1>1/2</Line1>\n                        <Line2>345 Calder Street</Line2>\n                        <!--<Line3></Line3>-->\n                        <Town>GLASGOW</Town>\n                        <!--<County></County>-->\n                        <Country>UK</Country>\n                        <Postcode>G42 7NT</Postcode>\n                \t\t<MarketingAllowed>false</MarketingAllowed>\n                </PostoutDeliveryAddress>\n            </TicketDistributionSummary>\n        </getNewTicketNumber>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_purchaseTravel",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\r\n   <Body>\r\n      <purchaseTravel xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\r\n         <ChannelIdentifier xmlns=\"\">\r\n            <SalesChannelCode>web</SalesChannelCode>\r\n            <AgentCode>NXDSK</AgentCode>\r\n            <AgentUser>webDTU</AgentUser>\r\n            <PartnerCode>NX</PartnerCode>\r\n            <CampaignCode>DEFAULT</CampaignCode>\r\n         </ChannelIdentifier>\r\n         <TicketNumber xmlns=\"\">P7D14557</TicketNumber>\r\n         <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF85AF</SessionIdentifier>\r\n         <LeadPassenger xmlns=\"\">\r\n            <!-- Optional -->\r\n            <PassengerName>\r\n               <Title>Mr</Title>\r\n               <FirstName>Lead</FirstName>\r\n               <LastName>Passenger</LastName>\r\n            </PassengerName>\r\n            <Address>\r\n               <Line1>1/2</Line1>\r\n               <Line2>345 Calder Street</Line2>\r\n               <!--<Line3></Line3>-->\r\n               <Town>GLASGOW</Town>\r\n               <!--<County></County>-->\r\n               <Country>UK</Country>\r\n               <Postcode>G42 7NT</Postcode>\r\n            </Address>\r\n            <Email>rahul.chauhan@nationalexpress.com</Email>\r\n            <Phone>1234567890</Phone>\r\n            <Gender>F</Gender>\r\n            <DateOfBirth>12-02-1991</DateOfBirth>\r\n            <!-- Optional -->\r\n            <ContactMethods>\r\n               <ViaEmail>true</ViaEmail>\r\n               <ViaSMS>true</ViaSMS>\r\n               <NxWhiteCoach>false</NxWhiteCoach>\r\n               <ThirdPartyTravel>false</ThirdPartyTravel>\r\n               <ThirdPartyLeisure>false</ThirdPartyLeisure>\r\n               <ThirdPartyShopping>false</ThirdPartyShopping>\r\n               <ThirdPartyGambling>false</ThirdPartyGambling>\r\n               <ThirdPartyOffers>fasle</ThirdPartyOffers>\r\n               <ThirdPartyEvents>false</ThirdPartyEvents>\r\n               <ThirdPartyFinance>false</ThirdPartyFinance>\r\n               <NxAccountID>true</NxAccountID>\r\n            </ContactMethods>\r\n         </LeadPassenger>\r\n         <!-- Optional -->\r\n         <Passengers xmlns=\"\">\r\n            <!-- Optional -->\r\n            <PassengerName>\r\n               <Title>Mr</Title>\r\n               <FirstName>Lead</FirstName>\r\n               <LastName>Passenger</LastName>\r\n            </PassengerName>\r\n            <Gender>F</Gender>\r\n            <DateOfBirth>12-02-1996</DateOfBirth>\r\n            <PassengerType>AD</PassengerType>\r\n            <LeadPassenger>true</LeadPassenger>\r\n         </Passengers>\r\n         <!-- Optional -->\r\n         <!--<CoachCard xmlns=\"\"><Type>[string?]</Type><SerialNumber>[string]</SerialNumber><ExpiryDate>[date?]</ExpiryDate></CoachCard>-->\r\n         <BookingFee xmlns=\"\">\r\n            <SKU>B04B004</SKU>\r\n            <Fee>100</Fee>\r\n         </BookingFee>\r\n         <DistributionFee xmlns=\"\">\r\n            <SKU>0</SKU>\r\n            <Fee>0</Fee>\r\n         </DistributionFee>\r\n         <AdditionalProduct xmlns=\"\">\r\n            <!--<SKU>H01H004</SKU>-->\r\n            <!--<UnitPrice>1500</UnitPrice>-->\r\n            <!--<Quantity>1</Quantity>-->\r\n            <!--<TotalPrice>1500</TotalPrice>-->\r\n         </AdditionalProduct>\r\n         <TicketDistributionSummary xmlns=\"\">\r\n            <DistributionProductClass>ETICKET</DistributionProductClass>\r\n            <RemoteCollectAgentCode>[string?]</RemoteCollectAgentCode>\r\n            <MTicketPhoneNumber>[string?]</MTicketPhoneNumber>\r\n            <!-- Optional -->\r\n            <PostoutDeliveryName>\r\n               <Title>Mr</Title>\r\n               <FirstName>Lead</FirstName>\r\n               <LastName>Passenger</LastName>\r\n            </PostoutDeliveryName>\r\n            <!-- Optional -->\r\n            <PostoutDeliveryAddress>\r\n               <Line1>1/2</Line1>\r\n               <Line2>345 Calder Street</Line2>\r\n               <!--<Line3></Line3>-->\r\n               <Town>GLASGOW</Town>\r\n               <!--<County></County>-->\r\n               <Country>UK</Country>\r\n               <Postcode>G42 7NT</Postcode>\r\n            </PostoutDeliveryAddress>\r\n         </TicketDistributionSummary>\r\n         <Payment xmlns=\"\">\r\n            <Amount>7.30</Amount>\r\n            <PaymentType>card</PaymentType>\r\n            <!-- Optional -->\r\n            <Barclays>\r\n               <PaymentProviderTransactionId>96952898096080097</PaymentProviderTransactionId>\r\n               <PaymentMethod>visa</PaymentMethod>\r\n            </Barclays>\r\n            <!-- Optional -->\r\n            <!--<PayPal>-->\r\n            <!--    <token>[string]</token>-->\r\n            <!--    <payerID>[string]</payerID>-->\r\n            <!--    <accountName>[string]</accountName>-->\r\n            <!--</PayPal>-->\r\n            <!-- Optional -->\r\n            <!--<Amazon>-->\r\n            <!--    <amazonOrderReferenceId>[string]</amazonOrderReferenceId>-->\r\n            <!--    <accountEmail>[string]</accountEmail>-->\r\n            <!--    <currencyCode>[string]</currencyCode>-->\r\n            <!--    <sellerAuthorisationNote>[string]</sellerAuthorisationNote>-->\r\n            <!--    <sellerNote>[string]</sellerNote>-->\r\n            <!--    <sellerOrderId>[string]</sellerOrderId>-->\r\n            <!--    <storeName>[string]</storeName>-->\r\n            <!--    <isOrderDetailsPreviouslyConfirmed>[boolean?]</isOrderDetailsPreviouslyConfirmed>-->\r\n            <!--</Amazon>-->\r\n         </Payment>\r\n         <FareRequestID xmlns=\"\">a1edefc9-05d9-4270-b9a9-43a7f6d096f2</FareRequestID>\r\n         <FareCode xmlns=\"\">CST</FareCode>\r\n         <!--<OutboundSeats xmlns=\"\">[string?]</OutboundSeats>-->\r\n         <!--<InboundSeats xmlns=\"\">[string?]</InboundSeats>-->\r\n         <!--<Discounts xmlns=\"\">-->\r\n         <!--    <CampaignCode>[string?]</CampaignCode>-->\r\n         <!--    <DiscountCode>[string?]</DiscountCode>-->\r\n         <!--    <Value>[integer?]</Value>-->\r\n         <!--</Discounts>-->\r\n         <!--<SalesChannelFare xmlns=\"\">[int?]</SalesChannelFare>-->\r\n         <!--<AccessibilityRequirement xmlns=\"\">No</AccessibilityRequirement>-->\r\n         <!--<ODSReference xmlns=\"\">[string?]</ODSReference>-->\r\n      </purchaseTravel>\r\n   </Body>\r\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getTravelTicket",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{username}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getTravelTicket xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">E5JD4173</TicketNumber>\n        </getTravelTicket>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3",
+										"nxpub_ChannelApi3_Port"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_getAmendmentExcess",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAmendmentExcess xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">E5JD4569</TicketNumber>\n            <OutboundJourneyId xmlns=\"\">MzMzNDN8NTc4NDZ8MjAxOTEwMTNUMDk0MDAwfENTVHwyMy4zMHwwfDIzLjMwfElMRks3Nzd8SEVOWDQ1NQ==</OutboundJourneyId>\n            <OutboundAmended xmlns=\"\">true</OutboundAmended>\n            <InboundJourneyId xmlns=\"\"></InboundJourneyId>\n            <InboundAmended xmlns=\"\">false</InboundAmended>\n        </getAmendmentExcess>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3",
+										"nxpub_ChannelApi3_Port"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_amendTravel",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "text/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\r\n            <Body>\r\n                <amendTravel xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\r\n                    <ChannelIdentifier xmlns=\"\">\r\n                        <SalesChannelCode>Web</SalesChannelCode>\r\n                        <AgentCode>NXDSK</AgentCode>\r\n                        <AgentUser>webDTU</AgentUser>\r\n                        <PartnerCode>NX</PartnerCode>\r\n                        <CampaignCode>DEFAULT</CampaignCode>+\r\n                    </ChannelIdentifier>\r\n                    <TicketNumber xmlns=\"\">E5JD7983</TicketNumber>\r\n                    <FareRequestID xmlns=\"\">385ec92c-362b-437c-9294-cb6c20f9a76e</FareRequestID>\r\n                    <!-- Optional -->\r\n                    <!--<BookingFee xmlns=\"\">-->\r\n                    <!--    <SKU>[string]</SKU>-->\r\n                    <!--    <ProductDescription>[string]</ProductDescription>-->\r\n                    <!--    <ProductRole>[string]</ProductRole>-->\r\n                    <!--    <ProductClass>[string]</ProductClass>-->\r\n                    <!--    <Fee>[decimal]</Fee>-->\r\n                    <!--    <ProductCategoryCode>[string?]</ProductCategoryCode>-->\r\n                    <!--    <Duration>[int]</Duration>-->\r\n                    <!--    <DurationUnits>[string]</DurationUnits>-->\r\n                    <!--</BookingFee>-->\r\n                    <!-- Optional -->\r\n                    <Payment xmlns=\"\">\r\n                        <PaymentProviderTransactionId>656512823392001</PaymentProviderTransactionId>\r\n                        <PaymentMethod>visa</PaymentMethod>\r\n                        <!--<PaymentProvider>[string?]</PaymentProvider>-->\r\n                        <Amount>0</Amount>\r\n                        <!--<Last4Digits>[string?]</Last4Digits>-->\r\n                        <!--<MerchantID>[string?]</MerchantID>-->\r\n                        <!--<TerminalID>[string?]</TerminalID>-->\r\n                        <!--<AuhorisationCode>[string?]</AuhorisationCode>-->\r\n                        <!--<CardType>[string?]</CardType>-->\r\n                    </Payment>\r\n                    <leadPassengeremail xmlns=\"\">rahul.chauhan@nationalexpress.com</leadPassengeremail>\r\n                    <!--<OutboundSeats xmlns=\"\">[string?]</OutboundSeats>-->\r\n                    <!--<InboundSeats xmlns=\"\">[string?]</InboundSeats>-->\r\n                    <!-- Optional -->\r\n                    <!--<AdditionalProduct xmlns=\"\">-->\r\n                    <!--    <SKU>[string]</SKU>-->\r\n                    <!--    <UnitPrice>[integer]</UnitPrice>-->\r\n                    <!--    <Quantity>[integer]</Quantity>-->\r\n                    <!--    <TotalPrice>[integer]</TotalPrice>-->\r\n                    <!--</AdditionalProduct>-->\r\n                </amendTravel>\r\n            </Body>\r\n        </Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3",
+										"nxpub_ChannelApi3_Port"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "E2E_CHv3_cancelTicket",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{username}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <cancelTicket xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">E5JD3678</TicketNumber>\n        </cancelTicket>\n    </Body>\n</Envelope>"
+								},
+								"url": {
+									"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+									"host": [
+										"{{APIurl}}"
+									],
+									"path": [
+										"ws",
+										"nxpub:ChannelApi3",
+										"nxpub_ChannelApi3_Port"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "79473cbb-13e2-4e73-9b68-4d5ca0e301a1",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "15f1e5eb-3645-4aec-b951-bb1af443fdd1",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "CHv3_addMailToQueue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <addMailToQueue xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <emailTo xmlns=\"\">[string?]</emailTo>\n            <emailType xmlns=\"\">[string]</emailType>\n            <ticketNumber xmlns=\"\">[string]</ticketNumber>\n        </addMailToQueue>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_addressLookup",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <addressLookup xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <postcode xmlns=\"\">123</postcode>\n        </addressLookup>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_addReturnJourney",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <addReturnJourney xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n            <ReturnJourneyId xmlns=\"\">[string]</ReturnJourneyId>\n            <Email xmlns=\"\">[string]</Email>\n            <InboundSeats xmlns=\"\">[string?]</InboundSeats>\n            <!-- Optional -->\n            <AdditionalProduct xmlns=\"\">\n                <SKU>[string]</SKU>\n                <UnitPrice>[integer]</UnitPrice>\n                <Quantity>[integer]</Quantity>\n                <TotalPrice>[integer]</TotalPrice>\n            </AdditionalProduct>\n            <!-- Optional -->\n            <Payment xmlns=\"\">\n                <PaymentProviderTransactionId>[string?]</PaymentProviderTransactionId>\n                <PaymentMethod>[string]</PaymentMethod>\n                <PaymentProvider>[string?]</PaymentProvider>\n                <Amount>[int]</Amount>\n                <Last4Digits>[string?]</Last4Digits>\n                <MerchantID>[string?]</MerchantID>\n                <TerminalID>[string?]</TerminalID>\n                <AuhorisationCode>[string?]</AuhorisationCode>\n                <CardType>[string?]</CardType>\n            </Payment>\n        </addReturnJourney>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_amendSeats",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <amendSeats xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n            <!-- Optional -->\n            <Payment xmlns=\"\">\n                <PaymentProviderTransactionId>[string?]</PaymentProviderTransactionId>\n                <PaymentMethod>[string]</PaymentMethod>\n                <PaymentProvider>[string?]</PaymentProvider>\n                <Amount>[int]</Amount>\n                <Last4Digits>[string?]</Last4Digits>\n                <MerchantID>[string?]</MerchantID>\n                <TerminalID>[string?]</TerminalID>\n                <AuhorisationCode>[string?]</AuhorisationCode>\n                <CardType>[string?]</CardType>\n            </Payment>\n            <OutboundJourneyId xmlns=\"\">[string]</OutboundJourneyId>\n            <InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>\n            <leadPassengeremail xmlns=\"\">[string]</leadPassengeremail>\n            <InboundSeats xmlns=\"\">[string?]</InboundSeats>\n            <OutboundSeats xmlns=\"\">[string?]</OutboundSeats>\n            <!-- Optional -->\n            <AdditionalProduct xmlns=\"\">\n                <SKU>[string]</SKU>\n                <UnitPrice>[integer]</UnitPrice>\n                <Quantity>[integer]</Quantity>\n                <TotalPrice>[integer]</TotalPrice>\n            </AdditionalProduct>\n        </amendSeats>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_amendTravel",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <amendTravel xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n            <FareRequestID xmlns=\"\">[string]</FareRequestID>\n            <!-- Optional -->\n            <BookingFee xmlns=\"\">\n                <SKU>[string]</SKU>\n                <ProductDescription>[string]</ProductDescription>\n                <ProductRole>[string]</ProductRole>\n                <ProductClass>[string]</ProductClass>\n                <Fee>[decimal]</Fee>\n                <ProductCategoryCode>[string?]</ProductCategoryCode>\n                <Duration>[int]</Duration>\n                <DurationUnits>[string]</DurationUnits>\n            </BookingFee>\n            <!-- Optional -->\n            <Payment xmlns=\"\">\n                <PaymentProviderTransactionId>[string?]</PaymentProviderTransactionId>\n                <PaymentMethod>[string]</PaymentMethod>\n                <PaymentProvider>[string?]</PaymentProvider>\n                <Amount>[int]</Amount>\n                <Last4Digits>[string?]</Last4Digits>\n                <MerchantID>[string?]</MerchantID>\n                <TerminalID>[string?]</TerminalID>\n                <AuhorisationCode>[string?]</AuhorisationCode>\n                <CardType>[string?]</CardType>\n            </Payment>\n            <leadPassengeremail xmlns=\"\">[string]</leadPassengeremail>\n            <OutboundSeats xmlns=\"\">[string?]</OutboundSeats>\n            <InboundSeats xmlns=\"\">[string?]</InboundSeats>\n            <!-- Optional -->\n            <AdditionalProduct xmlns=\"\">\n                <SKU>[string]</SKU>\n                <UnitPrice>[integer]</UnitPrice>\n                <Quantity>[integer]</Quantity>\n                <TotalPrice>[integer]</TotalPrice>\n            </AdditionalProduct>\n        </amendTravel>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_areSeatsAvailable",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <areSeatsAvailable xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyId xmlns=\"\">[string]</JourneyId>\n            <Direction xmlns=\"\">[string]</Direction>\n            <SeatNumbers xmlns=\"\">[string]</SeatNumbers>\n        </areSeatsAvailable>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_cancelTicket",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <cancelTicket xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">E3A94081</TicketNumber>\n        </cancelTicket>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_doProvisionalBooking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <doProvisionalBooking xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <OutboundJourneyId xmlns=\"\">[string]</OutboundJourneyId>\n            <InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>\n            <FareRequestID xmlns=\"\">[string]</FareRequestID>\n            <FareCode xmlns=\"\">[string]</FareCode>\n        </doProvisionalBooking>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getAdditionalProducts",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAdditionalProducts xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>[integer?]</DomesticAdults>\n                <DomesticSeniors>[integer?]</DomesticSeniors>\n                <DomesticDisabled>[integer?]</DomesticDisabled>\n                <DomesticChildren>[integer?]</DomesticChildren>\n                <DomesticInfants>[integer?]</DomesticInfants>\n                <EuropeanAdults>[integer?]</EuropeanAdults>\n                <EuropeanSeniors>[integer?]</EuropeanSeniors>\n                <EuropeanYoungPersons>[integer?]</EuropeanYoungPersons>\n                <EuropeanChildren>[integer?]</EuropeanChildren>\n            </PassengerSummary>\n            <!-- Optional -->\n            <CoachCardSummary xmlns=\"\">\n                <Disabled>[integer?]</Disabled>\n                <SeniorCitizens>[integer?]</SeniorCitizens>\n                <YoungPersons>[integer?]</YoungPersons>\n                <Family1plus1>[integer?]</Family1plus1>\n                <Family2plus2>[integer?]</Family2plus2>\n                <BritExplorer>[integer?]</BritExplorer>\n            </CoachCardSummary>\n            <OutboundJourneyId xmlns=\"\">[string]</OutboundJourneyId>\n            <InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>\n            <JourneyType xmlns=\"\">[string]</JourneyType>\n            <DiscountCode xmlns=\"\">[string?]</DiscountCode>\n            <FareType xmlns=\"\">[string]</FareType>\n            <TransactionType xmlns=\"\">[string]</TransactionType>\n        </getAdditionalProducts>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getAdditionalProductsWithCMSData",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAdditionalProductsWithCMSData xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>[integer?]</DomesticAdults>\n                <DomesticSeniors>[integer?]</DomesticSeniors>\n                <DomesticDisabled>[integer?]</DomesticDisabled>\n                <DomesticChildren>[integer?]</DomesticChildren>\n                <DomesticInfants>[integer?]</DomesticInfants>\n                <EuropeanAdults>[integer?]</EuropeanAdults>\n                <EuropeanSeniors>[integer?]</EuropeanSeniors>\n                <EuropeanYoungPersons>[integer?]</EuropeanYoungPersons>\n                <EuropeanChildren>[integer?]</EuropeanChildren>\n            </PassengerSummary>\n            <CoachCardSummary xmlns=\"\">\n                <Disabled>[integer?]</Disabled>\n                <SeniorCitizens>[integer?]</SeniorCitizens>\n                <YoungPersons>[integer?]</YoungPersons>\n                <Family1plus1>[integer?]</Family1plus1>\n                <Family2plus2>[integer?]</Family2plus2>\n                <BritExplorer>[integer?]</BritExplorer>\n            </CoachCardSummary>\n            <OutboundJourneyId xmlns=\"\">[string]</OutboundJourneyId>\n            <InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>\n            <JourneyType xmlns=\"\">[string]</JourneyType>\n            <DiscountCode xmlns=\"\">[string?]</DiscountCode>\n            <FareType xmlns=\"\">[string]</FareType>\n            <TransactionType xmlns=\"\">[string]</TransactionType>\n            <LanguageCode xmlns=\"\">[string?]</LanguageCode>\n        </getAdditionalProductsWithCMSData>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getAllJourneysForDay",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Winter12",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\r\n    <Body>\r\n        <getAllJourneysForDay xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\r\n            <FromCode xmlns=\"\">57366</FromCode>\r\n         <ToCode xmlns=\"\">33013</ToCode>\r\n         <SearchDateTime xmlns=\"\">2020-07-29T00:00:00</SearchDateTime>\r\n         <DirectsOnly xmlns=\"\">False</DirectsOnly>\r\n         <LiveData xmlns=\"\">True</LiveData>\r\n         <EngineOverrides xmlns=\"\" />\r\n         <OptimiserOverrides xmlns=\"\" />\r\n         <SalesChannel xmlns=\"\">NXShp</SalesChannel>\r\n         <NumberOfJourneys xmlns=\"\">4</NumberOfJourneys>\r\n        </getAllJourneysForDay>\r\n    </Body>\r\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getAllocatedSeatsLayout",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAllocatedSeatsLayout xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>WEb</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyId xmlns=\"\">[string]</JourneyId>\n            <Direction xmlns=\"\">[string]</Direction>\n        </getAllocatedSeatsLayout>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getAmazonPayConfiguration",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAmazonPayConfiguration xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\"/>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getAmendabilityRule",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAmendabilityRule xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <TicketNumber xmlns=\"\">E5JD4569</TicketNumber>\n            <Date xmlns=\"\">[dateTime?]</Date>\n        </getAmendabilityRule>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getAmendmentExcess",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getAmendmentExcess xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string?]</TicketNumber>\n            <OutboundJourneyId xmlns=\"\">[string]</OutboundJourneyId>\n            <OutboundAmended xmlns=\"\">[boolean]</OutboundAmended>\n            <InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>\n            <InboundAmended xmlns=\"\">[boolean?]</InboundAmended>\n        </getAmendmentExcess>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getBookingFee",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getBookingFee xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TransactionType xmlns=\"\">RESERVATION</TransactionType>\n            <isEurolines xmlns=\"\">true</isEurolines>\n            <numberOfPassengers xmlns=\"\">1</numberOfPassengers>\n            <!-- <FareCode xmlns=\"\">[string?]</FareCode> -->\n        </getBookingFee>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getBraintreeClientToken",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getBraintreeClientToken xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\"/>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getBrands",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getBrands xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\"/>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getCMSContent",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "text/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getCMSContent xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <AgentId xmlns=\"\">[string]</AgentId>\n            <PageId xmlns=\"\">[string]</PageId>\n            <TemplateId xmlns=\"\">[string]</TemplateId>\n            <LanguageCode xmlns=\"\">[string]</LanguageCode>\n        </getCMSContent>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getCoachcardDetails",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getCoachcardDetails xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>[string]</SalesChannelCode>\n                <AgentCode>[string]</AgentCode>\n                <AgentUser>[string]</AgentUser>\n                <PartnerCode>[string]</PartnerCode>\n                <CampaignCode>[string]</CampaignCode>\n            </ChannelIdentifier>\n            <CoachCard xmlns=\"\">\n                <Type>[string?]</Type>\n                <SerialNumber>[string]</SerialNumber>\n                <ExpiryDate>[date?]</ExpiryDate>\n            </CoachCard>\n        </getCoachcardDetails>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getDistributionFee",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getDistributionFee xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <FromLocationCode xmlns=\"\">[string]</FromLocationCode>\n            <ToLocationCode xmlns=\"\">[string]</ToLocationCode>\n            <DepartureDateTime xmlns=\"\">[dateTime]</DepartureDateTime>\n            <BrandId xmlns=\"\">[string]</BrandId>\n            <AdditionalProductSku xmlns=\"\">[string]</AdditionalProductSku>\n        </getDistributionFee>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getDistributionTypeForProduct",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getDistributionTypeForProduct xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <ProductDescription xmlns=\"\">H27H200</ProductDescription>\n           <DiscountCode xmlns=\"\">12121</DiscountCode>\n        </getDistributionTypeForProduct>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getFacilities",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getFacilities xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <FacilitiesRequest xmlns=\"\">\n                <brand>[string]</brand>\n                <service>[string]</service>\n                <flight>[string]</flight>\n            </FacilitiesRequest>\n        </getFacilities>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getFareDetails",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getFareDetails xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyType xmlns=\"\">single</JourneyType>\n            <OutboundJourneyId xmlns=\"\">MzMzNDN8NTc4NDZ8MjAxOTEwMjJUMTA1NTAwfENTVHwyMi42MHwwfDIyLjYwfENPTlgyMTJ8WUVOWDU1MA==</OutboundJourneyId>\n           <!--<InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>-->\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>1</DomesticAdults>\n                <DomesticSeniors>0</DomesticSeniors>\n                <DomesticDisabled>0</DomesticDisabled>\n                <DomesticChildren>0</DomesticChildren>\n                <DomesticInfants>0</DomesticInfants>\n                <EuropeanAdults>0</EuropeanAdults>\n                <EuropeanSeniors>0</EuropeanSeniors>\n                <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                <EuropeanChildren>0</EuropeanChildren>\n            </PassengerSummary>\n            <!-- Optional -->\n            <CoachCards xmlns=\"\">\n                <Disabled>0</Disabled>\n                <SeniorCitizens>0</SeniorCitizens>\n                <YoungPersons>0</YoungPersons>\n                <Family1plus1>0</Family1plus1>\n                <Family2plus2>0</Family2plus2>\n                <BritExplorer>0</BritExplorer>\n            </CoachCards>\n            <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF86AF</SessionIdentifier>\n            <LanguageCode xmlns=\"\">[string]</LanguageCode>\n            <IsEurolines xmlns=\"\">false</IsEurolines>\n        </getFareDetails>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getFares",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getFares xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyType xmlns=\"\">[string]</JourneyType>\n            <OutboundJourneyId xmlns=\"\">[string]</OutboundJourneyId>\n            <InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>[integer?]</DomesticAdults>\n                <DomesticSeniors>[integer?]</DomesticSeniors>\n                <DomesticDisabled>[integer?]</DomesticDisabled>\n                <DomesticChildren>[integer?]</DomesticChildren>\n                <DomesticInfants>[integer?]</DomesticInfants>\n                <EuropeanAdults>[integer?]</EuropeanAdults>\n                <EuropeanSeniors>[integer?]</EuropeanSeniors>\n                <EuropeanYoungPersons>[integer?]</EuropeanYoungPersons>\n                <EuropeanChildren>[integer?]</EuropeanChildren>\n            </PassengerSummary>\n            <!-- Optional -->\n            <CoachCards xmlns=\"\">\n                <Disabled>[integer?]</Disabled>\n                <SeniorCitizens>[integer?]</SeniorCitizens>\n                <YoungPersons>[integer?]</YoungPersons>\n                <Family1plus1>[integer?]</Family1plus1>\n                <Family2plus2>[integer?]</Family2plus2>\n                <BritExplorer>[integer?]</BritExplorer>\n            </CoachCards>\n            <SessionIdentifier xmlns=\"\">[string]</SessionIdentifier>\n        </getFares>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getJourneyStages",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\r\n    <Body>\r\n        <getJourneyStages xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\r\n            <ChannelIdentifier xmlns=\"\">\r\n                <SalesChannelCode>Web</SalesChannelCode>\r\n                <AgentCode>NXDSK</AgentCode>\r\n                <AgentUser>webDTU</AgentUser>\r\n                <PartnerCode>NX</PartnerCode>\r\n                <CampaignCode>DEFAULT</CampaignCode>\r\n            </ChannelIdentifier>\r\n            <JourneyId xmlns=\"\">NTczNjZ8MzMwMjN8MjAyMDA5MTJUMDkwMDAwfENSU3w2LjkwfDB8Ni45MHxaRk5YNTUw</JourneyId>\r\n            <Direction xmlns=\"\">outbound</Direction>\r\n        </getJourneyStages>\r\n    </Body>\r\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getNewPassTicketNumber",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getNewPassTicketNumber xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n        </getNewPassTicketNumber>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getNewTicketNumber",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getNewTicketNumber xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <SessionIdentifier xmlns=\"\">[string]</SessionIdentifier>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>[integer?]</DomesticAdults>\n                <DomesticSeniors>[integer?]</DomesticSeniors>\n                <DomesticDisabled>[integer?]</DomesticDisabled>\n                <DomesticChildren>[integer?]</DomesticChildren>\n                <DomesticInfants>[integer?]</DomesticInfants>\n                <EuropeanAdults>[integer?]</EuropeanAdults>\n                <EuropeanSeniors>[integer?]</EuropeanSeniors>\n                <EuropeanYoungPersons>[integer?]</EuropeanYoungPersons>\n                <EuropeanChildren>[integer?]</EuropeanChildren>\n            </PassengerSummary>\n            <!-- Optional -->\n            <CoachCard xmlns=\"\">\n                <Type>[string?]</Type>\n                <SerialNumber>[string]</SerialNumber>\n                <ExpiryDate>[date?]</ExpiryDate>\n            </CoachCard>\n            <!-- Optional -->\n            <SelectedFare xmlns=\"\">\n                <FareCode>[string]</FareCode>\n                <GrossPrice>[decimal]</GrossPrice>\n                <Discount>[decimal]</Discount>\n                <NetPrice>[decimal]</NetPrice>\n            </SelectedFare>\n            <OutboundJourneyId xmlns=\"\">[string]</OutboundJourneyId>\n            <InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>\n            <TicketDistributionSummary xmlns=\"\">\n                <DistributionType>[string]</DistributionType>\n                <RemoteCollectAgentCode>[string?]</RemoteCollectAgentCode>\n                <MTicketPhoneNumber>[string?]</MTicketPhoneNumber>\n                <HasBeenCollected>[boolean?]</HasBeenCollected>\n                <!-- Optional -->\n                <PostoutDeliveryName>\n                    <Title>[string]</Title>\n                    <FirstName>[string]</FirstName>\n                    <LastName>[string]</LastName>\n                </PostoutDeliveryName>\n                <!-- Optional -->\n                <PostoutDeliveryAddress>\n                    <Line1>[string?]</Line1>\n                    <Line2>[string?]</Line2>\n                    <Line3>[string?]</Line3>\n                    <Town>[string?]</Town>\n                    <County>[string?]</County>\n                    <Country>[string?]</Country>\n                    <Postcode>[string?]</Postcode>\n                    <MarketingAllowed>[boolean?]</MarketingAllowed>\n                </PostoutDeliveryAddress>\n            </TicketDistributionSummary>\n        </getNewTicketNumber>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getPricedJourneys",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPricedJourneys xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyRequest xmlns=\"\">\n                <FromLocationCode>57366</FromLocationCode>\n                <ToLocationCode>E4043</ToLocationCode>\n                <DateTime>2020-05-31T06:00:00</DateTime>\n                <DepartArrivalIndicator>DepartAfter</DepartArrivalIndicator>\n                <Direction>outbound</Direction>\n                <JourneyType>single</JourneyType>\n                <!-- <PromotionCode>[string?]</PromotionCode> -->\n                <PassengerSummary>\n                    <DomesticAdults>0</DomesticAdults>\n                    <DomesticSeniors>0</DomesticSeniors>\n                    <DomesticDisabled>0</DomesticDisabled>\n                    <DomesticChildren>0</DomesticChildren>\n                    <DomesticInfants>0</DomesticInfants>\n                    <EuropeanAdults>1</EuropeanAdults>\n                    <EuropeanSeniors>0</EuropeanSeniors>\n                    <EuropeanYoungPersons>0</EuropeanYoungPersons>\n                    <EuropeanChildren>0</EuropeanChildren>\n                </PassengerSummary>\n                <!-- Optional\n                <CoachCards>\n                    <Disabled>[integer?]</Disabled>\n                    <SeniorCitizens>[integer?]</SeniorCitizens>\n                    <YoungPersons>[integer?]</YoungPersons>\n                    <Family1plus1>[integer?]</Family1plus1>\n                    <Family2plus2>[integer?]</Family2plus2>\n                    <BritExplorer>[integer?]</BritExplorer>\n                </CoachCards>  -->\n                <!-- <journeyId>[string?]</journeyId> -->\n                <MinJourneys>4</MinJourneys>\n                <!-- <MaxJourneys>[positiveInteger?]</MaxJourneys> -->\n                <FastestJourney>true</FastestJourney>\n                <IncludeUnavailableJourneys>true</IncludeUnavailableJourneys>\n                <!-- <FixedJourneyDate>[boolean?]</FixedJourneyDate> -->\n            </JourneyRequest>\n            <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF85AF</SessionIdentifier>\n        </getPricedJourneys>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getOrderReferenceDetails",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getOrderReferenceDetails xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <AmazonOrderReferenceId xmlns=\"\">[string]</AmazonOrderReferenceId>\n            <CurrencyCode xmlns=\"\">[string]</CurrencyCode>\n            <AddressConsentToken xmlns=\"\">[string?]</AddressConsentToken>\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n        </getOrderReferenceDetails>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getPartnerLocations",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPartnerLocations xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <LocationType xmlns=\"\">from</LocationType>\n        </getPartnerLocations>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getPartnerProfileDetails",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPartnerProfileDetails xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n        </getPartnerProfileDetails>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getPaymentFee",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPaymentFee xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <isEurolines xmlns=\"\">[boolean?]</isEurolines>\n            <DiscountCode xmlns=\"\">[string?]</DiscountCode>\n        </getPaymentFee>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getPayPalConfiguration",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPayPalConfiguration xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\"/>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getPricedReturnJourneys",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getPricedReturnJourneys xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>[integer?]</DomesticAdults>\n                <DomesticSeniors>[integer?]</DomesticSeniors>\n                <DomesticDisabled>[integer?]</DomesticDisabled>\n                <DomesticChildren>[integer?]</DomesticChildren>\n                <DomesticInfants>[integer?]</DomesticInfants>\n                <EuropeanAdults>[integer?]</EuropeanAdults>\n                <EuropeanSeniors>[integer?]</EuropeanSeniors>\n                <EuropeanYoungPersons>[integer?]</EuropeanYoungPersons>\n                <EuropeanChildren>[integer?]</EuropeanChildren>\n            </PassengerSummary>\n            <FromLocationCode xmlns=\"\">[string]</FromLocationCode>\n            <ToLocationCode xmlns=\"\">[string]</ToLocationCode>\n            <OutboundDepartArrivalIndicator xmlns=\"\">[string]</OutboundDepartArrivalIndicator>\n            <OutboundDateTime xmlns=\"\">[dateTime]</OutboundDateTime>\n            <InboundDepartArrivalIndicator xmlns=\"\">[string]</InboundDepartArrivalIndicator>\n            <InboundDateTime xmlns=\"\">[dateTime]</InboundDateTime>\n            <PromotionCode xmlns=\"\">[string?]</PromotionCode>\n            <!-- Optional -->\n            <CoachCards xmlns=\"\">\n                <Disabled>[integer?]</Disabled>\n                <SeniorCitizens>[integer?]</SeniorCitizens>\n                <YoungPersons>[integer?]</YoungPersons>\n                <Family1plus1>[integer?]</Family1plus1>\n                <Family2plus2>[integer?]</Family2plus2>\n                <BritExplorer>[integer?]</BritExplorer>\n            </CoachCards>\n            <MinJourneys xmlns=\"\">[int?]</MinJourneys>\n            <MaxJourneys xmlns=\"\">[positiveInteger?]</MaxJourneys>\n            <FastestJourney xmlns=\"\">[boolean?]</FastestJourney>\n            <IncludeUnavailableJourneys xmlns=\"\">[boolean?]</IncludeUnavailableJourneys>\n            <FixedJourneyDate xmlns=\"\">[boolean?]</FixedJourneyDate>\n            <SessionIdentifier xmlns=\"\">[string]</SessionIdentifier>\n        </getPricedReturnJourneys>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getProductDetails",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getProductDetails xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n            \t<SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <ProductDescription xmlns=\"\">[string?]</ProductDescription>\n        </getProductDetails>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getProductOnlyPurchase",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getProductOnlyPurchase xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n        </getProductOnlyPurchase>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getQuickIssueTicket",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getQuickIssueTicket xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n        </getQuickIssueTicket>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getSeatStock",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getSeatStock xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <OutboundJourneyId xmlns=\"\">[string]</OutboundJourneyId>\n            <InboundJourneyId xmlns=\"\">[string?]</InboundJourneyId>\n        </getSeatStock>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getTicketReprintToken",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getTicketReprintToken xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n        </getTicketReprintToken>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getTopDestinations",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getTopDestinations xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n        </getTopDestinations>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getTravelPass",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getTravelPass xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <PassNumber xmlns=\"\">[string]</PassNumber>\n        </getTravelPass>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getTravelPassTransaction",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getTravelPassTransaction xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">I3A83474</TicketNumber>\n        </getTravelPassTransaction>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getTravelTicket",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getTravelTicket xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">E5JD3012</TicketNumber>\n        </getTravelTicket>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_getUnavailableSeats",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <getUnavailableSeats xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <JourneyId xmlns=\"\">[string]</JourneyId>\n        </getUnavailableSeats>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_initPaypalCheckout",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <initPaypalCheckout xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <amount xmlns=\"\">[int]</amount>\n            <invoiceID xmlns=\"\">[string]</invoiceID>\n            <cancelURL xmlns=\"\">[string]</cancelURL>\n            <returnURL xmlns=\"\">[string]</returnURL>\n            <outboundJourneyId xmlns=\"\">[string]</outboundJourneyId>\n        </initPaypalCheckout>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_JourneySearch",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <JourneySearch xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <FromLocationCode xmlns=\"\">[string]</FromLocationCode>\n            <ToLocationCode xmlns=\"\">[string]</ToLocationCode>\n            <DateTime xmlns=\"\">[dateTime]</DateTime>\n            <DepartArrivalIndicator xmlns=\"\">[string]</DepartArrivalIndicator>\n            <MinJourneys xmlns=\"\">[int?]</MinJourneys>\n            <FindFastestJourney xmlns=\"\">[boolean?]</FindFastestJourney>\n            <IncludeUnavailableJourneys xmlns=\"\">[boolean?]</IncludeUnavailableJourneys>\n            <PassengerSummary xmlns=\"\">\n                <DomesticAdults>[integer?]</DomesticAdults>\n                <DomesticSeniors>[integer?]</DomesticSeniors>\n                <DomesticDisabled>[integer?]</DomesticDisabled>\n                <DomesticChildren>[integer?]</DomesticChildren>\n                <DomesticInfants>[integer?]</DomesticInfants>\n                <EuropeanAdults>[integer?]</EuropeanAdults>\n                <EuropeanSeniors>[integer?]</EuropeanSeniors>\n                <EuropeanYoungPersons>[integer?]</EuropeanYoungPersons>\n                <EuropeanChildren>[integer?]</EuropeanChildren>\n            </PassengerSummary>\n        </JourneySearch>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_markTicketAsCollected",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <markTicketAsCollected xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>wedDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n        </markTicketAsCollected>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_PaymentFailed",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <PaymentFailed xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <SessionIdentifier xmlns=\"\">[string]</SessionIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>wedDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <Payment xmlns=\"\">\n                <PaymentProviderTransactionId>[string?]</PaymentProviderTransactionId>\n                <PaymentMethod>[string]</PaymentMethod>\n                <PaymentProvider>[string?]</PaymentProvider>\n                <Amount>[int]</Amount>\n                <Last4Digits>[string?]</Last4Digits>\n                <MerchantID>[string?]</MerchantID>\n                <TerminalID>[string?]</TerminalID>\n                <AuhorisationCode>[string?]</AuhorisationCode>\n                <CardType>[string?]</CardType>\n            </Payment>\n        </PaymentFailed>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_paypalCheckoutDetails",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <paypalCheckoutDetails xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>wedDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <token xmlns=\"\">[string]</token>\n        </paypalCheckoutDetails>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_purchaseTravel",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <purchaseTravel xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>wedDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n            <SessionIdentifier xmlns=\"\">[string]</SessionIdentifier>\n            <LeadPassenger xmlns=\"\">\n                <!-- Optional -->\n                <PassengerName>\n                    <Title>[string?]</Title>\n                    <FirstName>[string?]</FirstName>\n                    <LastName>[string?]</LastName>\n                </PassengerName>\n                <Address>\n                    <Line1>[string?]</Line1>\n                    <Line2>[string?]</Line2>\n                    <Line3>[string?]</Line3>\n                    <Town>[string?]</Town>\n                    <County>[string?]</County>\n                    <Country>[string?]</Country>\n                    <CountryCode>[string?]</CountryCode>\n                    <Postcode>[string?]</Postcode>\n                </Address>\n                <Email>[string]</Email>\n                <Phone>[string]</Phone>\n                <Gender>[string?]</Gender>\n                <DateOfBirth>[date?]</DateOfBirth>\n                <!-- Optional -->\n                <ContactMethods>\n                    <ViaEmail>[boolean?]</ViaEmail>\n                    <ViaSMS>[boolean?]</ViaSMS>\n                    <NxWhiteCoach>[boolean?]</NxWhiteCoach>\n                    <ThirdPartyTravel>[boolean?]</ThirdPartyTravel>\n                    <ThirdPartyLeisure>[boolean?]</ThirdPartyLeisure>\n                    <ThirdPartyShopping>[boolean?]</ThirdPartyShopping>\n                    <ThirdPartyGambling>[boolean?]</ThirdPartyGambling>\n                    <ThirdPartyOffers>[boolean?]</ThirdPartyOffers>\n                    <ThirdPartyEvents>[boolean?]</ThirdPartyEvents>\n                    <ThirdPartyFinance>[boolean?]</ThirdPartyFinance>\n                    <NxAccountID>[string?]</NxAccountID>\n                </ContactMethods>\n            </LeadPassenger>\n            <!-- Optional -->\n            <Passengers xmlns=\"\">\n                <!-- Optional -->\n                <PassengerName>\n                    <Title>[string?]</Title>\n                    <FirstName>[string?]</FirstName>\n                    <LastName>[string?]</LastName>\n                </PassengerName>\n                <Gender>[string?]</Gender>\n                <DateOfBirth>[date?]</DateOfBirth>\n                <PassengerType>[string]</PassengerType>\n                <LeadPassenger>[boolean]</LeadPassenger>\n            </Passengers>\n            <!-- Optional -->\n            <CoachCard xmlns=\"\">\n                <Type>[string?]</Type>\n                <SerialNumber>[string]</SerialNumber>\n                <ExpiryDate>[date?]</ExpiryDate>\n            </CoachCard>\n            <BookingFee xmlns=\"\">\n                <SKU>[string]</SKU>\n                <Fee>[int]</Fee>\n            </BookingFee>\n            <DistributionFee xmlns=\"\">\n                <SKU>[string]</SKU>\n                <Fee>[int]</Fee>\n            </DistributionFee>\n            <AdditionalProduct xmlns=\"\">\n                <SKU>[string]</SKU>\n                <UnitPrice>[integer]</UnitPrice>\n                <Quantity>[integer]</Quantity>\n                <TotalPrice>[integer]</TotalPrice>\n            </AdditionalProduct>\n            <TicketDistributionSummary xmlns=\"\">\n                <DistributionProductClass>[string]</DistributionProductClass>\n                <RemoteCollectAgentCode>[string?]</RemoteCollectAgentCode>\n                <MTicketPhoneNumber>[string?]</MTicketPhoneNumber>\n                <!-- Optional -->\n                <PostoutDeliveryName>\n                    <Title>[string]</Title>\n                    <FirstName>[string]</FirstName>\n                    <LastName>[string]</LastName>\n                </PostoutDeliveryName>\n                <!-- Optional -->\n                <PostoutDeliveryAddress>\n                    <Line1>[string?]</Line1>\n                    <Line2>[string?]</Line2>\n                    <Line3>[string?]</Line3>\n                    <Town>[string?]</Town>\n                    <County>[string?]</County>\n                    <Country>[string?]</Country>\n                    <CountryCode>[string?]</CountryCode>\n                    <Postcode>[string?]</Postcode>\n                </PostoutDeliveryAddress>\n            </TicketDistributionSummary>\n            <Payment xmlns=\"\">\n                <Amount>[int]</Amount>\n                <PaymentType>[string?]</PaymentType>\n                <!-- Optional -->\n                <Barclays>\n                    <PaymentProviderTransactionId>[string]</PaymentProviderTransactionId>\n                    <PaymentMethod>[string]</PaymentMethod>\n                </Barclays>\n                <!-- Optional -->\n                <PayPal>\n                    <token>[string]</token>\n                    <payerID>[string]</payerID>\n                    <accountName>[string]</accountName>\n                </PayPal>\n                <!-- Optional -->\n                <Amazon>\n                    <amazonOrderReferenceId>[string]</amazonOrderReferenceId>\n                    <accountEmail>[string]</accountEmail>\n                    <currencyCode>[string]</currencyCode>\n                    <sellerAuthorisationNote>[string]</sellerAuthorisationNote>\n                    <sellerNote>[string]</sellerNote>\n                    <sellerOrderId>[string]</sellerOrderId>\n                    <storeName>[string]</storeName>\n                    <isOrderDetailsPreviouslyConfirmed>[boolean?]</isOrderDetailsPreviouslyConfirmed>\n                </Amazon>\n            </Payment>\n            <FareRequestID xmlns=\"\">[string]</FareRequestID>\n            <FareCode xmlns=\"\">[string]</FareCode>\n            <OutboundSeats xmlns=\"\">[string?]</OutboundSeats>\n            <InboundSeats xmlns=\"\">[string?]</InboundSeats>\n            <Discounts xmlns=\"\">\n                <CampaignCode>[string?]</CampaignCode>\n                <DiscountCode>[string?]</DiscountCode>\n                <Value>[integer?]</Value>\n            </Discounts>\n            <SalesChannelFare xmlns=\"\">[int?]</SalesChannelFare>\n        </purchaseTravel>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_purchaseTravel2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\r\n    <Body>\r\n        <purchaseTravel2 xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\r\n            <ChannelIdentifier xmlns=\"\">\r\n                <SalesChannelCode>Kiosk</SalesChannelCode>\r\n                <AgentCode>XK105</AgentCode>\r\n                <AgentUser>HTF5</AgentUser>\r\n                <PartnerCode>NXKIOSKS</PartnerCode>\r\n                <CampaignCode>TVMS_HEATHROW_T5</CampaignCode>\r\n            </ChannelIdentifier>\r\n            <TicketNumber xmlns=\"\">K7A00052</TicketNumber>\r\n            <SessionIdentifier xmlns=\"\">C6F87E6C1ACD02B026A10B4009BF85AF</SessionIdentifier>\r\n            <LeadPassenger xmlns=\"\">\r\n                <!-- Optional -->\r\n                <PassengerName>\r\n                    <Title>Mr</Title>\r\n                    <FirstName>Lead</FirstName>\r\n                    <LastName>Passenger</LastName>\r\n                </PassengerName>\r\n                <Address>\r\n                    <Line1>1/2</Line1>\r\n                    <Line2>345 Calder Street</Line2>\r\n                    <!--<Line3></Line3>-->\r\n                    <Town>GLASGOW</Town>\r\n                    <!--<County></County>-->\r\n                    <Country>UK</Country>\r\n                    <Postcode>G42 7NT</Postcode>\r\n                </Address>\r\n                <Email>rahul.chauhan@nationalexpress.com</Email>\r\n                <Phone>1234567890</Phone>\r\n                <Gender>M</Gender>\r\n                <DateOfBirth>12-02-1996</DateOfBirth>\r\n                <!-- Optional -->\r\n                <ContactMethods>\r\n                    <ViaEmail>true</ViaEmail>\r\n                    <ViaSMS>true</ViaSMS>\r\n                    <NxWhiteCoach>false</NxWhiteCoach>\r\n                    <ThirdPartyTravel>false</ThirdPartyTravel>\r\n                    <ThirdPartyLeisure>false</ThirdPartyLeisure>\r\n                    <ThirdPartyShopping>false</ThirdPartyShopping>\r\n                    <ThirdPartyGambling>false</ThirdPartyGambling>\r\n                    <ThirdPartyOffers>fasle</ThirdPartyOffers>\r\n                    <ThirdPartyEvents>false</ThirdPartyEvents>\r\n                    <ThirdPartyFinance>false</ThirdPartyFinance>\r\n                    <NxAccountID>false</NxAccountID>\r\n                </ContactMethods>\r\n            </LeadPassenger>\r\n            <!-- Optional -->\r\n            <!--<CoachCard xmlns=\"\">-->\r\n            <!--    <Type>[string?]</Type>-->\r\n            <!--    <SerialNumber>[string]</SerialNumber>-->\r\n            <!--    <ExpiryDate>[date?]</ExpiryDate>-->\r\n            <!--</CoachCard>-->\r\n            <BookingFee xmlns=\"\">\r\n                <SKU>B04B004</SKU>\r\n                <Fee>100</Fee>\r\n            </BookingFee>\r\n            <DistributionFee xmlns=\"\">\r\n                <SKU>H43H003</SKU>\r\n                <Fee>00</Fee>\r\n            </DistributionFee>\r\n            <AdditionalProduct xmlns=\"\">\r\n                <SKU>H01H004</SKU>\r\n                <UnitPrice>1500</UnitPrice>\r\n                <Quantity>1</Quantity>\r\n                <TotalPrice>1500</TotalPrice>\r\n            </AdditionalProduct>\r\n            <TicketDistributionSummary xmlns=\"\">\r\n                <DistributionProductClass>RETAILSITEOUTLET</DistributionProductClass>\r\n                <RemoteCollectAgentCode>[string?]</RemoteCollectAgentCode>\r\n                <MTicketPhoneNumber>[string?]</MTicketPhoneNumber>\r\n                <!-- Optional -->\r\n                <PostoutDeliveryName>\r\n                    <Title>Mr</Title>\r\n                    <FirstName>Lead</FirstName>\r\n                    <LastName>Passenger</LastName>\r\n                </PostoutDeliveryName>\r\n                <!-- Optional -->\r\n                <PostoutDeliveryAddress>\r\n                    <Line1>1/2</Line1>\r\n                    <Line2>345 Calder Street</Line2>\r\n                    <!--<Line3></Line3>-->\r\n                    <Town>GLASGOW</Town>\r\n                    <!--<County></County>-->\r\n                    <Country>UK</Country>\r\n                    <Postcode>G42 7NT</Postcode>\r\n                </PostoutDeliveryAddress>\r\n            </TicketDistributionSummary>\r\n            <Payment xmlns=\"\">\r\n                <Amount>1630</Amount>\r\n                <!-- Optional -->\r\n                <!--<Barclays>-->\r\n                <!--    <PaymentProviderTransactionId>8913720181259979</PaymentProviderTransactionId>-->\r\n                <!--    <PaymentMethod>visa</PaymentMethod>-->\r\n                <!--</Barclays>-->\r\n                <!-- Optional -->\r\n                <!--<PayPal>-->\r\n                <!--    <token>[string]</token>-->\r\n                <!--    <payerID>[string]</payerID>-->\r\n                <!--    <accountName>[string]</accountName>-->\r\n                <!--</PayPal>-->\r\n                <!--<Braintree>-->\r\n                <!--    <nonce>[string]</nonce>-->\r\n                <!--</Braintree>-->\r\n                <!-- Optional -->\r\n                <!--<CreditCall>-->\r\n                <!--    <Last4Digits>[string]</Last4Digits>-->\r\n                <!--    <MerchantID>[string]</MerchantID>-->\r\n                <!--    <TerminalID>[string]</TerminalID>-->\r\n                <!--    <AuhorisationCode>[string]</AuhorisationCode>-->\r\n                <!--    <CardType>[string]</CardType>-->\r\n                <!--    <PaymentProviderTransactionID>[string]</PaymentProviderTransactionID>-->\r\n                <!--</CreditCall>-->\r\n                <!-- Optional -->\r\n                <Cash>\r\n                    <Cash>cash</Cash>\r\n                </Cash>\r\n            </Payment>\r\n            <FareRequestID xmlns=\"\">a5f0ace8-01cd-4233-87f0-c4e64b3cf048</FareRequestID>\r\n            <FareCode xmlns=\"\">CFL</FareCode>\r\n            <!--<OutboundSeats xmlns=\"\">[string?]</OutboundSeats>-->\r\n            <!--<InboundSeats xmlns=\"\">[string?]</InboundSeats>-->\r\n        </purchaseTravel2>\r\n    </Body>\r\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_purchaseTravelPass",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <purchaseTravelPass xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <!--<TicketNumber xmlns=\"\"></TicketNumber>-->\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TravelPassDetails xmlns=\"\">\n                <TravelPassHolderDetails>\n                    <!-- Optional -->\n                    <PassengerName>\n                        <Title>Mr</Title>\n                        <FirstName>Bhupendra</FirstName>\n                        <LastName>Singh</LastName>\n                    </PassengerName>\n                    <!-- Optional -->\n                    <Address>\n                        <Line1>1/2</Line1>\n                        <Line2>345 Calder Street</Line2>\n                        <!--<Line3></Line3>-->\n                        <Town>GLASGOW</Town>\n                        <!--<County></County>-->\n                        <Country>UK</Country>\n                        <Postcode>G42 7NT</Postcode>\n                        <MarketingAllowed>false</MarketingAllowed>\n                    </Address>\n                    <!-- Optional -->\n                    <Email>\n                        <Email>bhumika.makwana@nationalexpress.com</Email>\n                        <MarketingAllowed>false</MarketingAllowed>\n                    </Email>\n                    <!-- Optional -->\n                    <Phone>\n                        <Phone>1234567890</Phone>\n                        <MarketingAllowed>false</MarketingAllowed>\n                    </Phone>\n                </TravelPassHolderDetails>\n                <ProductType>\n                    <SKU>H05H036</SKU>\n                    <ProductDescription>Outbound Seat Reservation</ProductDescription>\n                    <!--<ProductRole>[string]</ProductRole>\n                    <ProductClass>[string]</ProductClass>-->\n                    <Fee>2.00</Fee>\n                    <ProductCategoryCode>J</ProductCategoryCode>\n                    <Duration></Duration>\n                    <DurationUnits></DurationUnits>\n                </ProductType>\n                <SerialNumber>1C496780</SerialNumber>\n                <PassStartDate>2019-01-20T00:00:00+00:00</PassStartDate>\n                <PassEndDate>2020-01-20T00:00:00+00:00</PassEndDate>\n                <!--<QRCode></QRCode>-->\n            </TravelPassDetails>\n            <!-- Optional -->\n            <!--<BookingFee xmlns=\"\">\n                <SKU>[string]</SKU>\n                <ProductDescription>[string]</ProductDescription>\n                <ProductRole>[string]</ProductRole>\n                <ProductClass>[string]</ProductClass>\n                <Fee>[decimal]</Fee>\n                <ProductCategoryCode>[string?]</ProductCategoryCode>\n                <Duration>[int]</Duration>\n                <DurationUnits>[string]</DurationUnits>\n            </BookingFee>-->\n            <!-- Optional -->\n            <!--<DistributionFee xmlns=\"\">\n                <SKU>[string]</SKU>\n                <ProductDescription>[string]</ProductDescription>\n                <ProductRole>[string]</ProductRole>\n                <ProductClass>[string]</ProductClass>\n                <Fee>[decimal]</Fee>\n                <ProductCategoryCode>[string?]</ProductCategoryCode>\n                <Duration>[int]</Duration>\n                <DurationUnits>[string]</DurationUnits>\n            </DistributionFee>-->\n            <DistributionSummary xmlns=\"\">\n                <DistributionType>eTicket Charge</DistributionType>\n                <!--<RemoteCollectAgentCode>[string?]</RemoteCollectAgentCode>\n                <MTicketPhoneNumber>[string?]</MTicketPhoneNumber>\n                <HasBeenCollected>[boolean?]</HasBeenCollected>-->\n                <!-- Optional -->\n                <PostoutDeliveryName>\n                    <Title>Mr</Title>\n                    <FirstName>Bhupendra</FirstName>\n                    <LastName>Singh</LastName>\n                </PostoutDeliveryName>\n                <!-- Optional -->\n                <PostoutDeliveryAddress>\n                    <Line1>1/2</Line1>\n                    <Line2>345 Calder Street</Line2>\n                    <!--<Line3></Line3>-->\n                    <Town>GLASGOW</Town>\n                    <!--<County></County>-->\n                    <Country>UK</Country>\n                    <Postcode>G42 7NT</Postcode>\n                    <MarketingAllowed>false</MarketingAllowed>\n                </PostoutDeliveryAddress>\n            </DistributionSummary>\n            <Payment xmlns=\"\">\n                <PaymentProviderTransactionId>8569355</PaymentProviderTransactionId>\n                <PaymentMethod>card</PaymentMethod>\n                <PaymentProvider>test</PaymentProvider>\n                <Amount>700</Amount>\n                <Last4Digits>5689</Last4Digits>\n                <MerchantID>1234</MerchantID>\n                <TerminalID>1342</TerminalID>\n                <AuhorisationCode>56895</AuhorisationCode>\n                <CardType>test</CardType>\n            </Payment>\n            <ContactEmail xmlns=\"\">bhumika.makwana@nationalexpress.com</ContactEmail>\n            <ContactPhoneNumber xmlns=\"\">1234567890</ContactPhoneNumber>\n            <Discounts>\n            \t<CampaignCode>101</CampaignCode>\n            \t<DiscountCode>UNITTEST</DiscountCode>\n            \t<Value>550</Value>\n            \t<productSKU>H02H180</productSKU>\n            \t<campaignID>101</campaignID>\n            </Discounts>\n        </purchaseTravelPass>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_queueConfirmationEmail",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <queueConfirmationEmail xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <ticketNumber xmlns=\"\">[string]</ticketNumber>\n            <emailTemplate xmlns=\"\">[string]</emailTemplate>\n            <languageCode xmlns=\"\">[string]</languageCode>\n        </queueConfirmationEmail>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_queueSendMyJourney",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <queueSendMyJourney xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <journeyType xmlns=\"\">[string]</journeyType>\n            <departureStopId xmlns=\"\">[string]</departureStopId>\n            <destinationStopId xmlns=\"\">[string]</destinationStopId>\n            <departureDate xmlns=\"\">[string]</departureDate>\n            <departArrive xmlns=\"\">[string]</departArrive>\n            <outboundTime xmlns=\"\">[string]</outboundTime>\n            <returnDate xmlns=\"\">[string]</returnDate>\n            <departArriveReturn xmlns=\"\">[string]</departArriveReturn>\n            <returnTime xmlns=\"\">[string]</returnTime>\n            <adults xmlns=\"\">[string]</adults>\n            <children xmlns=\"\">[string]</children>\n            <seniors xmlns=\"\">[string]</seniors>\n            <infants xmlns=\"\">[string]</infants>\n            <disabled xmlns=\"\">[string]</disabled>\n            <euroAdults xmlns=\"\">[string]</euroAdults>\n            <euroChildren xmlns=\"\">[string]</euroChildren>\n            <euroSixtyPlus xmlns=\"\">[string]</euroSixtyPlus>\n            <euroInfants xmlns=\"\">[string]</euroInfants>\n            <ouiAdults xmlns=\"\">[string]</ouiAdults>\n            <ouiChildren xmlns=\"\">[string]</ouiChildren>\n            <usingCoachCard xmlns=\"\">[string]</usingCoachCard>\n            <familyCards xmlns=\"\">[string]</familyCards>\n            <youngPersonCards xmlns=\"\">[string]</youngPersonCards>\n            <seniorCards xmlns=\"\">[string]</seniorCards>\n            <disabledCards xmlns=\"\">[string]</disabledCards>\n            <partnerId xmlns=\"\">[string]</partnerId>\n            <campaignId xmlns=\"\">[string]</campaignId>\n            <waiting xmlns=\"\">[string]</waiting>\n            <request_locale xmlns=\"\">[string]</request_locale>\n            <emailId xmlns=\"\">[string]</emailId>\n            <template xmlns=\"\">[string]</template>\n            <context xmlns=\"\">[string]</context>\n        </queueSendMyJourney>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_recordPurchase",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <recordPurchase xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <PassengerDetails xmlns=\"\">\n                <!-- Optional -->\n                <PassengerName>\n                    <Title>[string?]</Title>\n                    <FirstName>[string?]</FirstName>\n                    <LastName>[string?]</LastName>\n                </PassengerName>\n                <Address>\n                    <Line1>[string?]</Line1>\n                    <Line2>[string?]</Line2>\n                    <Line3>[string?]</Line3>\n                    <Town>[string?]</Town>\n                    <County>[string?]</County>\n                    <Country>[string?]</Country>\n                    <CountryCode>[string?]</CountryCode>\n                    <Postcode>[string?]</Postcode>\n                </Address>\n                <Email>[string]</Email>\n                <Phone>[string]</Phone>\n                <Gender>[string?]</Gender>\n                <DateOfBirth>[date?]</DateOfBirth>\n                <!-- Optional -->\n                <ContactMethods>\n                    <ViaEmail>[boolean?]</ViaEmail>\n                    <ViaSMS>[boolean?]</ViaSMS>\n                    <NxWhiteCoach>[boolean?]</NxWhiteCoach>\n                    <ThirdPartyTravel>[boolean?]</ThirdPartyTravel>\n                    <ThirdPartyLeisure>[boolean?]</ThirdPartyLeisure>\n                    <ThirdPartyShopping>[boolean?]</ThirdPartyShopping>\n                    <ThirdPartyGambling>[boolean?]</ThirdPartyGambling>\n                    <ThirdPartyOffers>[boolean?]</ThirdPartyOffers>\n                    <ThirdPartyEvents>[boolean?]</ThirdPartyEvents>\n                    <ThirdPartyFinance>[boolean?]</ThirdPartyFinance>\n                    <NxAccountID>[string?]</NxAccountID>\n                </ContactMethods>\n            </PassengerDetails>\n            <CommunicationPreferences xmlns=\"\">\n                <AcceptMonthlyEmail>[boolean]</AcceptMonthlyEmail>\n                <AcceptEuroSpecialOffers>[boolean]</AcceptEuroSpecialOffers>\n                <AcceptSpecialOffers>[boolean?]</AcceptSpecialOffers>\n            </CommunicationPreferences>\n            <TicketDetails xmlns=\"\">\n                <TicketNumber>[string]</TicketNumber>\n                <DepartureStop>[string?]</DepartureStop>\n                <DestinationStop>[string?]</DestinationStop>\n                <JourneyType>[string?]</JourneyType>\n                <DistributionType>[string]</DistributionType>\n                <BookingAmount>[decimal]</BookingAmount>\n            </TicketDetails>\n        </recordPurchase>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_validateCoachCard",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <validateCoachCard xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <SerialNumber xmlns=\"\">[string]</SerialNumber>\n        </validateCoachCard>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_validateCoachcard2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <validateCoachcard2 xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <SerialNumber xmlns=\"\">[string]</SerialNumber>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n            <ExpiryDate xmlns=\"\">[dateTime]</ExpiryDate>\n            <JourneyOutDate xmlns=\"\">[dateTime]</JourneyOutDate>\n            <JourneyInDate xmlns=\"\">[dateTime?]</JourneyInDate>\n            <FromLocation xmlns=\"\">[string]</FromLocation>\n            <ToLocation xmlns=\"\">[string]</ToLocation>\n            <TotalFare xmlns=\"\">[decimal]</TotalFare>\n        </validateCoachcard2>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHv3_voidPayment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Body>\n        <voidPayment xmlns=\"http://VMUKNXDEV2.eur.ad.sag/nxpub:ChannelApi3\">\n            <ChannelIdentifier xmlns=\"\">\n                <SalesChannelCode>Web</SalesChannelCode>\n                <AgentCode>NXDSK</AgentCode>\n                <AgentUser>webDTU</AgentUser>\n                <PartnerCode>NX</PartnerCode>\n                <CampaignCode>DEFAULT</CampaignCode>\n            </ChannelIdentifier>\n            <TicketNumber xmlns=\"\">[string]</TicketNumber>\n            <SessionIdentifier xmlns=\"\">[string?]</SessionIdentifier>\n            <Amount xmlns=\"\">[positiveInteger?]</Amount>\n            <PaymentProvider xmlns=\"\">[string]</PaymentProvider>\n            <PaymentProviderTransactionId xmlns=\"\">[string]</PaymentProviderTransactionId>\n        </voidPayment>\n    </Body>\n</Envelope>"
+						},
+						"url": {
+							"raw": "{{APIurl}}/ws/nxpub:ChannelApi3/nxpub_ChannelApi3_Port",
+							"host": [
+								"{{APIurl}}"
+							],
+							"path": [
+								"ws",
+								"nxpub:ChannelApi3",
+								"nxpub_ChannelApi3_Port"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6444c52d-3eea-4704-84bf-a8dfc5efbe2a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1a08f91b-82d3-4923-98ec-45ec59d8c268",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "97d9d58c-7efd-4ac2-b007-8872cbcdbce1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "70a8006b-b04a-457f-abda-13831158f8d8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
